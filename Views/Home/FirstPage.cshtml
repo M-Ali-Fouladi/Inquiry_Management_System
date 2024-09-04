@@ -1,0 +1,187 @@
+﻿@model IEnumerable<CustomMembershipEF.Models.InquiryViewModel>
+      @*@model CustomMembershipEF.Models.tbl_Inquiry*@            
+                @*@Html.Label("نام درخواست کننده")
+                @(Html.Kendo().DropDownList()
+            .Name("Inquiry_Names")
+            .HtmlAttributes(new { style = "width: 30%" })
+            .DataTextField("Inquiry_Names")
+            .DataValueField("Inquiry_IDs")
+            .DataSource(source =>
+            {
+                source.Read(read =>
+                {
+                    read.Action("GetTblInquiry_NameDropdown", "Home");
+                });
+            })
+                
+                )*@
+                      <div class="container" ng-app="sortApp" ng-controller="mainController">
+                          <input type="text" id="element_code">کد کالا :<br>
+                          <input type="text" id="AdminUserName">نام کارشناس :<br>
+                          <input type="text" id="Inquiry_Vaheds">نام واحد :<br>
+                          <input type="text" id="Inquiry_Main_ID">شماره درخواست :<br>
+                          <input type="text" id="Inquiry_Name">نام درخواست دهنده :<br>
+
+                          @*<button onclick="search()" class="button blue-gradient">جستجو</button>*@
+                          <input type="button" id="btnSave" value="search" ng-click="search(element_code,AdminUserName,Inquiry_Vaheds,Inquiry_Main_ID,Inquiry_Name)" />
+
+                      </div>
+                <br />
+        @(Html.Kendo().Grid(Model)
+                .Name("grid")
+                .Columns(columns =>
+                {
+                    columns.Bound(c => c.Id).Hidden(true);
+                    columns.Bound(c => c.Inquiry_Main_ID);
+                    columns.Bound(c => c.Inquiry_Element);
+                    columns.Bound(c => c.Inquiry_Date);
+                    columns.Bound(c => c.Inquiry_Vahed);
+                    columns.Bound(c => c.Inquiry_Type);
+                    columns.Bound(c => c.Inquiry_Name);
+                    columns.Bound(c => c.Inquiry_NeededDate);
+                    columns.Command(command => command.Custom("ViewDetails").Click("showDetails")).Width(180);
+                })
+                 .Pageable(pageable => pageable
+                .Refresh(true)
+                .PageSizes(true)
+                .ButtonCount(5))
+                .Sortable()
+                .Scrollable()
+                 .HtmlAttributes(new { style = "height:550px;" })
+                  .Filterable(filterable => filterable
+        .Extra(false)
+        .Operators(operators => operators
+            .ForString(str => str.Clear()
+                .StartsWith("شروع شود با")
+                .IsEqualTo("برابر باشد با")
+                .IsNotEqualTo("مخالف باشد با")
+                .Contains("شبیه باشد با")
+            ))
+        )
+                .DataSource(dataSource => dataSource
+                .Ajax()
+                .PageSize(10)
+            .Read(read => read.Action("KartablePopup_Read", "Home"))
+                )
+        )
+        @(Html.Kendo().Window().Name("Details")
+                    .Title("Customer Details")
+                    .Visible(false)
+                    .Modal(true)
+                    .Draggable(true)
+                    .Width(300)
+        )
+
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    <br />
+    <br />
+                     
+                   
+        
+                      <script>
+                          //var element_code = document.getElementById("element_code").value;
+                          //var  AdminUserName = document.getElementById("AdminUserName").value;
+                          //var Inquiry_Vahed = document.getElementById("Inquiry_Vahed").value;
+                          //var Inquiry_Main_ID = document.getElementById("Inquiry_Main_ID").value;  
+                          var app = angular.module("sortApp", []);
+                          app.controller("mainController", function ($scope, $http) {
+                              debugger;
+                              $scope.search = function (element_code, AdminUserName, Inquiry_Vahed, Inquiry_Main_ID, Inquiry_Name) {
+
+                                  $scope.user = {}
+                                  $scope.user.ElementCode = $('#element_code').val();
+                                  $scope.user.AdminUserName = $('#AdminUserName').val();
+                                  $scope.user.Inquiry_Vahed = $('#Inquiry_Vaheds').val();
+                                  $scope.user.Inquiry_Main_ID = $('#Inquiry_Main_ID').val();
+                                  $scope.user.Inquiry_Name = $('#Inquiry_Name').val();
+                                  $http({
+                                     
+                                      url: '@Url.Action("Kartable_Search", "Home")',
+
+                                      method: "POST",
+                                      data: JSON.stringify($scope.user)
+                                  })
+                                      .then(function (response) {
+                                          // success
+                                          alert('success');
+                                          var grid = $("#grid").data("kendoGrid");
+                                          grid.dataSource.read();
+                                          //$scope.users = response.data;
+                                      },
+                                      function (response) { // optional
+                                          // failed
+                                          alert("Error Occur");
+                                      })
+
+                              };
+
+                          });
+                      </script>
+
+    <script type="text/javascript">
+        var detailsTemplate = kendo.template($("#template").html());
+        function showDetails(e)
+        {
+                e.preventDefault();
+                var dataItem = this.dataItem($(e.currentTarget).closest("tr"));
+                $.get("@Url.Action("_Update_Kartable", "Home")/" + dataItem.Id,
+                function (data) { $(".modal-body").html(data); })
+                $('#exampleModal').modal('show');
+            }
+
+                 // data: JSON.stringify({ model: { ElementCode: "", AdminUsername: "", Inquiry_Vahed: "", Inquiry_Main_ID: "" } }),
+            
+        </script>
+   
+
+        <style>
+            .customer-photo {
+                display: inline-block;
+                width: 32px;
+                height: 32px;
+                border-radius: 50%;
+                background-size: 32px 35px;
+                background-position: center center;
+                vertical-align: middle;
+                line-height: 32px;
+                box-shadow: inset 0 0 1px #999, inset 0 0 10px rgba(0,0,0,.2);
+                margin-left: 5px;
+            }
+
+            .customer-name {
+                display: inline-block;
+                vertical-align: middle;
+                line-height: 32px;
+                padding-left: 3px;
+            }
+        </style>
+        <style>
+            .demo-section {
+                width: 250px;
+                margin: 35px auto 50px;
+                padding: 30px;
+            }
+
+                .demo-section h2 {
+                    text-transform: uppercase;
+                    font-size: 1.2em;
+                    margin-bottom: 10px;
+                }
+        </style>
+        

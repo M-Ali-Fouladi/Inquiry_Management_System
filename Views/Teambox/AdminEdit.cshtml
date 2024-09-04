@@ -1,0 +1,68 @@
+﻿
+@model CustomMembershipEF.Entities.UserRole
+@{
+    
+    ViewBag.Title = "AdminEdit";
+}
+<div dir="rtl">
+<h2>ویرایش اطلاعات کاربر</h2>
+
+@{
+ 
+  
+    ViewBag.Title = "Edit";
+
+}
+
+
+
+@using (Html.BeginForm())
+{
+    @Html.ValidationSummary(true)
+
+    <fieldset dir="rtl">
+        <legend>UserEdit</legend>
+
+        @Html.HiddenFor(model => model.UserRoleId)
+        @Html.HiddenFor(model => model.UserId)
+        @Html.HiddenFor(model => model.Role.RoleName)
+
+
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.User.UserName)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.User.UserName)
+            @Html.ValidationMessageFor(model => model.User.UserName)
+        </div>
+
+       
+
+        <div class="editor-field">
+            @Html.DropDownListFor(model => model.RoleId, (SelectList)ViewBag.RoleId);
+       
+           
+        </div>
+
+
+        <p dir="rtl">
+            <input type="submit" value="ثبت تغییرات" />
+        </p>
+        <br />
+        @{
+    if (@ViewBag.message != "")
+    {
+            <h2>@ViewBag.message </h2>
+    }
+            
+        }
+    </fieldset>
+}
+
+<div class="back">
+     @Html.ActionLink("ثبت  نام", "Register")
+    @Html.ActionLink("بازگشت به صفحه مدیریت کاربران", "ManageAdmin")
+</div>
+
+    </div>

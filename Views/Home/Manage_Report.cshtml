@@ -1,0 +1,802 @@
+﻿@*@model IEnumerable<CustomMembershipEF.Models.InquiryViewModel>*@
+
+@{
+    ViewBag.Title = "Manage_Report";
+}
+<h2>Manage_Report</h2>
+
+<fieldset  id="group1">
+    <div class="row">
+        <input class="col-sm-1" onchange="showkala()" type="radio" name="rd" id="kala" value="1">کالاها <br>
+        <input class="col-sm-1" onchange="inserted_inquiry()" type="radio" name="rd" id="inserted_inquiryrd" value="2">درخواست های ثبت شده<br>
+        <input class="col-sm-1" onchange="final_result()" type="radio" name="rd" id="final_result" value="2">نتایج نهایی<br>
+        <input class="col-sm-1" onchange="Tests()" type="radio" name="rd" id="Tests" value="2">آزمون ها<br>
+   </div>
+    <br />
+    <div class="row">
+        <input class="col-sm-1" onchange="Customer()" type="radio" name="rd" id="Customer" value="2">مشتریان<br>
+        <input class="col-sm-1" onchange="Inquiry_saraneh()" type="radio" name="rd" id="Inquiry_saraneh" value="2">سرانه درخواست ها<br>
+        <input class="col-sm-1" onchange="Salary()" type="radio" name="rd" id="Salary" value="2">درآمدها<br>
+        <input class="col-sm-1" onchange="All_Inquiry()" type="radio" name="rd" id="All_Inquiry" value="2">کل درخواست ها<br>
+        </div>
+    <br />
+    <div class="row">
+        <input class="col-sm-1" onchange="taradod()" type="radio" name="rd" id="taradod" value="2">ترددها<br>
+        <input class="col-sm-1" onchange="Inquiry_deny()" type="radio" name="rd" id="Inquiry_deny" value="2">درخواست های رد شده<br>
+        <input class="col-sm-1" onchange="Inquiry_Status()" type="radio" name="rd" id="Inquiry_Status" value="2">وضیعت درخواست ها<br>
+        <input class="col-sm-1" onchange="Outsource()" type="radio" name="rd" id="Outsource" value="2">برون سپاری<br>
+</div>
+</fieldset>
+<div>
+    <label id="Grid_kala1">gridkala</label>
+    @(Html.Kendo().Grid<CustomMembershipEF.Models.InquiryViewModel>()
+                .Name("Grid_kala")
+               
+                .Columns(columns =>
+                {
+                    columns.Bound(c => c.Id).Hidden(true);
+                    columns.Bound(c => c.Inquiry_Element_Code).Hidden(true);
+                    columns.Bound(c => c.Element_count).Title("تعداد درخواست");
+                    columns.Bound(c => c.Inquiry_Element).Title("عنوان کالا");
+                })
+                
+                 .Pageable(pageable => pageable
+                .Refresh(true)
+                .PageSizes(true)
+                .ButtonCount(5))
+                .Sortable()
+                .Scrollable()
+                  .HtmlAttributes(new { style = "height:550px;" })
+                .DataSource(dataSource => dataSource
+                .Ajax()
+                .PageSize(10)
+                .Read(read => read.Action("Select_Report_kala", "Home"))
+                )
+    )
+
+</div>
+
+<div>
+    <label id="inserted_inquiry1">inserted_inquiry</label>
+            @(Html.Kendo().Grid<CustomMembershipEF.Models.InquiryViewModel>()
+                .Name("inserted_inquiry")
+                .AutoBind(false)
+                .Columns(columns =>
+                {
+                    columns.Bound(c => c.Id).Hidden(true);
+                    columns.Bound(c => c.keyvalue).Title("تاریخ").Hidden(true);
+                    columns.Bound(c => c.Inquiry_count).Title("تعداد درخواست");
+                    columns.Bound(c => c.Inquiry_Confirm_DateMonth).Title("ماه");
+                    columns.Bound(c => c.Inquiry_Confirm_DateYear).Title("سال");
+                })
+                 .Pageable(pageable => pageable
+                .Refresh(true)
+                .PageSizes(true)
+                .ButtonCount(5))
+                .Sortable()
+                .Scrollable()
+                  .HtmlAttributes(new { style = "height:550px;" })
+                .DataSource(dataSource => dataSource
+                .Ajax()
+                .PageSize(10)
+            .Read(read => read.Action("Select_Report_Inserted_Inquiry", "Home"))
+                )
+            )
+     
+
+</div>
+
+<div>
+   
+    <label id="Final_Result1">Final_Result</label>
+
+@(Html.Kendo().Grid<CustomMembershipEF.Models.Test_Inquiry_Viewmodel>()
+                .Name("Final_Result")
+                .AutoBind(false)
+                .Columns(columns =>
+                {
+                    columns.Bound(c => c.Id);
+                    columns.Bound(c => c.Inquiry_count).Title("تعداد ");
+                    columns.Bound(c => c.Test_Inquiry_Final_Status).Title(" نتیجه نهایی آزمون"); 
+
+                })
+                 .Pageable(pageable => pageable
+                .Refresh(true)
+                .PageSizes(true)
+                .ButtonCount(5))
+                .Sortable()
+                .Scrollable()
+                  .HtmlAttributes(new { style = "height:550px;" })
+                .DataSource(dataSource => dataSource
+                .Ajax()
+                .PageSize(10)
+            .Read(read => read.Action("Select_Report_Final_Result", "Home"))
+                )
+)
+</div>
+
+<div>
+    <label id="Tests_Count1">Tests_Count</label>
+
+    @(Html.Kendo().Grid<CustomMembershipEF.Models.Test_Inquiry_Viewmodel>()
+                .Name("Tests_Count")
+                .AutoBind(false)
+                .Columns(columns =>
+                {
+                    columns.Bound(c => c.Id).Hidden(true);
+                    columns.Bound(c => c.Test_Inquiry_Done_DateYear).Title("سال ");
+                    columns.Bound(c => c.Test_Inquiry_Done_DateMonth).Title("ماه");
+                    columns.Bound(c => c.Inquiry_count).Title("تعداد آزمون ");
+
+                })
+                 .Pageable(pageable => pageable
+                .Refresh(true)
+                .PageSizes(true)
+                .ButtonCount(5))
+                .Sortable()
+                .Scrollable()
+                  .HtmlAttributes(new { style = "height:550px;" })
+                .DataSource(dataSource => dataSource
+                .Ajax()
+                .PageSize(10)
+            .Read(read => read.Action("Select_Report_Test_Count", "Home"))
+                )
+    )
+</div>
+
+<div>
+    <label id="saraneh_Grid1">saraneh_Grid</label>
+    
+    @(Html.Kendo().Grid<CustomMembershipEF.Models.InquiryViewModel>()
+                .Name("saraneh_Grid")
+                .AutoBind(false)
+                .Columns(columns =>
+                {
+                    columns.Bound(c => c.Id).Hidden(true);
+                    columns.Bound(c => c.Inquiry_DateYear).Title("سال ");
+                    columns.Bound(c => c.Inquiry_DateMonth).Title("ماه");
+                    columns.Bound(c => c.Inquiry_count).Title("سرانه");
+
+                })
+                 .Pageable(pageable => pageable
+                .Refresh(true)
+                .PageSizes(true)
+                .ButtonCount(5))
+                .Sortable()
+                .Scrollable()
+                  .HtmlAttributes(new { style = "height:550px;" })
+                .DataSource(dataSource => dataSource
+                .Ajax()
+                .PageSize(10)
+            .Read(read => read.Action("Select_Report_Saraneh", "Home"))
+                )
+    )
+</div>
+
+<div>
+    <label id="Salary_Grid1">Salary_Grid</label>
+
+    @(Html.Kendo().Grid<CustomMembershipEF.Models.Test_Inquiry_Viewmodel>()
+                .Name("Salary_Grid")
+                .AutoBind(false)
+                .Columns(columns =>
+                {
+                    columns.Bound(c => c.Id).Hidden(true);
+                    columns.Bound(c => c._Inquiry_DateYear).Title("سال ");
+                         //.Filterable(filterable => filterable.UI("DateYear"));
+                    columns.Bound(c => c._Inquiry_DateMonth).Title("ماه");
+                    columns.Bound(c => c.Test_Inquiry_Coast).Title("درآمد پیش بینی شده به ریال");
+
+                })
+                .Pageable(pageable => pageable
+                .Refresh(true)
+                .PageSizes(true)
+                .ButtonCount(5))
+                .Sortable()
+
+                .Scrollable()
+                  .HtmlAttributes(new { style = "height:550px;" })
+                   .Filterable(filterable => filterable
+        .Extra(false)
+        .Operators(operators => operators
+            .ForString(str => str.Clear()
+                .StartsWith("شروع شود با")
+                .IsEqualTo("برابر باشد با")
+                .IsNotEqualTo("مخالف باشد با")
+                .Contains("شبیه باشد با")
+            ))
+        )
+                .DataSource(dataSource => dataSource
+                .Ajax()
+                .PageSize(10)
+            .Read(read => read.Action("Select_Report_Salary", "Home"))
+                )
+    )
+</div>
+
+<div>
+    <label id="Grid_All_Inquiry1">Grid_All_Inquiry</label>
+
+    @(Html.Kendo().Grid<CustomMembershipEF.Models.InquiryViewModel>()
+                .Name("Grid_All_Inquiry")
+                .AutoBind(false)
+                .Columns(columns =>
+                {
+                    columns.Bound(c => c.Id).Hidden(true);
+                    columns.Bound(c => c.status).Title("وضعیت ");
+                    columns.Bound(c => c.Inquiry_count).Title("تعداد درخواست");
+
+                })
+                 .Pageable(pageable => pageable
+                .Refresh(true)
+                .PageSizes(true)
+                .ButtonCount(5))
+                .Sortable()
+                .Scrollable()
+                  .HtmlAttributes(new { style = "height:550px;" })
+                .DataSource(dataSource => dataSource
+                .Ajax()
+                .PageSize(10)
+            .Read(read => read.Action("Select_Report_AllInquiry", "Home"))
+                )
+    )
+</div>
+
+<div>
+    <label id="Grid_taradod1">Grid_taradod</label>
+
+    @(Html.Kendo().Grid<CustomMembershipEF.Models.InquiryViewModel>()
+                .Name("Grid_taradod")
+                .AutoBind(false)
+                .Columns(columns =>
+                {
+                    columns.Bound(c => c.Id).Hidden(true);
+                    columns.Bound(c => c.Inquiry_Main_ID).Title("شماره درخواست");
+                    columns.Bound(c => c.Inquiry_Admin).Title("نام کاربری");
+                    columns.Bound(c => c.Inquiry_Name).Title("نام درخواست کننده");
+                    columns.Bound(c => c.Inquiry_Element).Title("نام قطعه");
+                    columns.Bound(c => c.Inquiry_Element_Code).Title("کد قطعه");
+                    columns.Bound(c => c.Inquiry_Count).Title("تعداد درخواست");
+                    columns.Bound(c => c.Inquiry_Scale).Title("واحد اندازه گیری");
+                    columns.Bound(c => c.Inquiry_Element_Gate_Pass).Title("تردد");
+                    columns.Bound(c => c.Inquiry_Element_Gate_Pass_Date).Title("تاریخ تردد");
+                    columns.Bound(c => c.Inquiry_Element_Lab_Pass).Title("تردد در آزمایشگاه");
+                    columns.Bound(c => c.Inquiry_Element_Lab_Pass_Date).Title("تاریخ تردد در آزمایشگاه");
+                    
+                })
+                 .Pageable(pageable => pageable
+                .Refresh(true)
+                .PageSizes(true)
+                .ButtonCount(5))
+                .Sortable()
+                .Scrollable()
+                  .HtmlAttributes(new { style = "height:550px;" })
+                .DataSource(dataSource => dataSource
+                .Ajax()
+                .PageSize(10)
+            .Read(read => read.Action("Select_Report_Taradod", "Home"))
+                )
+    )
+</div>
+
+<div>
+
+    @(Html.Kendo().Grid<CustomMembershipEF.Models.InquiryViewModel>()
+                .Name("Grid_Inquiry_deny")
+                .AutoBind(false)
+                .Columns(columns =>
+                {
+                    columns.Bound(c => c.Id).Hidden(true);
+                    columns.Bound(c => c.Inquiry_RejectedDesc).Title("دلیل رد درخواست");
+                    columns.Bound(c => c.Inquiry_count).Title("تعداد درخواست");
+
+                })
+                 .Pageable(pageable => pageable
+                .Refresh(true)
+                .PageSizes(true)
+                .ButtonCount(5))
+                .Sortable()
+                .Scrollable()
+                  .HtmlAttributes(new { style = "height:550px;" })
+                .DataSource(dataSource => dataSource
+                .Ajax()
+                .PageSize(10)
+            .Read(read => read.Action("Select_Report_Inquiry_deny", "Home"))
+                )
+    )
+</div>
+
+<div>
+
+    @(Html.Kendo().Grid<CustomMembershipEF.Models.InquiryViewModel>()
+                .Name("Grid_Inquiry_Status")
+                .AutoBind(false)
+                .Columns(columns =>
+                {
+                    //columns.Bound(c => c.intid);
+
+                    columns.Bound(c => c.Inquiry_Related_Agent).Title("وضعیت درخواست");
+                    columns.Bound(c => c.Inquiry_count).Title("تعداد درخواست");//if condition :full=تعیین تکلیف شده,:notfull=بلاتکلیف
+
+                })
+                 .Pageable(pageable => pageable
+                .Refresh(true)
+                .PageSizes(true)
+                .ButtonCount(5))
+                .Sortable()
+                .Scrollable()
+                  .HtmlAttributes(new { style = "height:550px;" })
+                .DataSource(dataSource => dataSource
+                .Ajax()
+                .PageSize(10)
+            .Read(read => read.Action("Select_Report_Inquiry_Status", "Home"))
+                )
+    )
+</div>
+
+<div>
+
+    @(Html.Kendo().Grid<CustomMembershipEF.Models.InquiryViewModel>()
+                .Name("Grid_Outsource")
+                .AutoBind(false)
+                .Columns(columns =>
+                {
+                    columns.Bound(c => c.Id).Hidden(true);
+                    columns.Bound(c => c.Inquiry_Main_ID).Title("شماره درخواست");
+                    columns.Bound(c => c.Inquiry_Name).Title("نام درخواست دهنده");//if condition :full=تعیین تکلیف شده,:notfull=بلاتکلیف
+                    columns.Bound(c => c.Inquiry_Element).Title("نام نمونه");
+                    columns.Bound(c => c.Inquiry_Element_Code).Title("کد نمونه");
+                    columns.Bound(c => c.Inquiry_Element_Gate_Pass_Count).Title("تعداد");
+                    columns.Bound(c => c.Inquiry_Element_Gate_Pass_Date).Title("خروج از نگهبانی");
+                    columns.Bound(c => c.Inquiry_Element_Lab_Pass_Date).Title("ورود به آزمایشگاه");
+                
+                })
+                 .Pageable(pageable => pageable
+                .Refresh(true)
+                .PageSizes(true)
+                .ButtonCount(5))
+                .Sortable()
+                .Scrollable()
+                  .HtmlAttributes(new { style = "height:550px;" })
+                .DataSource(dataSource => dataSource
+                .Ajax()
+                .PageSize(10)
+            .Read(read => read.Action("Select_Report_Outsource", "Home"))
+                )
+    )
+</div>
+
+@*<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+
+            </div>
+
+        </div>
+    </div>
+</div>*@
+
+
+<script type="text/javascript">
+
+
+   
+
+    $("#Salary_Grid").hide();
+ 
+
+    $("#saraneh_Grid").hide();
+    $("#Tests_Count").hide();
+    $("#Final_Result").hide();
+    $("#inserted_inquiry").hide();
+    $("#Grid_All_Inquiry").hide();
+    $("#Grid_taradod").hide();
+    $("#Grid_Inquiry_deny").hide();
+    $("#Grid_Inquiry_Status").hide();
+    $("#Grid_Outsource").hide();
+
+
+    //----------- labels---------------
+    $("#Salary_Grid1").hide();
+    $("#saraneh_Grid1").hide();
+    $("#Tests_Count1").hide();
+    $("#Final_Result1").hide();
+    $("#inserted_inquiry1").hide();
+    $("#Grid_All_Inquiry1").hide();
+    $("#Grid_taradod1").hide();
+    $("#Grid_Inquiry_deny1").hide();
+    $("#Grid_Inquiry_Status1").hide();
+    $("#Grid_Outsource1").hide();
+    $("#kala").focus(true);
+   
+    function showkala() {
+
+        $("#inserted_inquiry").hide();
+        $("#Final_Result").hide();
+        $("#Tests_Count").hide();
+        $("#saraneh_Grid").hide();
+        $("#Salary_Grid").hide();
+        $("#Grid_Outsource").hide();
+        $("#Grid_Inquiry_Status").hide();
+        $("#Grid_Inquiry_deny").hide();
+        $("#Grid_taradod").hide();
+        $("#Grid_All_Inquiry").hide();
+        $("#Grid_All_Inquiry").hide();
+
+        $("#inserted_inquiry1").hide();
+        $("#Final_Result1").hide();
+        $("#Tests_Count1").hide();
+        $("#saraneh_Grid1").hide();
+        $("#Salary_Grid1").hide();
+        $("#Grid_Outsource1").hide();
+        $("#Grid_Inquiry_Status1").hide();
+        $("#Grid_Inquiry_deny1").hide();
+        $("#Grid_taradod1").hide();
+        $("#Grid_All_Inquiry1").hide();
+        $("#Grid_All_Inquiry1").hide();
+
+        //--------------------------------------------------------
+        var grid1 = $("#Grid_kala").data("kendoGrid");
+        grid1.dataSource.read();
+        $("#Grid_kala").show();
+        $("#Grid_kala1").show();
+      
+
+    }
+
+    function Outsource()
+    {
+        var grid = $("#Grid_Outsource").data("kendoGrid");
+        grid.dataSource.read();
+        $("#Grid_Outsource").show();
+        $("#Grid_Outsource1").show();
+
+
+        $("#Grid_kala").hide();
+        $("#inserted_inquiry").hide();
+        $("#Final_Result").hide();
+        $("#Tests_Count").hide();
+        $("#saraneh_Grid").hide();
+        $("#Salary_Grid").hide();
+        $("#Grid_Inquiry_Status").hide();
+        $("#Grid_Inquiry_deny").hide();
+        $("#Grid_taradod").hide();
+        $("#Grid_All_Inquiry").hide();
+        //---------------------------------------
+        $("#Grid_kala1").hide();
+        $("#inserted_inquiry1").hide();
+        $("#Final_Result1").hide();
+        $("#Tests_Count1").hide();
+        $("#saraneh_Grid1").hide();
+        $("#Salary_Grid1").hide();
+        $("#Grid_Inquiry_Status1").hide();
+        $("#Grid_Inquiry_deny1").hide();
+        $("#Grid_taradod1").hide();
+        $("#Grid_All_Inquiry1").hide();
+
+    }
+    function Inquiry_Status()
+    {
+        var grid = $("#Grid_Inquiry_Status").data("kendoGrid");
+        grid.dataSource.read();
+        $("#Grid_Inquiry_Status").show();
+        $("#Grid_Inquiry_Status1").show();
+
+
+
+        $("#Grid_Outsource").hide();
+        $("#Grid_kala").hide();
+        $("#inserted_inquiry").hide();
+        $("#Final_Result").hide();
+        $("#Tests_Count").hide();
+        $("#saraneh_Grid").hide();
+        $("#Salary_Grid").hide();
+        $("#Grid_Inquiry_deny").hide();
+        $("#Grid_taradod").hide();
+        $("#Grid_All_Inquiry").hide();
+        //-----------------------------------
+        $("#Grid_Outsource1").hide();
+        $("#Grid_kala1").hide();
+        $("#inserted_inquiry1").hide();
+        $("#Final_Result1").hide();
+        $("#Tests_Count1").hide();
+        $("#saraneh_Grid1").hide();
+        $("#Salary_Grid1").hide();
+        $("#Grid_Inquiry_deny1").hide();
+        $("#Grid_taradod1").hide();
+        $("#Grid_All_Inquiry1").hide();
+    }
+    function Inquiry_deny()
+    {
+        var grid = $("#Grid_Inquiry_deny").data("kendoGrid");
+        grid.dataSource.read();
+        
+        $("#Grid_Inquiry_deny").show();
+        $("#Grid_Inquiry_deny1").show();
+
+
+
+        $("#Grid_Inquiry_Status").hide();
+        $("#Grid_Outsource").hide();
+        $("#Grid_kala").hide();
+        $("#inserted_inquiry").hide();
+        $("#Final_Result").hide();
+        $("#Tests_Count").hide();
+        $("#saraneh_Grid").hide();
+        $("#Salary_Grid").hide();
+        $("#Grid_taradod").hide();
+        $("#Grid_All_Inquiry").hide();
+        //-------------------------------------
+        $("#Grid_Inquiry_Status1").hide();
+        $("#Grid_Outsource1").hide();
+        $("#Grid_kala1").hide();
+        $("#inserted_inquiry1").hide();
+        $("#Final_Result1").hide();
+        $("#Tests_Count1").hide();
+        $("#saraneh_Grid1").hide();
+        $("#Salary_Grid1").hide();
+        $("#Grid_taradod1").hide();
+        $("#Grid_All_Inquiry1").hide();
+    }
+
+    function taradod()
+    {
+        var grid = $("#Grid_taradod").data("kendoGrid");
+        grid.dataSource.read();
+        $("#Grid_taradod").show();
+        $("#Grid_taradod1").show();
+
+
+        $("#Grid_Inquiry_deny").hide();
+        $("#Grid_Inquiry_Status").hide();
+        $("#Grid_Outsource").hide();
+        $("#Grid_kala").hide();
+        $("#inserted_inquiry").hide();
+        $("#Final_Result").hide();
+        $("#Tests_Count").hide();
+        $("#saraneh_Grid").hide();
+        $("#Salary_Grid").hide();
+        $("#Grid_All_Inquiry").hide();
+        //-------------------------------------
+        $("#Grid_Inquiry_deny1").hide();
+        $("#Grid_Inquiry_Status1").hide();
+        $("#Grid_Outsource1").hide();
+        $("#Grid_kala1").hide();
+        $("#inserted_inquiry1").hide();
+        $("#Final_Result1").hide();
+        $("#Tests_Count1").hide();
+        $("#saraneh_Grid1").hide();
+        $("#Salary_Grid1").hide();
+        $("#Grid_All_Inquiry1").hide();
+    }
+    function All_Inquiry()
+    {
+        var grid = $("#Grid_All_Inquiry").data("kendoGrid");
+        grid.dataSource.read();
+        $("#Grid_All_Inquiry").show();
+        $("#Grid_All_Inquiry1").show();
+
+
+        $("#Grid_taradod").hide();
+        $("#Grid_Inquiry_deny").hide();
+        $("#Grid_Inquiry_Status").hide();
+        $("#Grid_Outsource").hide();
+        $("#Grid_kala").hide();
+        $("#inserted_inquiry").hide();
+        $("#Final_Result").hide();
+        $("#Tests_Count").hide();
+        $("#saraneh_Grid").hide();
+        $("#Salary_Grid").hide();
+        //--------------------------------
+        $("#Grid_taradod1").hide();
+        $("#Grid_Inquiry_deny1").hide();
+        $("#Grid_Inquiry_Status1").hide();
+        $("#Grid_Outsource1").hide();
+        $("#Grid_kala1").hide();
+        $("#inserted_inquiry1").hide();
+        $("#Final_Result1").hide();
+        $("#Tests_Count1").hide();
+        $("#saraneh_Grid1").hide();
+        $("#Salary_Grid1").hide();
+    }
+    function inserted_inquiry()
+    {
+        var grid = $("#inserted_inquiry").data("kendoGrid");
+        grid.dataSource.read();
+        $("#inserted_inquiry").show();
+        $("#inserted_inquiry1").show();
+
+        $("#Grid_kala").hide();
+
+
+        $("#Grid_All_Inquiry").hide();
+        $("#Grid_taradod").hide();
+        $("#Grid_Inquiry_deny").hide();
+        $("#Grid_Inquiry_Status").hide();
+        $("#Grid_Outsource").hide();
+        $("#Final_Result").hide();
+        $("#Tests_Count").hide();
+        $("#saraneh_Grid").hide();
+
+        $("#Salary_Grid").hide();
+        //-------------------------------------
+        $("#Grid_kala1").hide();
+        $("#Grid_All_Inquiry1").hide();
+        $("#Grid_taradod1").hide();
+        $("#Grid_Inquiry_deny1").hide();
+        $("#Grid_Inquiry_Status1").hide();
+        $("#Grid_Outsource1").hide();
+        $("#Final_Result1").hide();
+        $("#Tests_Count1").hide();
+        $("#saraneh_Grid1").hide();
+
+        $("#Salary_Grid1").hide();
+
+    }
+    function final_result()
+    {
+        var grid = $("#Final_Result").data("kendoGrid");
+        grid.dataSource.read();
+        $("#Final_Result").show();
+        $("#Final_Result1").show();
+
+
+        $("#inserted_inquiry").hide();
+        $("#Grid_All_Inquiry").hide();
+        $("#Grid_taradod").hide();
+        $("#Grid_Inquiry_deny").hide();
+        $("#Grid_Inquiry_Status").hide();
+        $("#Grid_Outsource").hide();
+        $("#inserted_inquiry").hide();
+        $("#Tests_Count").hide();
+        $("#saraneh_Grid").hide();
+        $("#Salary_Grid").hide();
+        //-------------------------------------
+        $("#inserted_inquiry1").hide();
+        $("#Grid_All_Inquiry1").hide();
+        $("#Grid_taradod1").hide();
+        $("#Grid_Inquiry_deny1").hide();
+        $("#Grid_Inquiry_Status1").hide();
+        $("#Grid_Outsource1").hide();
+        $("#inserted_inquiry1").hide();
+        $("#Tests_Count1").hide();
+        $("#saraneh_Grid1").hide();
+        $("#Salary_Grid1").hide();
+    }
+    function Tests() {
+        var grid = $("#Tests_Count").data("kendoGrid");
+         grid.dataSource.read();
+        $("#Tests_Count").show();
+        $("#Tests_Count1").show();
+
+
+        $("#Final_Result").hide();
+
+        $("#inserted_inquiry").hide();
+        $("#Grid_All_Inquiry").hide();
+        $("#Grid_taradod").hide();
+        $("#Grid_Inquiry_deny").hide();
+        $("#Grid_Inquiry_Status").hide();
+        $("#Grid_Outsource").hide();
+        $("#inserted_inquiry").hide();
+        $("#saraneh_Grid").hide();
+        $("#Salary_Grid").hide();
+        //------------------------------------
+        $("#Final_Result1").hide();
+
+        $("#inserted_inquiry1").hide();
+        $("#Grid_All_Inquiry1").hide();
+        $("#Grid_taradod1").hide();
+        $("#Grid_Inquiry_deny1").hide();
+        $("#Grid_Inquiry_Status1").hide();
+        $("#Grid_Outsource1").hide();
+        $("#inserted_inquiry1").hide();
+        $("#saraneh_Grid1").hide();
+        $("#Salary_Grid1").hide();
+    } 
+    function Inquiry_saraneh()
+    {
+        var grid = $("#saraneh_Grid").data("kendoGrid");
+        grid.dataSource.read();
+        $("#saraneh_Grid").show();
+        $("#saraneh_Grid1").show();
+
+        $("#Tests_Count").hide();
+
+
+        $("#Final_Result").hide();
+
+        $("#inserted_inquiry").hide();
+        $("#Grid_All_Inquiry").hide();
+        $("#Grid_taradod").hide();
+        $("#Grid_Inquiry_deny").hide();
+        $("#Grid_Inquiry_Status").hide();
+        $("#Grid_Outsource").hide();
+        $("#inserted_inquiry").hide();
+        $("#Salary_Grid").hide();
+        //-----------------------------------------
+        $("#Tests_Count1").hide();
+
+
+        $("#Final_Result1").hide();
+
+        $("#inserted_inquiry1").hide();
+        $("#Grid_All_Inquiry1").hide();
+        $("#Grid_taradod1").hide();
+        $("#Grid_Inquiry_deny1").hide();
+        $("#Grid_Inquiry_Status1").hide();
+        $("#Grid_Outsource1").hide();
+        $("#inserted_inquiry1").hide();
+        $("#Salary_Grid1").hide();
+
+    } 
+    function Salary()
+    {
+        var grid = $("#Salary_Grid").data("kendoGrid");
+        grid.dataSource.read();
+        $("#Salary_Grid").show();
+        $("#Salary_Grid1").show();
+
+
+        $("#saraneh_Grid").hide();
+        $("#Tests_Count").hide();
+        $("#Final_Result").hide();
+        $("#inserted_inquiry").hide();
+        $("#Grid_All_Inquiry").hide();
+        $("#Grid_taradod").hide();
+        $("#Grid_Inquiry_deny").hide();
+        $("#Grid_Inquiry_Status").hide();
+        $("#Grid_Outsource").hide();
+        $("#inserted_inquiry").hide();
+        $("#Grid_kala").hide();
+        //---------------------------------
+        $("#saraneh_Grid1").hide();
+        $("#Tests_Count1").hide();
+        $("#Final_Result1").hide();
+        $("#inserted_inquiry1").hide();
+        $("#Grid_All_Inquiry1").hide();
+        $("#Grid_taradod1").hide();
+        $("#Grid_Inquiry_deny1").hide();
+        $("#Grid_Inquiry_Status1").hide();
+        $("#Grid_Outsource1").hide();
+        $("#inserted_inquiry1").hide();
+        $("#Grid_kala1").hide();
+
+
+    } 
+        
+</script>
+
+
+<style>
+    .customer-photo {
+        display: inline-block;
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        background-size: 32px 35px;
+        background-position: center center;
+        vertical-align: middle;
+        line-height: 32px;
+        box-shadow: inset 0 0 1px #999, inset 0 0 10px rgba(0,0,0,.2);
+        margin-left: 5px;
+    }
+
+    .customer-name {
+        display: inline-block;
+        vertical-align: middle;
+        line-height: 32px;
+        padding-left: 3px;
+    }
+</style>
+
+
+
+

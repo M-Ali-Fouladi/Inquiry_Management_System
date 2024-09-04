@@ -1,0 +1,124 @@
+﻿
+
+@model IEnumerable<CustomMembershipEF.Models.tbl_Inquiry>
+
+    @{
+        ViewBag.Title = "Manage_inquiry";
+    }
+
+    <h2>Manage_inquiry</h2>
+    <div dir="rtl">
+        <li>@Html.ActionLink("ایجاد درخواست", "create_inquiry", "Home")</li>
+        <br />
+        <li>@Html.ActionLink("حذف درخواست", "create_inquiry", "Home")</li>
+        <br />
+        <li>@Html.ActionLink("ویرایش درخواست", "create_inquiry", "Home")</li>
+    </div>
+                   
+
+    @(Html.Kendo().Grid(Model)
+                .Name("grid")
+                .Columns(columns =>
+
+                {
+                    columns.Bound(c => c.Inquiry_Main_ID);
+                    columns.Bound(c => c.Inquiry_Element);
+                    columns.Bound(c => c.Inquiry_Date);
+                    columns.Bound(c => c.Inquiry_Vahed);
+                    columns.Bound(c => c.Inquiry_Type);
+                    columns.Bound(c => c.Inquiry_Name);
+                    columns.Bound(c => c.Inquiry_NeededDate);
+                    columns.Command(command => command.Custom("ViewDetails").Click("showDetails")).Width(180);
+
+                })
+                .HtmlAttributes(new { style = "height: 550px;" })
+                .Scrollable()
+                .Groupable()
+                .Sortable()
+.Pageable(pageable => pageable
+                    .Refresh(true)
+                    .PageSizes(true)
+                    .ButtonCount(5))
+                .DataSource(dataSource => dataSource
+                    .Ajax()
+                    .PageSize(20)
+                )
+    )
+                      @(Html.Kendo().Window().Name("Details")
+                        .Title("Customer Details")
+                        .Visible(false)
+                        .Modal(true)
+                        .Draggable(true)
+                        .Width(300)
+                           )
+
+
+    <style>
+        .customer-photo {
+            display: inline-block;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background-size: 32px 35px;
+            background-position: center center;
+            vertical-align: middle;
+            line-height: 32px;
+            box-shadow: inset 0 0 1px #999, inset 0 0 10px rgba(0,0,0,.2);
+            margin-left: 5px;
+        }
+
+        .customer-name {
+            display: inline-block;
+            vertical-align: middle;
+            line-height: 32px;
+            padding-left: 3px;
+        }
+    </style>
+
+                   
+                      <script type="text/x-kendo-template" id="template">
+                          <div id="details-container">
+                              <h2>#= FirstName # #= LastName #</h2>
+                              <em>#= Title #</em>
+                              <dl>
+                                  <dt>City: #= City #</dt>
+                                  <dt>Address: #= Address #</dt>
+                              </dl>
+                          </div>
+                      </script>
+
+                      <script type="text/javascript">
+                          var detailsTemplate = kendo.template($("#template").html());
+
+                          function showDetails(e) {
+                              e.preventDefault();
+                              alert('');
+                              var dataItem = this.dataItem($(e.currentTarget).closest("tr"));
+                              var wnd = $("#Details").data("kendoWindow");
+
+                              wnd.content(detailsTemplate(dataItem));
+                              wnd.center().open();
+                          }
+                      </script>
+
+                      <style type="text/css">
+                          #details-container {
+                              padding: 10px;
+                          }
+
+                              #details-container h2 {
+                                  margin: 0;
+                              }
+
+                              #details-container em {
+                                  color: #8c8c8c;
+                              }
+
+                              #details-container dt {
+                                  margin: 0;
+                                  display: inline;
+                              }
+                      </style>
+
+
+

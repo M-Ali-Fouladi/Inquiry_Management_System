@@ -1,0 +1,47 @@
+﻿@model CustomMembershipEF.Models.tbl_Admin
+
+<div>
+                                    @Html.Label("نقش کاربر")
+                                    @(Html.Kendo().DropDownListFor(model => model.GroupID)
+                                          .Name("UserGroups")
+                                          .DataTextField("GroupName")
+                                          .DataValueField("GroupID")
+                                          .DataSource(source =>
+                                          {
+                                              source.Read(read =>
+                                              {
+                                                  read.Action("GetAdminGroupDropdown", "Home");
+                                              });
+                                          })
+                                          .HtmlAttributes(new { style = "width: 100%" })
+    )
+    @* from tbl admin *@
+</div>
+<input onclick="EditUser()" type="button" value="ثبت نقش کاربر" />
+<script>
+    function EditUser()
+    {//go to _Update_Users ajax call post
+         $.ajax({
+             url: '/Home/_Update_Users',
+                dataType: "json",
+                type: "POST",
+                contentType: 'application/json; charset=utf-8',
+                data: JSON.stringify({
+                    model: { GroupID: $("#UserGroups").val()}
+                }),
+                async: true,
+                processData: false,
+                cache: false,
+                success: function (data) {
+                    //alert('عملیات تایید صدور درخواست با موفقیت انجام شد');
+                    window.location.href = data;
+                    //var grid = $("#Grid2").data("kendoGrid");
+                    //grid.dataSource.read();
+                },
+                error: function (xhr) {
+                     //alert('مشکلی در ثبت تغییرات صورت گرفته است.');
+                   // alert('error');
+                }
+            })
+    }
+</script>

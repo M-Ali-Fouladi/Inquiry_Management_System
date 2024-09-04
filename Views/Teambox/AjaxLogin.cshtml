@@ -1,0 +1,60 @@
+﻿@{
+    ViewBag.Title = "AjaxLogin";
+}
+
+<h2>AjaxLogin</h2>
+
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+<link rel="stylesheet" href="/resources/demos/style.css" />
+ <script src="js/modernizr-2.5.3.min.js"></script>
+
+
+
+<script>
+    $(function () {
+        $("#login").click(function () {
+            var unj = $("#username").val();
+            var psj = $("#pass").val();
+
+            if (unj != "a")
+            {
+                var url = "@Url.Action("Athenticate","Teambox", new {un="ip1",ps="ip2"})";
+                url = url.replace("ip1", unj).replace("ip2", psj).replace("amp;", "");
+                alert(url);
+
+                $.get(url, function (data) {
+                    $("#mydiv").html(data);
+                });
+            }
+            else if (unj =="a")
+            {
+                @Html.RenderAction("test", "Teambox");
+                alert(url);
+                  
+   
+            }
+        });
+    });
+
+
+</script>
+<div>
+
+
+
+</div>
+
+
+<div>
+    <div id="mydiv"></div>
+    username: <input type="text" name="username" id="username" />
+    <br />
+    passwoed: <input type="text" name="pass" id="pass" />
+    <br />
+    <a id="login">Login</a>
+
+
+
+</div>

@@ -1,0 +1,165 @@
+﻿
+
+@{
+    ViewBag.Title = "Update";
+
+}
+<h2>آزمون ها </h2>
+
+    <div>
+        
+       
+        <input type="text" id="Test_Subject">عنوان آزمون :<br>
+        <input type="text" id="Test_UID">کد آزمون :<br>
+        <input type="text" id="Test_Standard_Code">کد استاندارد آزمون :<br>
+        <input type="text" id="Test_Sample_No">تعداد نمونه مورد نیاز :<br>
+        <input type="text" id="Test_Base_Cost">هزینه پایه آزمایش :<br>
+       
+        <div>
+            <label>واحد محاسبه: </label>
+            @(Html.Kendo().DropDownList()
+                                          .Name("Test_Base_Vahed")
+                                          .OptionLabel("انتخاب کنید ...")
+                                           .DataTextField("Text")
+                                           .DataValueField("Value")
+                                           .Events(e => e.Change("change"))
+                                           .BindTo(new List<System.Web.WebPages.Html.SelectListItem>() {
+                                              new System.Web.WebPages.Html.SelectListItem() {
+                                                  Text = "ساعتی",
+                                                  Value = "1"
+                                              },
+                                              new System.Web.WebPages.Html.SelectListItem() {
+                                                  Text = "روزانه",
+                                                  Value = "2"
+                                              },
+                                              new System.Web.WebPages.Html.SelectListItem() {
+                                                  Text = "هر آزمون",
+                                                  Value = "3"
+                                              },
+                                                 new System.Web.WebPages.Html.SelectListItem() {
+                                                  Text = "هر درخواست",
+                                                  Value = "4"
+                                              }
+                                          })
+                                         .Value("1")
+                                          .HtmlAttributes(new { style = "width: 100%" })
+            )
+            </div>
+            <div>
+                @Html.Label("تجهیزات مورد استفاده")
+                @(Html.Kendo().DropDownList()
+                                          .Name("Inquiry_Name")
+                                          .OptionLabel("انتخاب کنید ...")
+                                          .DataTextField("Hardware_Name")
+                                          .DataValueField("Hardware_ID")
+                                          .DataSource(source =>
+                                          {
+                                              source.Read(read =>
+                                              {
+                                                  read.Action("GetHardwareDropdown", "Home");
+                                              });
+                                          })
+                                          .HtmlAttributes(new { style = "width: 100%" })
+                )
+            </div>
+            <input type="button" id="btnSave" value="ثبت آزمون" onclick="insert()" />
+
+        </div>
+
+@(Html.Kendo().Grid<CustomMembershipEF.Models.tbl_Test>()
+            .Name("Grid2")
+            .Columns(columns =>
+            {
+                columns.Bound(c => c.Test_ID);
+                columns.Bound(c => c.Test_UID);
+                columns.Bound(c => c.Test_Subject);
+                columns.Bound(c => c.Test_Standard_Code);
+                //  columns.Command(command => command.Custom("ViewDetails").Click("showDetails")).Width(180);
+            })
+            .Pageable(pageable => pageable
+                .Refresh(true)
+                .PageSizes(true)
+                .ButtonCount(5))
+            .DataSource(dataSource => dataSource
+                .Ajax()
+                .PageSize(4)
+                    .Read(read => read.Action("Popup_Read_Test", "Home"))
+                )
+)
+
+<script>
+    function insert()
+    {
+        var Test_Subject = $("#Test_Subject").val();
+        var Test_UID = $("#Test_UID").val();
+        var Test_Standard_Code = $("#Test_Standard_Code").val();
+        var Test_Sample_No = $("#Test_Sample_No").val();
+        var Test_Base_Cost = $("#Test_Base_Cost").val();
+        var Test_Base_Vahed = $("#Test_Base_Vahed").val();
+        var Test_Base_Cost = $("#Test_Base_Cost").val();
+
+
+    $.ajax({
+        url: '/Home/_Insert_payeh_Test',
+        dataType: "json",
+        type: "POST",
+        contentType: 'application/json; charset=utf-8',
+        data: JSON.stringify({
+            model: {
+                Test_Subject: Test_Subject, Test_UID: Test_UID, Test_Standard_Code: Test_Standard_Code,
+                Test_Sample_No: Test_Sample_No, Test_Base_Cost: Test_Base_Cost, Test_Base_Vahed: Test_Base_Vahed
+
+            }
+        }),
+        async: true,
+        processData: false,
+        cache: false,
+        success: function (data) {
+            alert('عملیات تایید صدور درخواست با موفقیت انجام شد');
+            $("#Test_Subject").val("");
+            $("#Test_UID").val("");
+            $("#Test_Standard_Code").val("");
+            $("#Test_Sample_No").val("");
+            $("#Test_Base_Cost").val("");
+            $("#Test_Base_Vahed").val("");
+            $("#Test_Base_Cost").val("");
+            $("#Test_Subject").focus();
+            
+            $("#Grid2").data("kendoGrid");
+            grid.dataSource.read();
+        },
+        error: function (xhr) {
+            alert('مشکلی در ثبت تغییرات صورت گرفته است.');
+            // alert('error');
+        }
+    })
+
+        }
+</script>
+<script>
+    function change() {
+        var value = $("#Test_Base_Vahed").val();
+        $("#cap")
+            .toggleClass("ساعتی", value == 1)
+            .toggleClass("روزانه", value == 2)
+            .toggleClass("هر آزمون", value == 3)
+            .toggleClass("هر درخواست", value == 4)
+    };
+</script>
+<script>
+    function AjaxBegin() {
+    }
+
+    function AjaxComplete(result) {
+        alert("Completed");
+        var grid = $("#Grid2").data("kendoGrid");
+        grid.dataSource.read();
+    }
+
+    function AjaxFailure(ajaxContext) {
+        var response = ajaxContext.responseText;
+        alert("Error Code [" + ajaxContext.ErrorCode + "] " + response);
+    }
+
+</script>
+

@@ -1,0 +1,662 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="LaboratoryModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="tbl_Admin">
+    <Key>
+      <PropertyRef Name="AdminID" />
+    </Key>
+    <Property Name="AdminID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AdminUserName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="GroupID" Type="int" />
+    <Property Name="AdminDsc" Type="nvarchar" MaxLength="100" />
+    <Property Name="AdminType" Type="bit" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'Laboratory.dbo.tbl_AdminGroup' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="tbl_AdminGroup">
+    <Key>
+      <PropertyRef Name="GroupID" />
+      <PropertyRef Name="GroupName" />
+    </Key>
+    <Property Name="GroupID" Type="int" Nullable="false" />
+    <Property Name="GroupName" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tbl_App_Objs">
+    <Key>
+      <PropertyRef Name="ObjID" />
+    </Key>
+    <Property Name="ObjID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ObjName" Type="nvarchar" MaxLength="50" />
+    <Property Name="PageID" Type="int" />
+    <Property Name="ObjNameFA" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'Laboratory.dbo.tbl_App_Pages' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="tbl_App_Pages">
+    <Key>
+      <PropertyRef Name="PageID" />
+    </Key>
+    <Property Name="PageID" Type="int" Nullable="false" />
+    <Property Name="PageName" Type="nvarchar" MaxLength="50" />
+    <Property Name="PageNameFA" Type="nvarchar" MaxLength="100" />
+    <Property Name="priority" Type="int" />
+  </EntityType>
+  <EntityType Name="tbl_App_Securable_Pages">
+    <Key>
+      <PropertyRef Name="tbl_SecPageID" />
+    </Key>
+    <Property Name="tbl_SecPageID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PageID" Type="int" />
+    <Property Name="GroupID" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'Laboratory.dbo.tbl_App_Securables' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="tbl_App_Securables">
+    <Key>
+      <PropertyRef Name="tbl_SecID" />
+    </Key>
+    <Property Name="tbl_SecID" Type="int" Nullable="false" />
+    <Property Name="ObjID" Type="int" />
+    <Property Name="GroupID" Type="int" />
+  </EntityType>
+  <EntityType Name="tbl_Attachment">
+    <Key>
+      <PropertyRef Name="Attchment_ID" />
+    </Key>
+    <Property Name="Attchment_ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Attachment_FullAddress" Type="ntext" />
+    <Property Name="Test_Inquiry_ID" Type="bigint" />
+    <Property Name="Attachment_FileName" Type="ntext" />
+  </EntityType>
+  <EntityType Name="tbl_Hardware">
+    <Key>
+      <PropertyRef Name="Hardware_ID" />
+    </Key>
+    <Property Name="Hardware_ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Hardware_Name" Type="nvarchar(max)" />
+    <Property Name="Hardware_Code" Type="nvarchar(max)" />
+    <Property Name="Hardware_Serial" Type="nvarchar(max)" />
+    <Property Name="Hardware_Site" Type="nvarchar(max)" />
+    <Property Name="Hardware_Using" Type="bit" />
+    <Property Name="Hardware_NotUsing" Type="bit" />
+    <Property Name="Hardware_NCR" Type="bit" />
+    <Property Name="Hardware_Calibration_External" Type="bit" />
+    <Property Name="Hardware_Calibration_Internal" Type="bit" />
+    <Property Name="Hardware_Programable" Type="bit" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'Laboratory.dbo.tbl_Inquiry' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="tbl_Inquiry">
+    <Key>
+      <PropertyRef Name="Inquiry_ID" />
+      <PropertyRef Name="Inquiry_Element_Code" />
+    </Key>
+    <Property Name="Inquiry_ID" Type="bigint" Nullable="false" />
+    <Property Name="Inquiry_Admin" Type="nvarchar" MaxLength="50" />
+    <Property Name="Inquiry_Name" Type="nvarchar" MaxLength="100" />
+    <Property Name="Inquiry_Vahed" Type="nvarchar" MaxLength="50" />
+    <Property Name="Inquiry_Date" Type="nvarchar" MaxLength="50" />
+    <Property Name="Inquiry_NeededDate" Type="nvarchar" MaxLength="50" />
+    <Property Name="Inquiry_Element" Type="nvarchar" MaxLength="200" />
+    <Property Name="Inquiry_Element_Type1" Type="bit" />
+    <Property Name="Inquiry_Element_Type" Type="int" />
+    <Property Name="Inquiry_Element_Rahgiri" Type="nvarchar" MaxLength="50" />
+    <Property Name="Inquiry_Element_Gate_Pass" Type="bit" />
+    <Property Name="Inquiry_Element_Gate_Pass_Date" Type="nvarchar" MaxLength="70" />
+    <Property Name="Inquiry_Element_Gate_Pass_Count" Type="nvarchar" MaxLength="50" />
+    <Property Name="Inquiry_Element_Lab_Pass" Type="bit" />
+    <Property Name="Inquiry_Element_Lab_Pass_Date" Type="nvarchar" MaxLength="70" />
+    <Property Name="Inquiry_Element_Lab_Pass_Count" Type="nvarchar" MaxLength="50" />
+    <Property Name="Inquiry_Map_Code" Type="nvarchar" MaxLength="50" />
+    <Property Name="Inquiry_Element_Code" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Inquiry_Type" Type="int" />
+    <Property Name="Inquiry_Tech_Code" Type="nvarchar" MaxLength="50" />
+    <Property Name="Inquiry_Scale" Type="nvarchar" MaxLength="50" />
+    <Property Name="Inquiry_Count" Type="nvarchar" MaxLength="50" />
+    <Property Name="Inquiry_Trace_Code" Type="nvarchar" MaxLength="100" />
+    <Property Name="Inquiry_Client_Desc" Type="nvarchar(max)" />
+    <Property Name="Inquiry_Registered" Type="bit" />
+    <Property Name="Inquiry_Register_Date" Type="nvarchar" MaxLength="50" />
+    <Property Name="Inquiry_Confirmed_ManagerLab" Type="bit" />
+    <Property Name="Inquiry_Confirmed" Type="bit" />
+    <Property Name="Inquiry_Confirmed_ManagerLab_Date" Type="nvarchar" MaxLength="50" />
+    <Property Name="Inquiry_Confirm_Date" Type="nvarchar" MaxLength="50" />
+    <Property Name="Inquiry_Rejected" Type="bit" />
+    <Property Name="Inquiry_Reject_Date" Type="nvarchar" MaxLength="50" />
+    <Property Name="Inquiry_RejectedDesc" Type="nvarchar" MaxLength="200" />
+    <Property Name="Inquiry_Reserved" Type="bit" />
+    <Property Name="Inquiry_Related_Agent" Type="int" />
+    <Property Name="Inquiry_Assigned_Date" Type="nvarchar" MaxLength="50" />
+    <Property Name="Inquiry_Acception_Description" Type="nvarchar(max)" />
+    <Property Name="Inquiry_Admin_Time" Type="nvarchar" MaxLength="50" />
+    <Property Name="Inquiry_Final_Confirm" Type="bit" />
+    <Property Name="Inquiry_Final_Confirm_Date" Type="nvarchar" MaxLength="50" />
+    <Property Name="Inquiry_Main_ID" Type="nvarchar" MaxLength="50" />
+    <Property Name="Inquiry_Manager_Confirm" Type="bit" />
+    <Property Name="Inquiry_Primary_Date" Type="nvarchar" MaxLength="50" />
+    <Property Name="Inquiry_Manager_UserName" Type="nvarchar" MaxLength="50" />
+    <Property Name="Inquiry_OutSource" Type="bit" />
+    <Property Name="Inquiry_OutSource_Name" Type="nvarchar(max)" />
+    <Property Name="Inquiry_OutSource_Duration" Type="nvarchar" MaxLength="50" />
+    <Property Name="Inquiry_OutSource_Cost" Type="nvarchar" MaxLength="50" />
+    <Property Name="Inquiry_Admin_History" Type="nvarchar(max)" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'Laboratory.dbo.tbl_Inquiry950725' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="tbl_Inquiry950725">
+    <Key>
+      <PropertyRef Name="Inquiry_ID" />
+      <PropertyRef Name="Inquiry_Element_Code" />
+    </Key>
+    <Property Name="Inquiry_ID" Type="bigint" Nullable="false" />
+    <Property Name="Inquiry_Admin" Type="nvarchar" MaxLength="50" />
+    <Property Name="Inquiry_Name" Type="nvarchar" MaxLength="100" />
+    <Property Name="Inquiry_Vahed" Type="nvarchar" MaxLength="50" />
+    <Property Name="Inquiry_Date" Type="nvarchar" MaxLength="50" />
+    <Property Name="Inquiry_NeededDate" Type="nvarchar" MaxLength="50" />
+    <Property Name="Inquiry_Element" Type="nvarchar" MaxLength="200" />
+    <Property Name="Inquiry_Element_Type1" Type="bit" />
+    <Property Name="Inquiry_Element_Type" Type="int" />
+    <Property Name="Inquiry_Element_Rahgiri" Type="nvarchar" MaxLength="50" />
+    <Property Name="Inquiry_Element_Gate_Pass" Type="bit" />
+    <Property Name="Inquiry_Element_Gate_Pass_Date" Type="nvarchar" MaxLength="70" />
+    <Property Name="Inquiry_Element_Gate_Pass_Count" Type="nvarchar" MaxLength="50" />
+    <Property Name="Inquiry_Element_Lab_Pass" Type="bit" />
+    <Property Name="Inquiry_Element_Lab_Pass_Date" Type="nvarchar" MaxLength="70" />
+    <Property Name="Inquiry_Element_Lab_Pass_Count" Type="nvarchar" MaxLength="50" />
+    <Property Name="Inquiry_Map_Code" Type="nvarchar" MaxLength="50" />
+    <Property Name="Inquiry_Element_Code" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Inquiry_Type" Type="int" />
+    <Property Name="Inquiry_Tech_Code" Type="nvarchar" MaxLength="50" />
+    <Property Name="Inquiry_Scale" Type="nvarchar" MaxLength="50" />
+    <Property Name="Inquiry_Count" Type="nvarchar" MaxLength="50" />
+    <Property Name="Inquiry_Trace_Code" Type="nvarchar" MaxLength="100" />
+    <Property Name="Inquiry_Client_Desc" Type="nvarchar(max)" />
+    <Property Name="Inquiry_Registered" Type="bit" />
+    <Property Name="Inquiry_Register_Date" Type="nvarchar" MaxLength="50" />
+    <Property Name="Inquiry_Confirmed" Type="bit" />
+    <Property Name="Inquiry_Confirm_Date" Type="nvarchar" MaxLength="50" />
+    <Property Name="Inquiry_Rejected" Type="bit" />
+    <Property Name="Inquiry_Reject_Date" Type="nvarchar" MaxLength="50" />
+    <Property Name="Inquiry_RejectedDesc" Type="nvarchar" MaxLength="200" />
+    <Property Name="Inquiry_Reserved" Type="bit" />
+    <Property Name="Inquiry_Related_Agent" Type="int" />
+    <Property Name="Inquiry_Assigned_Date" Type="nvarchar" MaxLength="50" />
+    <Property Name="Inquiry_Acception_Description" Type="nvarchar(max)" />
+    <Property Name="Inquiry_Admin_Time" Type="nvarchar" MaxLength="50" />
+    <Property Name="Inquiry_Final_Confirm" Type="bit" />
+    <Property Name="Inquiry_Final_Confirm_Date" Type="nvarchar" MaxLength="50" />
+    <Property Name="Inquiry_Main_ID" Type="nvarchar" MaxLength="50" />
+    <Property Name="Inquiry_Manager_Confirm" Type="bit" />
+    <Property Name="Inquiry_Primary_Date" Type="nvarchar" MaxLength="50" />
+    <Property Name="Inquiry_Manager_UserName" Type="nvarchar" MaxLength="50" />
+    <Property Name="Inquiry_OutSource" Type="bit" />
+    <Property Name="Inquiry_OutSource_Name" Type="nvarchar(max)" />
+    <Property Name="Inquiry_OutSource_Duration" Type="nvarchar" MaxLength="50" />
+    <Property Name="Inquiry_OutSource_Cost" Type="nvarchar" MaxLength="50" />
+    <Property Name="Inquiry_Admin_History" Type="nvarchar(max)" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'Laboratory.dbo.tbl_Inquiry-kazemi' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="tbl_Inquiry-kazemi">
+    <Key>
+      <PropertyRef Name="Inquiry_ID" />
+      <PropertyRef Name="Inquiry_Element_Code" />
+    </Key>
+    <Property Name="Inquiry_ID" Type="bigint" Nullable="false" />
+    <Property Name="Inquiry_Admin" Type="nvarchar" MaxLength="50" />
+    <Property Name="Inquiry_Name" Type="nvarchar" MaxLength="100" />
+    <Property Name="Inquiry_Vahed" Type="nvarchar" MaxLength="50" />
+    <Property Name="Inquiry_Date" Type="nvarchar" MaxLength="50" />
+    <Property Name="Inquiry_NeededDate" Type="nvarchar" MaxLength="50" />
+    <Property Name="Inquiry_Element" Type="nvarchar" MaxLength="200" />
+    <Property Name="Inquiry_Element_Type1" Type="bit" />
+    <Property Name="Inquiry_Element_Type" Type="int" />
+    <Property Name="Inquiry_Element_Rahgiri" Type="nvarchar" MaxLength="50" />
+    <Property Name="Inquiry_Element_Gate_Pass" Type="bit" />
+    <Property Name="Inquiry_Element_Gate_Pass_Date" Type="nvarchar" MaxLength="70" />
+    <Property Name="Inquiry_Element_Gate_Pass_Count" Type="nvarchar" MaxLength="50" />
+    <Property Name="Inquiry_Element_Lab_Pass" Type="bit" />
+    <Property Name="Inquiry_Element_Lab_Pass_Date" Type="nvarchar" MaxLength="70" />
+    <Property Name="Inquiry_Element_Lab_Pass_Count" Type="nvarchar" MaxLength="50" />
+    <Property Name="Inquiry_Map_Code" Type="nvarchar" MaxLength="50" />
+    <Property Name="Inquiry_Element_Code" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Inquiry_Type" Type="int" />
+    <Property Name="Inquiry_Tech_Code" Type="nvarchar" MaxLength="50" />
+    <Property Name="Inquiry_Scale" Type="nvarchar" MaxLength="50" />
+    <Property Name="Inquiry_Count" Type="nvarchar" MaxLength="50" />
+    <Property Name="Inquiry_Trace_Code" Type="nvarchar" MaxLength="100" />
+    <Property Name="Inquiry_Client_Desc" Type="nvarchar(max)" />
+    <Property Name="Inquiry_Registered" Type="bit" />
+    <Property Name="Inquiry_Register_Date" Type="nvarchar" MaxLength="50" />
+    <Property Name="Inquiry_Confirmed" Type="bit" />
+    <Property Name="Inquiry_Confirm_Date" Type="nvarchar" MaxLength="50" />
+    <Property Name="Inquiry_Rejected" Type="bit" />
+    <Property Name="Inquiry_Reject_Date" Type="nvarchar" MaxLength="50" />
+    <Property Name="Inquiry_RejectedDesc" Type="nvarchar" MaxLength="200" />
+    <Property Name="Inquiry_Reserved" Type="bit" />
+    <Property Name="Inquiry_Related_Agent" Type="int" />
+    <Property Name="Inquiry_Assigned_Date" Type="nvarchar" MaxLength="50" />
+    <Property Name="Inquiry_Acception_Description" Type="nvarchar(max)" />
+    <Property Name="Inquiry_Admin_Time" Type="nvarchar" MaxLength="50" />
+    <Property Name="Inquiry_Final_Confirm" Type="bit" />
+    <Property Name="Inquiry_Final_Confirm_Date" Type="nvarchar" MaxLength="50" />
+    <Property Name="Inquiry_Main_ID" Type="nvarchar" MaxLength="50" />
+    <Property Name="Inquiry_Manager_Confirm" Type="bit" />
+    <Property Name="Inquiry_Primary_Date" Type="nvarchar" MaxLength="50" />
+    <Property Name="Inquiry_Manager_UserName" Type="nvarchar" MaxLength="50" />
+    <Property Name="Inquiry_OutSource" Type="bit" />
+    <Property Name="Inquiry_OutSource_Name" Type="nvarchar(max)" />
+    <Property Name="Inquiry_OutSource_Duration" Type="nvarchar" MaxLength="50" />
+    <Property Name="Inquiry_OutSource_Cost" Type="nvarchar" MaxLength="50" />
+    <Property Name="Inquiry_Admin_History" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="tbl_Masraf">
+    <Key>
+      <PropertyRef Name="Masraf_ID" />
+    </Key>
+    <Property Name="Masraf_ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Masraf_Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="Masraf_Unit" Type="nvarchar" MaxLength="50" />
+    <Property Name="Masraf_Quantity" Type="int" />
+  </EntityType>
+  <EntityType Name="tbl_Test">
+    <Key>
+      <PropertyRef Name="Test_ID" />
+    </Key>
+    <Property Name="Test_ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Test_UID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Test_Subject" Type="nvarchar" MaxLength="300" />
+    <Property Name="Test_Standard_Code" Type="nvarchar" MaxLength="50" />
+    <Property Name="Test_Sample_No" Type="nvarchar" MaxLength="50" />
+    <Property Name="Test_Related_HardWare" Type="nvarchar(max)" />
+    <Property Name="Test_Base_Cost" Type="nvarchar" MaxLength="50" />
+    <Property Name="Test_Base_Vahed" Type="int" />
+    <Property Name="Test_Sample_Count" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'Laboratory.dbo.tbl_Test_Inquiry' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="tbl_Test_Inquiry">
+    <Key>
+      <PropertyRef Name="Test_Inquiry_ID" />
+    </Key>
+    <Property Name="Test_Inquiry_ID" Type="bigint" Nullable="false" />
+    <Property Name="Test_Inquiry_Desc" Type="nvarchar(max)" />
+    <Property Name="Test_Inquiry_Coast" Type="nvarchar" MaxLength="50" />
+    <Property Name="Test_ID" Type="nvarchar" MaxLength="50" />
+    <Property Name="Inquiry_ID" Type="bigint" />
+    <Property Name="Test_Inquiry_Hardware_Desc" Type="nvarchar" MaxLength="200" />
+    <Property Name="Test_Inquiry_Way_Desc" Type="nvarchar(max)" />
+    <Property Name="Test_Inquiry_Done_Desc" Type="nvarchar(max)" />
+    <Property Name="Test_Inquiry_PreDone_Date" Type="nvarchar" MaxLength="50" />
+    <Property Name="Test_Inquiry_Done_Date" Type="nvarchar" MaxLength="50" />
+    <Property Name="Test_Inquiry_Done_Time" Type="nvarchar" MaxLength="50" />
+    <Property Name="Test_Inquiry_PreStart_Date" Type="nvarchar" MaxLength="50" />
+    <Property Name="Test_Inquiry_Start_Date" Type="nvarchar" MaxLength="50" />
+    <Property Name="Test_Inquiry_Start_Time" Type="nvarchar" MaxLength="50" />
+    <Property Name="Test_Inquiry_Final_Status" Type="bit" />
+    <Property Name="Test_NafarSaat" Type="nvarchar" MaxLength="50" />
+    <Property Name="Test_NeededDate" Type="nvarchar" MaxLength="50" />
+    <Property Name="Test_Ghatiat" Type="nvarchar" MaxLength="50" />
+    <Property Name="Inquiry_Related_Agent" Type="int" />
+    <Property Name="Inquiry_Assigned_Date" Type="nvarchar" MaxLength="50" />
+    <Property Name="Test_Inquiry_Result" Type="nvarchar(max)" />
+    <Property Name="Test_Standard_Code" Type="nvarchar" MaxLength="100" />
+    <Property Name="Test_Acception_Description" Type="nvarchar(max)" />
+    <Property Name="Test_Inquiry_PreferedResult" Type="nvarchar(max)" />
+    <Property Name="Inquiry_Final_Confirm" Type="bit" />
+    <Property Name="Inquiry_Final_Confirm_Date" Type="nvarchar" MaxLength="50" />
+    <Property Name="Inquiry_Element_Rahgiri" Type="nvarchar" MaxLength="100" />
+    <Property Name="Inquiry_Element_Refer_Agent" Type="bit" />
+    <Property Name="Inquiry_Element_Refer_Agent_Date" Type="nvarchar" MaxLength="50" />
+    <Property Name="Inquiry_Element_Alamat_Azmoon" Type="int" />
+  </EntityType>
+  <EntityType Name="tbl_Test_Inquiry_Hardware">
+    <Key>
+      <PropertyRef Name="Test_Inquiry_Hardware_ID" />
+    </Key>
+    <Property Name="Test_Inquiry_Hardware_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Test_Inquiry_ID" Type="bigint" />
+    <Property Name="Hardware_ID" Type="nvarchar" MaxLength="100" />
+    <Property Name="Test_Inquiry_Hardware_Program_FromDate" Type="nvarchar" MaxLength="50" />
+    <Property Name="Test_Inquiry_Hardware_FromDate" Type="nvarchar" MaxLength="50" />
+    <Property Name="Test_Inquiry_Hardware_Program_ToDate" Type="nvarchar" MaxLength="50" />
+    <Property Name="Test_Inquiry_Hardware_ToDate" Type="nvarchar" MaxLength="50" />
+    <Property Name="Test_Inquiry_Hardware_Program_FromTime" Type="nvarchar" MaxLength="50" />
+    <Property Name="Test_Inquiry_Hardware_FromTime" Type="nvarchar" MaxLength="50" />
+    <Property Name="Test_Inquiry_Hardware_Program_ToTime" Type="nvarchar" MaxLength="50" />
+    <Property Name="Test_Inquiry_Hardware_ToTime" Type="nvarchar" MaxLength="50" />
+    <Property Name="Test_Inquiry_Hardware_Description" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="tbl_Test_Inquiry_History">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Test_Inquiry_ID" Type="bigint" Nullable="false" />
+    <Property Name="Test_Inquiry_Desc" Type="nvarchar(max)" />
+    <Property Name="Test_Inquiry_Coast" Type="nvarchar" MaxLength="50" />
+    <Property Name="Test_ID" Type="nvarchar" MaxLength="50" />
+    <Property Name="Inquiry_ID" Type="bigint" />
+    <Property Name="Test_Inquiry_Hardware_Desc" Type="nvarchar" MaxLength="200" />
+    <Property Name="Test_Inquiry_Way_Desc" Type="nvarchar(max)" />
+    <Property Name="Test_Inquiry_Done_Desc" Type="nvarchar(max)" />
+    <Property Name="Test_Inquiry_PreDone_Date" Type="nvarchar" MaxLength="50" />
+    <Property Name="Test_Inquiry_Done_Date" Type="nvarchar" MaxLength="50" />
+    <Property Name="Test_Inquiry_Done_Time" Type="nvarchar" MaxLength="50" />
+    <Property Name="Test_Inquiry_PreStart_Date" Type="nvarchar" MaxLength="50" />
+    <Property Name="Test_Inquiry_Start_Date" Type="nvarchar" MaxLength="50" />
+    <Property Name="Test_Inquiry_Start_Time" Type="nvarchar" MaxLength="50" />
+    <Property Name="Test_Inquiry_Final_Status" Type="bit" />
+    <Property Name="Test_NafarSaat" Type="nvarchar" MaxLength="50" />
+    <Property Name="Test_NeededDate" Type="nvarchar" MaxLength="50" />
+    <Property Name="Test_Ghatiat" Type="nvarchar" MaxLength="50" />
+    <Property Name="Inquiry_Related_Agent" Type="int" />
+    <Property Name="Inquiry_Assigned_Date" Type="nvarchar" MaxLength="50" />
+    <Property Name="Test_Inquiry_Result" Type="nvarchar(max)" />
+    <Property Name="Test_Standard_Code" Type="nvarchar" MaxLength="100" />
+    <Property Name="Test_Acception_Description" Type="nvarchar(max)" />
+    <Property Name="Test_Inquiry_PreferedResult" Type="nvarchar(max)" />
+    <Property Name="Inquiry_Final_Confirm" Type="bit" />
+    <Property Name="Inquiry_Final_Confirm_Date" Type="nvarchar" MaxLength="50" />
+    <Property Name="Inquiry_Element_Rahgiri" Type="nvarchar" MaxLength="100" />
+    <Property Name="Inquiry_Element_Refer_Agent" Type="bit" />
+    <Property Name="Inquiry_Element_Refer_Agent_Date" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="tbl_Test_Inquiry_Masraf">
+    <Key>
+      <PropertyRef Name="Test_Inquiry_Masraf_ID" />
+    </Key>
+    <Property Name="Test_Inquiry_Masraf_ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Test_Inquiry_ID" Type="bigint" />
+    <Property Name="Masraf_Name" Type="nvarchar" MaxLength="200" />
+    <Property Name="Masraf_Unit" Type="nchar" MaxLength="10" />
+    <Property Name="Test_Inquiry_Masraf_Quantity" Type="bigint" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'Laboratory.dbo.tblTests' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="tblTests">
+    <Key>
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="رديف" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="رديف" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="نام آزمون" Type="nvarchar(max)" />
+    <Property Name="كد آزمون" Type="nvarchar(max)" />
+    <Property Name="شماره استاندارد  روش آزمون" Type="nvarchar(max)" />
+    <Property Name="تعداد نمونه ها جهت انجام آزمون" Type="nvarchar(max)" />
+    <Property Name="نام وکد دستگاه مورد استفاده" Type="nvarchar(max)" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'Laboratory.dbo.tblTests1' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="tblTests1">
+    <Key>
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="رديف" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="رديف" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="نام آزمون" Type="nvarchar(max)" />
+    <Property Name="كد آزمون" Type="nvarchar(max)" />
+    <Property Name="شماره استاندارد  روش آزمون" Type="nvarchar(max)" />
+    <Property Name="تعداد نمونه ها جهت انجام آزمون" Type="nvarchar(max)" />
+    <Property Name="نام وکد دستگاه مورد استفاده" Type="nvarchar(max)" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6013: The table/view 'Laboratory.dbo.tblTests2' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="tblTests2">
+          <Property Name="ردیف " Type="float" />
+          <Property Name="نام آزمون " Type="nvarchar" MaxLength="255" />
+          <Property Name="کد آزمون " Type="nvarchar" MaxLength="255" />
+          <Property Name="شماره استاندارد/روش آزمون" Type="nvarchar" MaxLength="255" />
+          <Property Name="تعداد نمونه ها جهت انجام آزمون" Type="nvarchar" MaxLength="255" />
+          <Property Name="شکل نمونه " Type="nvarchar" MaxLength="255" />
+          <Property Name="اطلاعات مورد نياز" Type="nvarchar" MaxLength="255" />
+          <Property Name="نام و کد دستگاه مورد استفاده " Type="nvarchar" MaxLength="255" />
+          <Property Name="کد دستگاه" Type="nvarchar" MaxLength="255" />
+        </EntityType>-->
+  <EntityContainer Name="LaboratoryModelStoreContainer">
+    <EntitySet Name="tbl_Admin" EntityType="Self.tbl_Admin" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_App_Objs" EntityType="Self.tbl_App_Objs" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_App_Securable_Pages" EntityType="Self.tbl_App_Securable_Pages" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_Attachment" EntityType="Self.tbl_Attachment" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_Hardware" EntityType="Self.tbl_Hardware" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_Masraf" EntityType="Self.tbl_Masraf" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_Test" EntityType="Self.tbl_Test" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_Test_Inquiry_Hardware" EntityType="Self.tbl_Test_Inquiry_Hardware" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_Test_Inquiry_History" EntityType="Self.tbl_Test_Inquiry_History" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_Test_Inquiry_Masraf" EntityType="Self.tbl_Test_Inquiry_Masraf" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_AdminGroup" EntityType="Self.tbl_AdminGroup" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [tbl_AdminGroup].[GroupID] AS [GroupID], 
+    [tbl_AdminGroup].[GroupName] AS [GroupName]
+    FROM [dbo].[tbl_AdminGroup] AS [tbl_AdminGroup]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="tbl_App_Pages" EntityType="Self.tbl_App_Pages" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [tbl_App_Pages].[PageID] AS [PageID], 
+    [tbl_App_Pages].[PageName] AS [PageName], 
+    [tbl_App_Pages].[PageNameFA] AS [PageNameFA], 
+    [tbl_App_Pages].[priority] AS [priority]
+    FROM [dbo].[tbl_App_Pages] AS [tbl_App_Pages]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="tbl_App_Securables" EntityType="Self.tbl_App_Securables" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [tbl_App_Securables].[tbl_SecID] AS [tbl_SecID], 
+    [tbl_App_Securables].[ObjID] AS [ObjID], 
+    [tbl_App_Securables].[GroupID] AS [GroupID]
+    FROM [dbo].[tbl_App_Securables] AS [tbl_App_Securables]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="tbl_Inquiry" EntityType="Self.tbl_Inquiry" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [tbl_Inquiry].[Inquiry_ID] AS [Inquiry_ID], 
+    [tbl_Inquiry].[Inquiry_Admin] AS [Inquiry_Admin], 
+    [tbl_Inquiry].[Inquiry_Name] AS [Inquiry_Name], 
+    [tbl_Inquiry].[Inquiry_Vahed] AS [Inquiry_Vahed], 
+    [tbl_Inquiry].[Inquiry_Date] AS [Inquiry_Date], 
+    [tbl_Inquiry].[Inquiry_NeededDate] AS [Inquiry_NeededDate], 
+    [tbl_Inquiry].[Inquiry_Element] AS [Inquiry_Element], 
+    [tbl_Inquiry].[Inquiry_Element_Type1] AS [Inquiry_Element_Type1], 
+    [tbl_Inquiry].[Inquiry_Element_Type] AS [Inquiry_Element_Type], 
+    [tbl_Inquiry].[Inquiry_Element_Rahgiri] AS [Inquiry_Element_Rahgiri], 
+    [tbl_Inquiry].[Inquiry_Element_Gate_Pass] AS [Inquiry_Element_Gate_Pass], 
+    [tbl_Inquiry].[Inquiry_Element_Gate_Pass_Date] AS [Inquiry_Element_Gate_Pass_Date], 
+    [tbl_Inquiry].[Inquiry_Element_Gate_Pass_Count] AS [Inquiry_Element_Gate_Pass_Count], 
+    [tbl_Inquiry].[Inquiry_Element_Lab_Pass] AS [Inquiry_Element_Lab_Pass], 
+    [tbl_Inquiry].[Inquiry_Element_Lab_Pass_Date] AS [Inquiry_Element_Lab_Pass_Date], 
+    [tbl_Inquiry].[Inquiry_Element_Lab_Pass_Count] AS [Inquiry_Element_Lab_Pass_Count], 
+    [tbl_Inquiry].[Inquiry_Map_Code] AS [Inquiry_Map_Code], 
+    [tbl_Inquiry].[Inquiry_Element_Code] AS [Inquiry_Element_Code], 
+    [tbl_Inquiry].[Inquiry_Type] AS [Inquiry_Type], 
+    [tbl_Inquiry].[Inquiry_Tech_Code] AS [Inquiry_Tech_Code], 
+    [tbl_Inquiry].[Inquiry_Scale] AS [Inquiry_Scale], 
+    [tbl_Inquiry].[Inquiry_Count] AS [Inquiry_Count], 
+    [tbl_Inquiry].[Inquiry_Trace_Code] AS [Inquiry_Trace_Code], 
+    [tbl_Inquiry].[Inquiry_Client_Desc] AS [Inquiry_Client_Desc], 
+    [tbl_Inquiry].[Inquiry_Registered] AS [Inquiry_Registered], 
+    [tbl_Inquiry].[Inquiry_Register_Date] AS [Inquiry_Register_Date], 
+    [tbl_Inquiry].[Inquiry_Confirmed_ManagerLab] AS [Inquiry_Confirmed_ManagerLab], 
+    [tbl_Inquiry].[Inquiry_Confirmed] AS [Inquiry_Confirmed], 
+    [tbl_Inquiry].[Inquiry_Confirmed_ManagerLab_Date] AS [Inquiry_Confirmed_ManagerLab_Date], 
+    [tbl_Inquiry].[Inquiry_Confirm_Date] AS [Inquiry_Confirm_Date], 
+    [tbl_Inquiry].[Inquiry_Rejected] AS [Inquiry_Rejected], 
+    [tbl_Inquiry].[Inquiry_Reject_Date] AS [Inquiry_Reject_Date], 
+    [tbl_Inquiry].[Inquiry_RejectedDesc] AS [Inquiry_RejectedDesc], 
+    [tbl_Inquiry].[Inquiry_Reserved] AS [Inquiry_Reserved], 
+    [tbl_Inquiry].[Inquiry_Related_Agent] AS [Inquiry_Related_Agent], 
+    [tbl_Inquiry].[Inquiry_Assigned_Date] AS [Inquiry_Assigned_Date], 
+    [tbl_Inquiry].[Inquiry_Acception_Description] AS [Inquiry_Acception_Description], 
+    [tbl_Inquiry].[Inquiry_Admin_Time] AS [Inquiry_Admin_Time], 
+    [tbl_Inquiry].[Inquiry_Final_Confirm] AS [Inquiry_Final_Confirm], 
+    [tbl_Inquiry].[Inquiry_Final_Confirm_Date] AS [Inquiry_Final_Confirm_Date], 
+    [tbl_Inquiry].[Inquiry_Main_ID] AS [Inquiry_Main_ID], 
+    [tbl_Inquiry].[Inquiry_Manager_Confirm] AS [Inquiry_Manager_Confirm], 
+    [tbl_Inquiry].[Inquiry_Primary_Date] AS [Inquiry_Primary_Date], 
+    [tbl_Inquiry].[Inquiry_Manager_UserName] AS [Inquiry_Manager_UserName], 
+    [tbl_Inquiry].[Inquiry_OutSource] AS [Inquiry_OutSource], 
+    [tbl_Inquiry].[Inquiry_OutSource_Name] AS [Inquiry_OutSource_Name], 
+    [tbl_Inquiry].[Inquiry_OutSource_Duration] AS [Inquiry_OutSource_Duration], 
+    [tbl_Inquiry].[Inquiry_OutSource_Cost] AS [Inquiry_OutSource_Cost], 
+    [tbl_Inquiry].[Inquiry_Admin_History] AS [Inquiry_Admin_History]
+    FROM [dbo].[tbl_Inquiry] AS [tbl_Inquiry]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="tbl_Inquiry950725" EntityType="Self.tbl_Inquiry950725" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [tbl_Inquiry950725].[Inquiry_ID] AS [Inquiry_ID], 
+    [tbl_Inquiry950725].[Inquiry_Admin] AS [Inquiry_Admin], 
+    [tbl_Inquiry950725].[Inquiry_Name] AS [Inquiry_Name], 
+    [tbl_Inquiry950725].[Inquiry_Vahed] AS [Inquiry_Vahed], 
+    [tbl_Inquiry950725].[Inquiry_Date] AS [Inquiry_Date], 
+    [tbl_Inquiry950725].[Inquiry_NeededDate] AS [Inquiry_NeededDate], 
+    [tbl_Inquiry950725].[Inquiry_Element] AS [Inquiry_Element], 
+    [tbl_Inquiry950725].[Inquiry_Element_Type1] AS [Inquiry_Element_Type1], 
+    [tbl_Inquiry950725].[Inquiry_Element_Type] AS [Inquiry_Element_Type], 
+    [tbl_Inquiry950725].[Inquiry_Element_Rahgiri] AS [Inquiry_Element_Rahgiri], 
+    [tbl_Inquiry950725].[Inquiry_Element_Gate_Pass] AS [Inquiry_Element_Gate_Pass], 
+    [tbl_Inquiry950725].[Inquiry_Element_Gate_Pass_Date] AS [Inquiry_Element_Gate_Pass_Date], 
+    [tbl_Inquiry950725].[Inquiry_Element_Gate_Pass_Count] AS [Inquiry_Element_Gate_Pass_Count], 
+    [tbl_Inquiry950725].[Inquiry_Element_Lab_Pass] AS [Inquiry_Element_Lab_Pass], 
+    [tbl_Inquiry950725].[Inquiry_Element_Lab_Pass_Date] AS [Inquiry_Element_Lab_Pass_Date], 
+    [tbl_Inquiry950725].[Inquiry_Element_Lab_Pass_Count] AS [Inquiry_Element_Lab_Pass_Count], 
+    [tbl_Inquiry950725].[Inquiry_Map_Code] AS [Inquiry_Map_Code], 
+    [tbl_Inquiry950725].[Inquiry_Element_Code] AS [Inquiry_Element_Code], 
+    [tbl_Inquiry950725].[Inquiry_Type] AS [Inquiry_Type], 
+    [tbl_Inquiry950725].[Inquiry_Tech_Code] AS [Inquiry_Tech_Code], 
+    [tbl_Inquiry950725].[Inquiry_Scale] AS [Inquiry_Scale], 
+    [tbl_Inquiry950725].[Inquiry_Count] AS [Inquiry_Count], 
+    [tbl_Inquiry950725].[Inquiry_Trace_Code] AS [Inquiry_Trace_Code], 
+    [tbl_Inquiry950725].[Inquiry_Client_Desc] AS [Inquiry_Client_Desc], 
+    [tbl_Inquiry950725].[Inquiry_Registered] AS [Inquiry_Registered], 
+    [tbl_Inquiry950725].[Inquiry_Register_Date] AS [Inquiry_Register_Date], 
+    [tbl_Inquiry950725].[Inquiry_Confirmed] AS [Inquiry_Confirmed], 
+    [tbl_Inquiry950725].[Inquiry_Confirm_Date] AS [Inquiry_Confirm_Date], 
+    [tbl_Inquiry950725].[Inquiry_Rejected] AS [Inquiry_Rejected], 
+    [tbl_Inquiry950725].[Inquiry_Reject_Date] AS [Inquiry_Reject_Date], 
+    [tbl_Inquiry950725].[Inquiry_RejectedDesc] AS [Inquiry_RejectedDesc], 
+    [tbl_Inquiry950725].[Inquiry_Reserved] AS [Inquiry_Reserved], 
+    [tbl_Inquiry950725].[Inquiry_Related_Agent] AS [Inquiry_Related_Agent], 
+    [tbl_Inquiry950725].[Inquiry_Assigned_Date] AS [Inquiry_Assigned_Date], 
+    [tbl_Inquiry950725].[Inquiry_Acception_Description] AS [Inquiry_Acception_Description], 
+    [tbl_Inquiry950725].[Inquiry_Admin_Time] AS [Inquiry_Admin_Time], 
+    [tbl_Inquiry950725].[Inquiry_Final_Confirm] AS [Inquiry_Final_Confirm], 
+    [tbl_Inquiry950725].[Inquiry_Final_Confirm_Date] AS [Inquiry_Final_Confirm_Date], 
+    [tbl_Inquiry950725].[Inquiry_Main_ID] AS [Inquiry_Main_ID], 
+    [tbl_Inquiry950725].[Inquiry_Manager_Confirm] AS [Inquiry_Manager_Confirm], 
+    [tbl_Inquiry950725].[Inquiry_Primary_Date] AS [Inquiry_Primary_Date], 
+    [tbl_Inquiry950725].[Inquiry_Manager_UserName] AS [Inquiry_Manager_UserName], 
+    [tbl_Inquiry950725].[Inquiry_OutSource] AS [Inquiry_OutSource], 
+    [tbl_Inquiry950725].[Inquiry_OutSource_Name] AS [Inquiry_OutSource_Name], 
+    [tbl_Inquiry950725].[Inquiry_OutSource_Duration] AS [Inquiry_OutSource_Duration], 
+    [tbl_Inquiry950725].[Inquiry_OutSource_Cost] AS [Inquiry_OutSource_Cost], 
+    [tbl_Inquiry950725].[Inquiry_Admin_History] AS [Inquiry_Admin_History]
+    FROM [dbo].[tbl_Inquiry950725] AS [tbl_Inquiry950725]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="tbl_Inquiry-kazemi" EntityType="Self.tbl_Inquiry-kazemi" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [tbl_Inquiry-kazemi].[Inquiry_ID] AS [Inquiry_ID], 
+    [tbl_Inquiry-kazemi].[Inquiry_Admin] AS [Inquiry_Admin], 
+    [tbl_Inquiry-kazemi].[Inquiry_Name] AS [Inquiry_Name], 
+    [tbl_Inquiry-kazemi].[Inquiry_Vahed] AS [Inquiry_Vahed], 
+    [tbl_Inquiry-kazemi].[Inquiry_Date] AS [Inquiry_Date], 
+    [tbl_Inquiry-kazemi].[Inquiry_NeededDate] AS [Inquiry_NeededDate], 
+    [tbl_Inquiry-kazemi].[Inquiry_Element] AS [Inquiry_Element], 
+    [tbl_Inquiry-kazemi].[Inquiry_Element_Type1] AS [Inquiry_Element_Type1], 
+    [tbl_Inquiry-kazemi].[Inquiry_Element_Type] AS [Inquiry_Element_Type], 
+    [tbl_Inquiry-kazemi].[Inquiry_Element_Rahgiri] AS [Inquiry_Element_Rahgiri], 
+    [tbl_Inquiry-kazemi].[Inquiry_Element_Gate_Pass] AS [Inquiry_Element_Gate_Pass], 
+    [tbl_Inquiry-kazemi].[Inquiry_Element_Gate_Pass_Date] AS [Inquiry_Element_Gate_Pass_Date], 
+    [tbl_Inquiry-kazemi].[Inquiry_Element_Gate_Pass_Count] AS [Inquiry_Element_Gate_Pass_Count], 
+    [tbl_Inquiry-kazemi].[Inquiry_Element_Lab_Pass] AS [Inquiry_Element_Lab_Pass], 
+    [tbl_Inquiry-kazemi].[Inquiry_Element_Lab_Pass_Date] AS [Inquiry_Element_Lab_Pass_Date], 
+    [tbl_Inquiry-kazemi].[Inquiry_Element_Lab_Pass_Count] AS [Inquiry_Element_Lab_Pass_Count], 
+    [tbl_Inquiry-kazemi].[Inquiry_Map_Code] AS [Inquiry_Map_Code], 
+    [tbl_Inquiry-kazemi].[Inquiry_Element_Code] AS [Inquiry_Element_Code], 
+    [tbl_Inquiry-kazemi].[Inquiry_Type] AS [Inquiry_Type], 
+    [tbl_Inquiry-kazemi].[Inquiry_Tech_Code] AS [Inquiry_Tech_Code], 
+    [tbl_Inquiry-kazemi].[Inquiry_Scale] AS [Inquiry_Scale], 
+    [tbl_Inquiry-kazemi].[Inquiry_Count] AS [Inquiry_Count], 
+    [tbl_Inquiry-kazemi].[Inquiry_Trace_Code] AS [Inquiry_Trace_Code], 
+    [tbl_Inquiry-kazemi].[Inquiry_Client_Desc] AS [Inquiry_Client_Desc], 
+    [tbl_Inquiry-kazemi].[Inquiry_Registered] AS [Inquiry_Registered], 
+    [tbl_Inquiry-kazemi].[Inquiry_Register_Date] AS [Inquiry_Register_Date], 
+    [tbl_Inquiry-kazemi].[Inquiry_Confirmed] AS [Inquiry_Confirmed], 
+    [tbl_Inquiry-kazemi].[Inquiry_Confirm_Date] AS [Inquiry_Confirm_Date], 
+    [tbl_Inquiry-kazemi].[Inquiry_Rejected] AS [Inquiry_Rejected], 
+    [tbl_Inquiry-kazemi].[Inquiry_Reject_Date] AS [Inquiry_Reject_Date], 
+    [tbl_Inquiry-kazemi].[Inquiry_RejectedDesc] AS [Inquiry_RejectedDesc], 
+    [tbl_Inquiry-kazemi].[Inquiry_Reserved] AS [Inquiry_Reserved], 
+    [tbl_Inquiry-kazemi].[Inquiry_Related_Agent] AS [Inquiry_Related_Agent], 
+    [tbl_Inquiry-kazemi].[Inquiry_Assigned_Date] AS [Inquiry_Assigned_Date], 
+    [tbl_Inquiry-kazemi].[Inquiry_Acception_Description] AS [Inquiry_Acception_Description], 
+    [tbl_Inquiry-kazemi].[Inquiry_Admin_Time] AS [Inquiry_Admin_Time], 
+    [tbl_Inquiry-kazemi].[Inquiry_Final_Confirm] AS [Inquiry_Final_Confirm], 
+    [tbl_Inquiry-kazemi].[Inquiry_Final_Confirm_Date] AS [Inquiry_Final_Confirm_Date], 
+    [tbl_Inquiry-kazemi].[Inquiry_Main_ID] AS [Inquiry_Main_ID], 
+    [tbl_Inquiry-kazemi].[Inquiry_Manager_Confirm] AS [Inquiry_Manager_Confirm], 
+    [tbl_Inquiry-kazemi].[Inquiry_Primary_Date] AS [Inquiry_Primary_Date], 
+    [tbl_Inquiry-kazemi].[Inquiry_Manager_UserName] AS [Inquiry_Manager_UserName], 
+    [tbl_Inquiry-kazemi].[Inquiry_OutSource] AS [Inquiry_OutSource], 
+    [tbl_Inquiry-kazemi].[Inquiry_OutSource_Name] AS [Inquiry_OutSource_Name], 
+    [tbl_Inquiry-kazemi].[Inquiry_OutSource_Duration] AS [Inquiry_OutSource_Duration], 
+    [tbl_Inquiry-kazemi].[Inquiry_OutSource_Cost] AS [Inquiry_OutSource_Cost], 
+    [tbl_Inquiry-kazemi].[Inquiry_Admin_History] AS [Inquiry_Admin_History]
+    FROM [dbo].[tbl_Inquiry-kazemi] AS [tbl_Inquiry-kazemi]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="tbl_Test_Inquiry" EntityType="Self.tbl_Test_Inquiry" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [tbl_Test_Inquiry].[Test_Inquiry_ID] AS [Test_Inquiry_ID], 
+    [tbl_Test_Inquiry].[Test_Inquiry_Desc] AS [Test_Inquiry_Desc], 
+    [tbl_Test_Inquiry].[Test_Inquiry_Coast] AS [Test_Inquiry_Coast], 
+    [tbl_Test_Inquiry].[Test_ID] AS [Test_ID], 
+    [tbl_Test_Inquiry].[Inquiry_ID] AS [Inquiry_ID], 
+    [tbl_Test_Inquiry].[Test_Inquiry_Hardware_Desc] AS [Test_Inquiry_Hardware_Desc], 
+    [tbl_Test_Inquiry].[Test_Inquiry_Way_Desc] AS [Test_Inquiry_Way_Desc], 
+    [tbl_Test_Inquiry].[Test_Inquiry_Done_Desc] AS [Test_Inquiry_Done_Desc], 
+    [tbl_Test_Inquiry].[Test_Inquiry_PreDone_Date] AS [Test_Inquiry_PreDone_Date], 
+    [tbl_Test_Inquiry].[Test_Inquiry_Done_Date] AS [Test_Inquiry_Done_Date], 
+    [tbl_Test_Inquiry].[Test_Inquiry_Done_Time] AS [Test_Inquiry_Done_Time], 
+    [tbl_Test_Inquiry].[Test_Inquiry_PreStart_Date] AS [Test_Inquiry_PreStart_Date], 
+    [tbl_Test_Inquiry].[Test_Inquiry_Start_Date] AS [Test_Inquiry_Start_Date], 
+    [tbl_Test_Inquiry].[Test_Inquiry_Start_Time] AS [Test_Inquiry_Start_Time], 
+    [tbl_Test_Inquiry].[Test_Inquiry_Final_Status] AS [Test_Inquiry_Final_Status], 
+    [tbl_Test_Inquiry].[Test_NafarSaat] AS [Test_NafarSaat], 
+    [tbl_Test_Inquiry].[Test_NeededDate] AS [Test_NeededDate], 
+    [tbl_Test_Inquiry].[Test_Ghatiat] AS [Test_Ghatiat], 
+    [tbl_Test_Inquiry].[Inquiry_Related_Agent] AS [Inquiry_Related_Agent], 
+    [tbl_Test_Inquiry].[Inquiry_Assigned_Date] AS [Inquiry_Assigned_Date], 
+    [tbl_Test_Inquiry].[Test_Inquiry_Result] AS [Test_Inquiry_Result], 
+    [tbl_Test_Inquiry].[Test_Standard_Code] AS [Test_Standard_Code], 
+    [tbl_Test_Inquiry].[Test_Acception_Description] AS [Test_Acception_Description], 
+    [tbl_Test_Inquiry].[Test_Inquiry_PreferedResult] AS [Test_Inquiry_PreferedResult], 
+    [tbl_Test_Inquiry].[Inquiry_Final_Confirm] AS [Inquiry_Final_Confirm], 
+    [tbl_Test_Inquiry].[Inquiry_Final_Confirm_Date] AS [Inquiry_Final_Confirm_Date], 
+    [tbl_Test_Inquiry].[Inquiry_Element_Rahgiri] AS [Inquiry_Element_Rahgiri], 
+    [tbl_Test_Inquiry].[Inquiry_Element_Refer_Agent] AS [Inquiry_Element_Refer_Agent], 
+    [tbl_Test_Inquiry].[Inquiry_Element_Refer_Agent_Date] AS [Inquiry_Element_Refer_Agent_Date], 
+    [tbl_Test_Inquiry].[Inquiry_Element_Alamat_Azmoon] AS [Inquiry_Element_Alamat_Azmoon]
+    FROM [dbo].[tbl_Test_Inquiry] AS [tbl_Test_Inquiry]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="tblTests" EntityType="Self.tblTests" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [tblTests].[ID] AS [ID], 
+    [tblTests].[رديف] AS [رديف], 
+    [tblTests].[نام آزمون] AS [نام آزمون], 
+    [tblTests].[كد آزمون] AS [كد آزمون], 
+    [tblTests].[شماره استاندارد  روش آزمون] AS [شماره استاندارد  روش آزمون], 
+    [tblTests].[تعداد نمونه ها جهت انجام آزمون] AS [تعداد نمونه ها جهت انجام آزمون], 
+    [tblTests].[نام وکد دستگاه مورد استفاده] AS [نام وکد دستگاه مورد استفاده]
+    FROM [dbo].[tblTests] AS [tblTests]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="tblTests1" EntityType="Self.tblTests1" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [tblTests1].[ID] AS [ID], 
+    [tblTests1].[رديف] AS [رديف], 
+    [tblTests1].[نام آزمون] AS [نام آزمون], 
+    [tblTests1].[كد آزمون] AS [كد آزمون], 
+    [tblTests1].[شماره استاندارد  روش آزمون] AS [شماره استاندارد  روش آزمون], 
+    [tblTests1].[تعداد نمونه ها جهت انجام آزمون] AS [تعداد نمونه ها جهت انجام آزمون], 
+    [tblTests1].[نام وکد دستگاه مورد استفاده] AS [نام وکد دستگاه مورد استفاده]
+    FROM [dbo].[tblTests1] AS [tblTests1]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,115 @@
+﻿
+@{
+    ViewBag.Title = "Manage_Users";
+}
+
+<h2>Manage_Users</h2>
+@*@model IEnumerable<CustomMembershipEF.Models.InquiryViewModel>*@
+
+@(Html.Kendo().Grid<CustomMembershipEF.Models.TblAdmin_Viewmodel>()
+                .Name("Grid")
+                .Columns(columns =>
+                {
+                    columns.Bound(c => c.AdminID);
+                    columns.Bound(c => c.GroupID);
+                    columns.Bound(c => c.AdminUserName);
+                    columns.Bound(c => c.AdminDsc);
+                    columns.Command(command => command.Custom("تعیین نقش کاربر").Click("showDetails")).Width(180);
+
+                })
+                 .Pageable(pageable => pageable
+                .Refresh(true)
+                .PageSizes(true)
+                .ButtonCount(5))
+                .Sortable()
+                .Scrollable()
+                  .HtmlAttributes(new { style = "height:550px;" })
+                     .Filterable(filterable => filterable
+                     .Extra(false)
+                     
+        .Operators(operators => operators
+            .ForString(str => str.Clear()
+                .StartsWith("شروع شود با")
+                .IsEqualTo("برابر باشد با")
+                .IsNotEqualTo("مخالف باشد با")
+                .Contains("شبیه باشد با")
+            ))
+        )
+                .DataSource(dataSource => dataSource
+                .Ajax()
+                .PageSize(10)
+            .Read(read => read.Action("Select_Users", "Home"))
+                )
+)
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+<script type="text/javascript">
+    //var grid = $("#Grid").data("kendoGrid");
+    //grid.filterMenu.find("div.k-filter-help-text").text("dfd");
+   // alert(grid.filterMenu.find("div.k-filter-help-text").text);
+    // alert('sd');
+    function statusFilter()
+    {
+
+    }
+   var detailsTemplate = kendo.template($("#template").html());
+
+        function showDetails(e) {
+            e.preventDefault();
+            var dataItem = this.dataItem($(e.currentTarget).closest("tr"));
+            $.get("@Url.Action("_Update_Users", "Home")/" + dataItem.AdminID,
+                function (data) { $(".modal-body").html(data); })
+                $('#exampleModal').modal('show');
+    }
+       
+    
+
+</script>
+
+
+<style>
+  
+    
+    .customer-photo {
+        display: inline-block;
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        background-size: 32px 35px;
+        background-position: center center;
+        vertical-align: middle;
+        line-height: 32px;
+        box-shadow: inset 0 0 1px #999, inset 0 0 10px rgba(0,0,0,.2);
+        margin-left: 5px;
+    }
+
+    .customer-name {
+        display: inline-block;
+        vertical-align: middle;
+        line-height: 32px;
+        padding-left: 3px;
+    }
+</style>
+
+
+
+
+
+

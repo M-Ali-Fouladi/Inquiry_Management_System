@@ -1,0 +1,729 @@
+C:\Users\HEEnCo2\Desktop\custom-membership\custom-role-providers-master\CustomMembershipEF\bin\CustomMembershipEF.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\custom-role-providers-master\CustomMembershipEF\bin\CustomMembershipEF.pdb
+C:\Users\HEEnCo2\Desktop\custom-membership\custom-role-providers-master\CustomMembershipEF\bin\EntityFramework.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\custom-role-providers-master\CustomMembershipEF\bin\EntityFramework.xml
+C:\Users\HEEnCo2\Desktop\custom-membership\custom-role-providers-master\CustomMembershipEF\obj\Debug\CustomMembershipEF.csprojResolveAssemblyReference.cache
+C:\Users\HEEnCo2\Desktop\custom-membership\custom-role-providers-master\CustomMembershipEF\obj\Debug\CustomMembershipEF.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\custom-role-providers-master\CustomMembershipEF\obj\Debug\CustomMembershipEF.pdb
+C:\Users\HEEnCo2\Desktop\custom-membership\custom-role-providers-master\CustomMembershipEF\bin\PagedList.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\custom-role-providers-master\CustomMembershipEF\bin\PagedList.Mvc.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\custom-role-providers-master\CustomMembershipEF\bin\System.Web.Razor.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\custom-role-providers-master\CustomMembershipEF\bin\PagedList.xml
+C:\Users\HEEnCo2\Desktop\custom-membership\custom-role-providers-master\CustomMembershipEF\bin\PagedList.Mvc.xml
+C:\Users\HEEnCo2\Desktop\custom-membership\custom-role-providers-master\CustomMembershipEF\bin\System.Web.Razor.xml
+C:\Users\HEEnCo2\Desktop\custom-membership\custom-role-providers-master\CustomMembershipEF\obj\Debug\CustomMembershipEF.Migrations.userscontext.resources
+C:\Users\HEEnCo2\Desktop\custom-membership\custom-role-providers-master\CustomMembershipEF\obj\Debug\CustomMembershipEF.csproj.GenerateResource.Cache
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_7.10.2013_ViewError\CustomMembershipEF\bin\CustomMembershipEF.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_7.10.2013_ViewError\CustomMembershipEF\bin\CustomMembershipEF.pdb
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_7.10.2013_ViewError\CustomMembershipEF\bin\EntityFramework.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_7.10.2013_ViewError\CustomMembershipEF\bin\PagedList.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_7.10.2013_ViewError\CustomMembershipEF\bin\PagedList.Mvc.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_7.10.2013_ViewError\CustomMembershipEF\bin\System.Web.Http.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_7.10.2013_ViewError\CustomMembershipEF\bin\System.Web.Http.WebHost.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_7.10.2013_ViewError\CustomMembershipEF\bin\System.Web.Razor.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_7.10.2013_ViewError\CustomMembershipEF\bin\System.Net.Http.Formatting.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_7.10.2013_ViewError\CustomMembershipEF\bin\EntityFramework.xml
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_7.10.2013_ViewError\CustomMembershipEF\bin\PagedList.xml
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_7.10.2013_ViewError\CustomMembershipEF\bin\PagedList.Mvc.xml
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_7.10.2013_ViewError\CustomMembershipEF\bin\System.Web.Http.xml
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_7.10.2013_ViewError\CustomMembershipEF\bin\System.Web.Http.WebHost.xml
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_7.10.2013_ViewError\CustomMembershipEF\bin\System.Web.Razor.xml
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_7.10.2013_ViewError\CustomMembershipEF\bin\System.Net.Http.Formatting.xml
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_7.10.2013_ViewError\CustomMembershipEF\obj\Debug\CustomMembershipEF.Migrations.userscontext.resources
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_7.10.2013_ViewError\CustomMembershipEF\obj\Debug\CustomMembershipEF.csproj.GenerateResource.Cache
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_7.10.2013_ViewError\CustomMembershipEF\obj\Debug\CustomMembershipEF.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_7.10.2013_ViewError\CustomMembershipEF\obj\Debug\CustomMembershipEF.pdb
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_7.10.2013_ViewError\CustomMembershipEF\obj\Debug\CustomMembershipEF.csprojResolveAssemblyReference.cache
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_8.10.2013_modify_UserAdmin\CustomMembershipEF\bin\CustomMembershipEF.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_8.10.2013_modify_UserAdmin\CustomMembershipEF\bin\CustomMembershipEF.pdb
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_8.10.2013_modify_UserAdmin\CustomMembershipEF\bin\EntityFramework.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_8.10.2013_modify_UserAdmin\CustomMembershipEF\bin\PagedList.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_8.10.2013_modify_UserAdmin\CustomMembershipEF\bin\PagedList.Mvc.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_8.10.2013_modify_UserAdmin\CustomMembershipEF\bin\System.Web.Http.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_8.10.2013_modify_UserAdmin\CustomMembershipEF\bin\System.Web.Http.WebHost.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_8.10.2013_modify_UserAdmin\CustomMembershipEF\bin\System.Web.Razor.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_8.10.2013_modify_UserAdmin\CustomMembershipEF\bin\System.Net.Http.Formatting.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_8.10.2013_modify_UserAdmin\CustomMembershipEF\bin\EntityFramework.xml
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_8.10.2013_modify_UserAdmin\CustomMembershipEF\bin\PagedList.xml
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_8.10.2013_modify_UserAdmin\CustomMembershipEF\bin\PagedList.Mvc.xml
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_8.10.2013_modify_UserAdmin\CustomMembershipEF\bin\System.Web.Http.xml
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_8.10.2013_modify_UserAdmin\CustomMembershipEF\bin\System.Web.Http.WebHost.xml
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_8.10.2013_modify_UserAdmin\CustomMembershipEF\bin\System.Web.Razor.xml
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_8.10.2013_modify_UserAdmin\CustomMembershipEF\bin\System.Net.Http.Formatting.xml
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_8.10.2013_modify_UserAdmin\CustomMembershipEF\obj\Debug\CustomMembershipEF.Migrations.userscontext.resources
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_8.10.2013_modify_UserAdmin\CustomMembershipEF\obj\Debug\CustomMembershipEF.csproj.GenerateResource.Cache
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_8.10.2013_modify_UserAdmin\CustomMembershipEF\obj\Debug\CustomMembershipEF.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_8.10.2013_modify_UserAdmin\CustomMembershipEF\obj\Debug\CustomMembershipEF.pdb
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_8.10.2013_modify_UserAdmin\CustomMembershipEF\obj\Debug\CustomMembershipEF.csprojResolveAssemblyReference.cache
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_9.10.2013_FinishEdit\CustomMembershipEF\obj\Debug\CustomMembershipEF.csprojResolveAssemblyReference.cache
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_9.10.2013_FinishEdit\CustomMembershipEF\obj\Debug\CustomMembershipEF.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_9.10.2013_FinishEdit\CustomMembershipEF\bin\CustomMembershipEF.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_9.10.2013_FinishEdit\CustomMembershipEF\bin\CustomMembershipEF.pdb
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_9.10.2013_FinishEdit\CustomMembershipEF\bin\EntityFramework.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_9.10.2013_FinishEdit\CustomMembershipEF\bin\PagedList.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_9.10.2013_FinishEdit\CustomMembershipEF\bin\PagedList.Mvc.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_9.10.2013_FinishEdit\CustomMembershipEF\bin\System.Web.Http.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_9.10.2013_FinishEdit\CustomMembershipEF\bin\System.Web.Http.WebHost.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_9.10.2013_FinishEdit\CustomMembershipEF\bin\System.Web.Razor.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_9.10.2013_FinishEdit\CustomMembershipEF\bin\System.Net.Http.Formatting.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_9.10.2013_FinishEdit\CustomMembershipEF\bin\EntityFramework.xml
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_9.10.2013_FinishEdit\CustomMembershipEF\bin\PagedList.xml
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_9.10.2013_FinishEdit\CustomMembershipEF\bin\PagedList.Mvc.xml
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_9.10.2013_FinishEdit\CustomMembershipEF\bin\System.Web.Http.xml
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_9.10.2013_FinishEdit\CustomMembershipEF\bin\System.Web.Http.WebHost.xml
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_9.10.2013_FinishEdit\CustomMembershipEF\bin\System.Web.Razor.xml
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_9.10.2013_FinishEdit\CustomMembershipEF\bin\System.Net.Http.Formatting.xml
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_9.10.2013_FinishEdit\CustomMembershipEF\obj\Debug\CustomMembershipEF.pdb
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_9.10.2013_FinishEdit\CustomMembershipEF\obj\Debug\CustomMembershipEF.Migrations.userscontext.resources
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_9.10.2013_FinishEdit\CustomMembershipEF\obj\Debug\CustomMembershipEF.csproj.GenerateResource.Cache
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_9.10.2013_ModifyRegister\CustomMembershipEF\bin\CustomMembershipEF.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_9.10.2013_ModifyRegister\CustomMembershipEF\bin\CustomMembershipEF.pdb
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_9.10.2013_ModifyRegister\CustomMembershipEF\bin\EntityFramework.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_9.10.2013_ModifyRegister\CustomMembershipEF\bin\PagedList.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_9.10.2013_ModifyRegister\CustomMembershipEF\bin\PagedList.Mvc.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_9.10.2013_ModifyRegister\CustomMembershipEF\bin\System.Web.Http.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_9.10.2013_ModifyRegister\CustomMembershipEF\bin\System.Web.Http.WebHost.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_9.10.2013_ModifyRegister\CustomMembershipEF\bin\System.Web.Razor.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_9.10.2013_ModifyRegister\CustomMembershipEF\bin\System.Net.Http.Formatting.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_9.10.2013_ModifyRegister\CustomMembershipEF\bin\EntityFramework.xml
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_9.10.2013_ModifyRegister\CustomMembershipEF\bin\PagedList.xml
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_9.10.2013_ModifyRegister\CustomMembershipEF\bin\PagedList.Mvc.xml
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_9.10.2013_ModifyRegister\CustomMembershipEF\bin\System.Web.Http.xml
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_9.10.2013_ModifyRegister\CustomMembershipEF\bin\System.Web.Http.WebHost.xml
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_9.10.2013_ModifyRegister\CustomMembershipEF\bin\System.Web.Razor.xml
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_9.10.2013_ModifyRegister\CustomMembershipEF\bin\System.Net.Http.Formatting.xml
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_9.10.2013_ModifyRegister\CustomMembershipEF\obj\Debug\CustomMembershipEF.csprojResolveAssemblyReference.cache
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_9.10.2013_ModifyRegister\CustomMembershipEF\obj\Debug\CustomMembershipEF.Migrations.userscontext.resources
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_9.10.2013_ModifyRegister\CustomMembershipEF\obj\Debug\CustomMembershipEF.csproj.GenerateResource.Cache
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_9.10.2013_ModifyRegister\CustomMembershipEF\obj\Debug\CustomMembershipEF.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_9.10.2013_ModifyRegister\CustomMembershipEF\obj\Debug\CustomMembershipEF.pdb
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_9.10.2013_ModifyRegister\CustomMembershipEF\obj\Debug\CustomMembershipEF.Migrations.userscontext1.resources
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_13.10.2013_FinishMembership\CustomMembershipEF\bin\CustomMembershipEF.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_13.10.2013_FinishMembership\CustomMembershipEF\bin\CustomMembershipEF.pdb
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_13.10.2013_FinishMembership\CustomMembershipEF\bin\EntityFramework.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_13.10.2013_FinishMembership\CustomMembershipEF\bin\PagedList.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_13.10.2013_FinishMembership\CustomMembershipEF\bin\PagedList.Mvc.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_13.10.2013_FinishMembership\CustomMembershipEF\bin\System.Web.Http.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_13.10.2013_FinishMembership\CustomMembershipEF\bin\System.Web.Http.WebHost.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_13.10.2013_FinishMembership\CustomMembershipEF\bin\System.Web.Razor.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_13.10.2013_FinishMembership\CustomMembershipEF\bin\System.Net.Http.Formatting.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_13.10.2013_FinishMembership\CustomMembershipEF\bin\EntityFramework.xml
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_13.10.2013_FinishMembership\CustomMembershipEF\bin\PagedList.xml
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_13.10.2013_FinishMembership\CustomMembershipEF\bin\PagedList.Mvc.xml
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_13.10.2013_FinishMembership\CustomMembershipEF\bin\System.Web.Http.xml
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_13.10.2013_FinishMembership\CustomMembershipEF\bin\System.Web.Http.WebHost.xml
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_13.10.2013_FinishMembership\CustomMembershipEF\bin\System.Web.Razor.xml
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_13.10.2013_FinishMembership\CustomMembershipEF\bin\System.Net.Http.Formatting.xml
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_13.10.2013_FinishMembership\CustomMembershipEF\obj\Debug\CustomMembershipEF.csprojResolveAssemblyReference.cache
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_13.10.2013_FinishMembership\CustomMembershipEF\obj\Debug\CustomMembershipEF.Migrations.userscontext.resources
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_13.10.2013_FinishMembership\CustomMembershipEF\obj\Debug\CustomMembershipEF.Migrations.userscontext1.resources
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_13.10.2013_FinishMembership\CustomMembershipEF\obj\Debug\CustomMembershipEF.csproj.GenerateResource.Cache
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_13.10.2013_FinishMembership\CustomMembershipEF\obj\Debug\CustomMembershipEF.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_13.10.2013_FinishMembership\CustomMembershipEF\obj\Debug\CustomMembershipEF.pdb
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_14.10.2013_FinishDelete\CustomMembershipEF\bin\CustomMembershipEF.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_14.10.2013_FinishDelete\CustomMembershipEF\bin\CustomMembershipEF.pdb
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_14.10.2013_FinishDelete\CustomMembershipEF\bin\EntityFramework.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_14.10.2013_FinishDelete\CustomMembershipEF\bin\PagedList.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_14.10.2013_FinishDelete\CustomMembershipEF\bin\PagedList.Mvc.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_14.10.2013_FinishDelete\CustomMembershipEF\bin\System.Web.Http.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_14.10.2013_FinishDelete\CustomMembershipEF\bin\System.Web.Http.WebHost.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_14.10.2013_FinishDelete\CustomMembershipEF\bin\System.Web.Razor.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_14.10.2013_FinishDelete\CustomMembershipEF\bin\System.Net.Http.Formatting.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_14.10.2013_FinishDelete\CustomMembershipEF\bin\EntityFramework.xml
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_14.10.2013_FinishDelete\CustomMembershipEF\bin\PagedList.xml
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_14.10.2013_FinishDelete\CustomMembershipEF\bin\PagedList.Mvc.xml
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_14.10.2013_FinishDelete\CustomMembershipEF\bin\System.Web.Http.xml
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_14.10.2013_FinishDelete\CustomMembershipEF\bin\System.Web.Http.WebHost.xml
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_14.10.2013_FinishDelete\CustomMembershipEF\bin\System.Web.Razor.xml
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_14.10.2013_FinishDelete\CustomMembershipEF\bin\System.Net.Http.Formatting.xml
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_14.10.2013_FinishDelete\CustomMembershipEF\obj\Debug\CustomMembershipEF.csprojResolveAssemblyReference.cache
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_14.10.2013_FinishDelete\CustomMembershipEF\obj\Debug\CustomMembershipEF.Migrations.userscontext.resources
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_14.10.2013_FinishDelete\CustomMembershipEF\obj\Debug\CustomMembershipEF.Migrations.userscontext1.resources
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_14.10.2013_FinishDelete\CustomMembershipEF\obj\Debug\CustomMembershipEF.csproj.GenerateResource.Cache
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_14.10.2013_FinishDelete\CustomMembershipEF\obj\Debug\CustomMembershipEF.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_14.10.2013_FinishDelete\CustomMembershipEF\obj\Debug\CustomMembershipEF.pdb
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_14.10.2013_FinishCreateRole\CustomMembershipEF\bin\CustomMembershipEF.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_14.10.2013_FinishCreateRole\CustomMembershipEF\bin\CustomMembershipEF.pdb
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_14.10.2013_FinishCreateRole\CustomMembershipEF\bin\EntityFramework.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_14.10.2013_FinishCreateRole\CustomMembershipEF\bin\PagedList.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_14.10.2013_FinishCreateRole\CustomMembershipEF\bin\PagedList.Mvc.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_14.10.2013_FinishCreateRole\CustomMembershipEF\bin\System.Web.Http.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_14.10.2013_FinishCreateRole\CustomMembershipEF\bin\System.Web.Http.WebHost.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_14.10.2013_FinishCreateRole\CustomMembershipEF\bin\System.Web.Razor.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_14.10.2013_FinishCreateRole\CustomMembershipEF\bin\System.Net.Http.Formatting.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_14.10.2013_FinishCreateRole\CustomMembershipEF\bin\EntityFramework.xml
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_14.10.2013_FinishCreateRole\CustomMembershipEF\bin\PagedList.xml
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_14.10.2013_FinishCreateRole\CustomMembershipEF\bin\PagedList.Mvc.xml
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_14.10.2013_FinishCreateRole\CustomMembershipEF\bin\System.Web.Http.xml
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_14.10.2013_FinishCreateRole\CustomMembershipEF\bin\System.Web.Http.WebHost.xml
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_14.10.2013_FinishCreateRole\CustomMembershipEF\bin\System.Web.Razor.xml
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_14.10.2013_FinishCreateRole\CustomMembershipEF\bin\System.Net.Http.Formatting.xml
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_14.10.2013_FinishCreateRole\CustomMembershipEF\obj\Debug\CustomMembershipEF.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_14.10.2013_FinishCreateRole\CustomMembershipEF\obj\Debug\CustomMembershipEF.pdb
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_14.10.2013_FinishCreateRole\CustomMembershipEF\obj\Debug\CustomMembershipEF.csprojResolveAssemblyReference.cache
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_14.10.2013_FinishAuthorize\CustomMembershipEF\bin\CustomMembershipEF.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_14.10.2013_FinishAuthorize\CustomMembershipEF\bin\CustomMembershipEF.pdb
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_14.10.2013_FinishAuthorize\CustomMembershipEF\bin\EntityFramework.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_14.10.2013_FinishAuthorize\CustomMembershipEF\bin\PagedList.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_14.10.2013_FinishAuthorize\CustomMembershipEF\bin\PagedList.Mvc.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_14.10.2013_FinishAuthorize\CustomMembershipEF\bin\System.Web.Http.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_14.10.2013_FinishAuthorize\CustomMembershipEF\bin\System.Web.Http.WebHost.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_14.10.2013_FinishAuthorize\CustomMembershipEF\bin\System.Web.Razor.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_14.10.2013_FinishAuthorize\CustomMembershipEF\bin\System.Net.Http.Formatting.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_14.10.2013_FinishAuthorize\CustomMembershipEF\bin\EntityFramework.xml
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_14.10.2013_FinishAuthorize\CustomMembershipEF\bin\PagedList.xml
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_14.10.2013_FinishAuthorize\CustomMembershipEF\bin\PagedList.Mvc.xml
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_14.10.2013_FinishAuthorize\CustomMembershipEF\bin\System.Web.Http.xml
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_14.10.2013_FinishAuthorize\CustomMembershipEF\bin\System.Web.Http.WebHost.xml
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_14.10.2013_FinishAuthorize\CustomMembershipEF\bin\System.Web.Razor.xml
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_14.10.2013_FinishAuthorize\CustomMembershipEF\bin\System.Net.Http.Formatting.xml
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_14.10.2013_FinishAuthorize\CustomMembershipEF\obj\Debug\CustomMembershipEF.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_14.10.2013_FinishAuthorize\CustomMembershipEF\obj\Debug\CustomMembershipEF.pdb
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_14.10.2013_FinishAuthorize\CustomMembershipEF\obj\Debug\CustomMembershipEF.Migrations.userscontext.resources
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_14.10.2013_FinishAuthorize\CustomMembershipEF\obj\Debug\CustomMembershipEF.csproj.GenerateResource.Cache
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_14.10.2013_FinishAuthorize\CustomMembershipEF\obj\Debug\CustomMembershipEF.csprojResolveAssemblyReference.cache
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_15.10.2013_CreateDBUserORG\CustomMembershipEF\bin\CustomMembershipEF.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_15.10.2013_CreateDBUserORG\CustomMembershipEF\bin\CustomMembershipEF.pdb
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_15.10.2013_CreateDBUserORG\CustomMembershipEF\bin\EntityFramework.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_15.10.2013_CreateDBUserORG\CustomMembershipEF\bin\PagedList.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_15.10.2013_CreateDBUserORG\CustomMembershipEF\bin\PagedList.Mvc.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_15.10.2013_CreateDBUserORG\CustomMembershipEF\bin\System.Web.Http.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_15.10.2013_CreateDBUserORG\CustomMembershipEF\bin\System.Web.Http.WebHost.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_15.10.2013_CreateDBUserORG\CustomMembershipEF\bin\System.Web.Razor.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_15.10.2013_CreateDBUserORG\CustomMembershipEF\bin\System.Net.Http.Formatting.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_15.10.2013_CreateDBUserORG\CustomMembershipEF\bin\EntityFramework.xml
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_15.10.2013_CreateDBUserORG\CustomMembershipEF\bin\PagedList.xml
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_15.10.2013_CreateDBUserORG\CustomMembershipEF\bin\PagedList.Mvc.xml
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_15.10.2013_CreateDBUserORG\CustomMembershipEF\bin\System.Web.Http.xml
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_15.10.2013_CreateDBUserORG\CustomMembershipEF\bin\System.Web.Http.WebHost.xml
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_15.10.2013_CreateDBUserORG\CustomMembershipEF\bin\System.Web.Razor.xml
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_15.10.2013_CreateDBUserORG\CustomMembershipEF\bin\System.Net.Http.Formatting.xml
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_15.10.2013_CreateDBUserORG\CustomMembershipEF\obj\Debug\CustomMembershipEF.csprojResolveAssemblyReference.cache
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_15.10.2013_CreateDBUserORG\CustomMembershipEF\obj\Debug\CustomMembershipEF.Migrations.userscontext.resources
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_15.10.2013_CreateDBUserORG\CustomMembershipEF\obj\Debug\CustomMembershipEF.csproj.GenerateResource.Cache
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_15.10.2013_CreateDBUserORG\CustomMembershipEF\obj\Debug\CustomMembershipEF.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_15.10.2013_CreateDBUserORG\CustomMembershipEF\obj\Debug\CustomMembershipEF.pdb
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_20.10.2013_FinishOrg\CustomMembershipEF\bin\CustomMembershipEF.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_20.10.2013_FinishOrg\CustomMembershipEF\bin\CustomMembershipEF.pdb
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_20.10.2013_FinishOrg\CustomMembershipEF\bin\EntityFramework.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_20.10.2013_FinishOrg\CustomMembershipEF\bin\PagedList.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_20.10.2013_FinishOrg\CustomMembershipEF\bin\PagedList.Mvc.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_20.10.2013_FinishOrg\CustomMembershipEF\bin\System.Web.Http.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_20.10.2013_FinishOrg\CustomMembershipEF\bin\System.Web.Http.WebHost.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_20.10.2013_FinishOrg\CustomMembershipEF\bin\System.Web.Razor.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_20.10.2013_FinishOrg\CustomMembershipEF\bin\System.Net.Http.Formatting.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_20.10.2013_FinishOrg\CustomMembershipEF\bin\EntityFramework.xml
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_20.10.2013_FinishOrg\CustomMembershipEF\bin\PagedList.xml
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_20.10.2013_FinishOrg\CustomMembershipEF\bin\PagedList.Mvc.xml
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_20.10.2013_FinishOrg\CustomMembershipEF\bin\System.Web.Http.xml
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_20.10.2013_FinishOrg\CustomMembershipEF\bin\System.Web.Http.WebHost.xml
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_20.10.2013_FinishOrg\CustomMembershipEF\bin\System.Web.Razor.xml
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_20.10.2013_FinishOrg\CustomMembershipEF\bin\System.Net.Http.Formatting.xml
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_20.10.2013_FinishOrg\CustomMembershipEF\obj\Debug\CustomMembershipEF.csprojResolveAssemblyReference.cache
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_20.10.2013_FinishOrg\CustomMembershipEF\obj\Debug\CustomMembershipEF.Migrations.userscontext.resources
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_20.10.2013_FinishOrg\CustomMembershipEF\obj\Debug\CustomMembershipEF.csproj.GenerateResource.Cache
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_20.10.2013_FinishOrg\CustomMembershipEF\obj\Debug\CustomMembershipEF.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_20.10.2013_FinishOrg\CustomMembershipEF\obj\Debug\CustomMembershipEF.pdb
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_21.10.2013_FinishCode\CustomMembershipEF\bin\CustomMembershipEF.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_21.10.2013_FinishCode\CustomMembershipEF\bin\CustomMembershipEF.pdb
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_21.10.2013_FinishCode\CustomMembershipEF\bin\EntityFramework.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_21.10.2013_FinishCode\CustomMembershipEF\bin\PagedList.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_21.10.2013_FinishCode\CustomMembershipEF\bin\PagedList.Mvc.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_21.10.2013_FinishCode\CustomMembershipEF\bin\System.Web.Http.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_21.10.2013_FinishCode\CustomMembershipEF\bin\System.Web.Http.WebHost.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_21.10.2013_FinishCode\CustomMembershipEF\bin\System.Web.Razor.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_21.10.2013_FinishCode\CustomMembershipEF\bin\System.Net.Http.Formatting.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_21.10.2013_FinishCode\CustomMembershipEF\bin\EntityFramework.xml
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_21.10.2013_FinishCode\CustomMembershipEF\bin\PagedList.xml
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_21.10.2013_FinishCode\CustomMembershipEF\bin\PagedList.Mvc.xml
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_21.10.2013_FinishCode\CustomMembershipEF\bin\System.Web.Http.xml
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_21.10.2013_FinishCode\CustomMembershipEF\bin\System.Web.Http.WebHost.xml
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_21.10.2013_FinishCode\CustomMembershipEF\bin\System.Web.Razor.xml
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_21.10.2013_FinishCode\CustomMembershipEF\bin\System.Net.Http.Formatting.xml
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_21.10.2013_FinishCode\CustomMembershipEF\obj\Debug\CustomMembershipEF.Migrations.userscontext.resources
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_21.10.2013_FinishCode\CustomMembershipEF\obj\Debug\CustomMembershipEF.csproj.GenerateResource.Cache
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_21.10.2013_FinishCode\CustomMembershipEF\obj\Debug\CustomMembershipEF.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_21.10.2013_FinishCode\CustomMembershipEF\obj\Debug\CustomMembershipEF.pdb
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_21.10.2013_FinishCode\CustomMembershipEF\obj\Debug\CustomMembershipEF.csprojResolveAssemblyReference.cache
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_21.10.2013_EditFirstPage\CustomMembershipEF\bin\CustomMembershipEF.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_21.10.2013_EditFirstPage\CustomMembershipEF\bin\CustomMembershipEF.pdb
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_21.10.2013_EditFirstPage\CustomMembershipEF\bin\EntityFramework.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_21.10.2013_EditFirstPage\CustomMembershipEF\bin\PagedList.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_21.10.2013_EditFirstPage\CustomMembershipEF\bin\PagedList.Mvc.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_21.10.2013_EditFirstPage\CustomMembershipEF\bin\System.Web.Http.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_21.10.2013_EditFirstPage\CustomMembershipEF\bin\System.Web.Http.WebHost.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_21.10.2013_EditFirstPage\CustomMembershipEF\bin\System.Web.Razor.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_21.10.2013_EditFirstPage\CustomMembershipEF\bin\System.Net.Http.Formatting.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_21.10.2013_EditFirstPage\CustomMembershipEF\bin\EntityFramework.xml
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_21.10.2013_EditFirstPage\CustomMembershipEF\bin\PagedList.xml
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_21.10.2013_EditFirstPage\CustomMembershipEF\bin\PagedList.Mvc.xml
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_21.10.2013_EditFirstPage\CustomMembershipEF\bin\System.Web.Http.xml
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_21.10.2013_EditFirstPage\CustomMembershipEF\bin\System.Web.Http.WebHost.xml
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_21.10.2013_EditFirstPage\CustomMembershipEF\bin\System.Web.Razor.xml
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_21.10.2013_EditFirstPage\CustomMembershipEF\bin\System.Net.Http.Formatting.xml
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_21.10.2013_EditFirstPage\CustomMembershipEF\obj\Debug\CustomMembershipEF.csprojResolveAssemblyReference.cache
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_21.10.2013_EditFirstPage\CustomMembershipEF\obj\Debug\CustomMembershipEF.Migrations.userscontext.resources
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_21.10.2013_EditFirstPage\CustomMembershipEF\obj\Debug\CustomMembershipEF.csproj.GenerateResource.Cache
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_21.10.2013_EditFirstPage\CustomMembershipEF\obj\Debug\CustomMembershipEF.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_21.10.2013_EditFirstPage\CustomMembershipEF\obj\Debug\CustomMembershipEF.pdb
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_22.10.2013_TableFirstStart\CustomMembershipEF\bin\CustomMembershipEF.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_22.10.2013_TableFirstStart\CustomMembershipEF\bin\CustomMembershipEF.pdb
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_22.10.2013_TableFirstStart\CustomMembershipEF\bin\EntityFramework.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_22.10.2013_TableFirstStart\CustomMembershipEF\bin\PagedList.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_22.10.2013_TableFirstStart\CustomMembershipEF\bin\PagedList.Mvc.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_22.10.2013_TableFirstStart\CustomMembershipEF\bin\System.Web.Http.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_22.10.2013_TableFirstStart\CustomMembershipEF\bin\System.Web.Http.WebHost.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_22.10.2013_TableFirstStart\CustomMembershipEF\bin\System.Web.Razor.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_22.10.2013_TableFirstStart\CustomMembershipEF\bin\System.Net.Http.Formatting.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_22.10.2013_TableFirstStart\CustomMembershipEF\bin\EntityFramework.xml
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_22.10.2013_TableFirstStart\CustomMembershipEF\bin\PagedList.xml
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_22.10.2013_TableFirstStart\CustomMembershipEF\bin\PagedList.Mvc.xml
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_22.10.2013_TableFirstStart\CustomMembershipEF\bin\System.Web.Http.xml
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_22.10.2013_TableFirstStart\CustomMembershipEF\bin\System.Web.Http.WebHost.xml
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_22.10.2013_TableFirstStart\CustomMembershipEF\bin\System.Web.Razor.xml
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_22.10.2013_TableFirstStart\CustomMembershipEF\bin\System.Net.Http.Formatting.xml
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_22.10.2013_TableFirstStart\CustomMembershipEF\obj\Debug\CustomMembershipEF.csprojResolveAssemblyReference.cache
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_22.10.2013_TableFirstStart\CustomMembershipEF\obj\Debug\CustomMembershipEF.Migrations.userscontext.resources
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_22.10.2013_TableFirstStart\CustomMembershipEF\obj\Debug\CustomMembershipEF.csproj.GenerateResource.Cache
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_22.10.2013_TableFirstStart\CustomMembershipEF\obj\Debug\CustomMembershipEF.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_22.10.2013_TableFirstStart\CustomMembershipEF\obj\Debug\CustomMembershipEF.pdb
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_23.10.2013_StartTeam\CustomMembershipEF\bin\CustomMembershipEF.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_23.10.2013_StartTeam\CustomMembershipEF\bin\CustomMembershipEF.pdb
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_23.10.2013_StartTeam\CustomMembershipEF\bin\EntityFramework.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_23.10.2013_StartTeam\CustomMembershipEF\bin\PagedList.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_23.10.2013_StartTeam\CustomMembershipEF\bin\PagedList.Mvc.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_23.10.2013_StartTeam\CustomMembershipEF\bin\System.Web.Http.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_23.10.2013_StartTeam\CustomMembershipEF\bin\System.Web.Http.WebHost.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_23.10.2013_StartTeam\CustomMembershipEF\bin\System.Web.Razor.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_23.10.2013_StartTeam\CustomMembershipEF\bin\System.Net.Http.Formatting.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_23.10.2013_StartTeam\CustomMembershipEF\bin\EntityFramework.xml
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_23.10.2013_StartTeam\CustomMembershipEF\bin\PagedList.xml
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_23.10.2013_StartTeam\CustomMembershipEF\bin\PagedList.Mvc.xml
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_23.10.2013_StartTeam\CustomMembershipEF\bin\System.Web.Http.xml
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_23.10.2013_StartTeam\CustomMembershipEF\bin\System.Web.Http.WebHost.xml
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_23.10.2013_StartTeam\CustomMembershipEF\bin\System.Web.Razor.xml
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_23.10.2013_StartTeam\CustomMembershipEF\bin\System.Net.Http.Formatting.xml
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_23.10.2013_StartTeam\CustomMembershipEF\obj\Debug\CustomMembershipEF.csprojResolveAssemblyReference.cache
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_23.10.2013_StartTeam\CustomMembershipEF\obj\Debug\CustomMembershipEF.Migrations.userscontext.resources
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_23.10.2013_StartTeam\CustomMembershipEF\obj\Debug\CustomMembershipEF.csproj.GenerateResource.Cache
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_23.10.2013_StartTeam\CustomMembershipEF\obj\Debug\CustomMembershipEF.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_23.10.2013_StartTeam\CustomMembershipEF\obj\Debug\CustomMembershipEF.pdb
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_27.10.2013_jquery Work\CustomMembershipEF\bin\CustomMembershipEF.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_27.10.2013_jquery Work\CustomMembershipEF\bin\CustomMembershipEF.pdb
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_27.10.2013_jquery Work\CustomMembershipEF\bin\EntityFramework.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_27.10.2013_jquery Work\CustomMembershipEF\bin\PagedList.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_27.10.2013_jquery Work\CustomMembershipEF\bin\PagedList.Mvc.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_27.10.2013_jquery Work\CustomMembershipEF\bin\System.Web.Http.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_27.10.2013_jquery Work\CustomMembershipEF\bin\System.Web.Http.WebHost.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_27.10.2013_jquery Work\CustomMembershipEF\bin\System.Web.Razor.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_27.10.2013_jquery Work\CustomMembershipEF\bin\System.Net.Http.Formatting.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_27.10.2013_jquery Work\CustomMembershipEF\bin\EntityFramework.xml
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_27.10.2013_jquery Work\CustomMembershipEF\bin\PagedList.xml
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_27.10.2013_jquery Work\CustomMembershipEF\bin\PagedList.Mvc.xml
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_27.10.2013_jquery Work\CustomMembershipEF\bin\System.Web.Http.xml
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_27.10.2013_jquery Work\CustomMembershipEF\bin\System.Web.Http.WebHost.xml
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_27.10.2013_jquery Work\CustomMembershipEF\bin\System.Web.Razor.xml
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_27.10.2013_jquery Work\CustomMembershipEF\bin\System.Net.Http.Formatting.xml
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_27.10.2013_jquery Work\CustomMembershipEF\obj\Debug\CustomMembershipEF.csprojResolveAssemblyReference.cache
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_27.10.2013_jquery Work\CustomMembershipEF\obj\Debug\CustomMembershipEF.Migrations.userscontext.resources
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_27.10.2013_jquery Work\CustomMembershipEF\obj\Debug\CustomMembershipEF.csproj.GenerateResource.Cache
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_27.10.2013_jquery Work\CustomMembershipEF\obj\Debug\CustomMembershipEF.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_27.10.2013_jquery Work\CustomMembershipEF\obj\Debug\CustomMembershipEF.pdb
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_27.10.2013_AjaxFinish\CustomMembershipEF\bin\CustomMembershipEF.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_27.10.2013_AjaxFinish\CustomMembershipEF\bin\CustomMembershipEF.pdb
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_27.10.2013_AjaxFinish\CustomMembershipEF\bin\EntityFramework.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_27.10.2013_AjaxFinish\CustomMembershipEF\bin\PagedList.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_27.10.2013_AjaxFinish\CustomMembershipEF\bin\PagedList.Mvc.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_27.10.2013_AjaxFinish\CustomMembershipEF\bin\System.Web.Http.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_27.10.2013_AjaxFinish\CustomMembershipEF\bin\System.Web.Http.WebHost.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_27.10.2013_AjaxFinish\CustomMembershipEF\bin\System.Web.Razor.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_27.10.2013_AjaxFinish\CustomMembershipEF\bin\System.Net.Http.Formatting.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_27.10.2013_AjaxFinish\CustomMembershipEF\bin\EntityFramework.xml
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_27.10.2013_AjaxFinish\CustomMembershipEF\bin\PagedList.xml
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_27.10.2013_AjaxFinish\CustomMembershipEF\bin\PagedList.Mvc.xml
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_27.10.2013_AjaxFinish\CustomMembershipEF\bin\System.Web.Http.xml
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_27.10.2013_AjaxFinish\CustomMembershipEF\bin\System.Web.Http.WebHost.xml
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_27.10.2013_AjaxFinish\CustomMembershipEF\bin\System.Web.Razor.xml
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_27.10.2013_AjaxFinish\CustomMembershipEF\bin\System.Net.Http.Formatting.xml
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_27.10.2013_AjaxFinish\CustomMembershipEF\obj\Debug\CustomMembershipEF.csprojResolveAssemblyReference.cache
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_27.10.2013_AjaxFinish\CustomMembershipEF\obj\Debug\CustomMembershipEF.Migrations.userscontext.resources
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_27.10.2013_AjaxFinish\CustomMembershipEF\obj\Debug\CustomMembershipEF.csproj.GenerateResource.Cache
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_27.10.2013_AjaxFinish\CustomMembershipEF\obj\Debug\CustomMembershipEF.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_27.10.2013_AjaxFinish\CustomMembershipEF\obj\Debug\CustomMembershipEF.pdb
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_29.10.2013_AjaxFinish\CustomMembershipEF\bin\CustomMembershipEF.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_29.10.2013_AjaxFinish\CustomMembershipEF\bin\CustomMembershipEF.pdb
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_29.10.2013_AjaxFinish\CustomMembershipEF\bin\EntityFramework.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_29.10.2013_AjaxFinish\CustomMembershipEF\bin\PagedList.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_29.10.2013_AjaxFinish\CustomMembershipEF\bin\PagedList.Mvc.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_29.10.2013_AjaxFinish\CustomMembershipEF\bin\System.Web.Http.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_29.10.2013_AjaxFinish\CustomMembershipEF\bin\System.Web.Http.WebHost.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_29.10.2013_AjaxFinish\CustomMembershipEF\bin\System.Web.Razor.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_29.10.2013_AjaxFinish\CustomMembershipEF\bin\System.Net.Http.Formatting.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_29.10.2013_AjaxFinish\CustomMembershipEF\bin\EntityFramework.xml
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_29.10.2013_AjaxFinish\CustomMembershipEF\bin\PagedList.xml
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_29.10.2013_AjaxFinish\CustomMembershipEF\bin\PagedList.Mvc.xml
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_29.10.2013_AjaxFinish\CustomMembershipEF\bin\System.Web.Http.xml
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_29.10.2013_AjaxFinish\CustomMembershipEF\bin\System.Web.Http.WebHost.xml
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_29.10.2013_AjaxFinish\CustomMembershipEF\bin\System.Web.Razor.xml
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_29.10.2013_AjaxFinish\CustomMembershipEF\bin\System.Net.Http.Formatting.xml
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_29.10.2013_AjaxFinish\CustomMembershipEF\obj\Debug\CustomMembershipEF.csprojResolveAssemblyReference.cache
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_29.10.2013_AjaxFinish\CustomMembershipEF\obj\Debug\CustomMembershipEF.Migrations.userscontext.resources
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_29.10.2013_AjaxFinish\CustomMembershipEF\obj\Debug\CustomMembershipEF.csproj.GenerateResource.Cache
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_29.10.2013_AjaxFinish\CustomMembershipEF\obj\Debug\CustomMembershipEF.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_29.10.2013_AjaxFinish\CustomMembershipEF\obj\Debug\CustomMembershipEF.pdb
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_30.10.2013_AjaxFinish\CustomMembershipEF\bin\CustomMembershipEF.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_30.10.2013_AjaxFinish\CustomMembershipEF\bin\CustomMembershipEF.pdb
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_30.10.2013_AjaxFinish\CustomMembershipEF\bin\EntityFramework.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_30.10.2013_AjaxFinish\CustomMembershipEF\bin\PagedList.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_30.10.2013_AjaxFinish\CustomMembershipEF\bin\PagedList.Mvc.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_30.10.2013_AjaxFinish\CustomMembershipEF\bin\System.Web.Http.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_30.10.2013_AjaxFinish\CustomMembershipEF\bin\System.Web.Http.WebHost.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_30.10.2013_AjaxFinish\CustomMembershipEF\bin\System.Web.Razor.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_30.10.2013_AjaxFinish\CustomMembershipEF\bin\System.Net.Http.Formatting.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_30.10.2013_AjaxFinish\CustomMembershipEF\bin\EntityFramework.xml
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_30.10.2013_AjaxFinish\CustomMembershipEF\bin\PagedList.xml
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_30.10.2013_AjaxFinish\CustomMembershipEF\bin\PagedList.Mvc.xml
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_30.10.2013_AjaxFinish\CustomMembershipEF\bin\System.Web.Http.xml
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_30.10.2013_AjaxFinish\CustomMembershipEF\bin\System.Web.Http.WebHost.xml
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_30.10.2013_AjaxFinish\CustomMembershipEF\bin\System.Web.Razor.xml
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_30.10.2013_AjaxFinish\CustomMembershipEF\bin\System.Net.Http.Formatting.xml
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_30.10.2013_AjaxFinish\CustomMembershipEF\obj\Debug\CustomMembershipEF.csprojResolveAssemblyReference.cache
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_30.10.2013_AjaxFinish\CustomMembershipEF\obj\Debug\CustomMembershipEF.Migrations.userscontext.resources
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_30.10.2013_AjaxFinish\CustomMembershipEF\obj\Debug\CustomMembershipEF.csproj.GenerateResource.Cache
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_30.10.2013_AjaxFinish\CustomMembershipEF\obj\Debug\CustomMembershipEF.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_30.10.2013_AjaxFinish\CustomMembershipEF\obj\Debug\CustomMembershipEF.pdb
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_2-moharam_AjaxFinish\CustomMembershipEF\bin\CustomMembershipEF.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_2-moharam_AjaxFinish\CustomMembershipEF\bin\CustomMembershipEF.pdb
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_2-moharam_AjaxFinish\CustomMembershipEF\bin\EntityFramework.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_2-moharam_AjaxFinish\CustomMembershipEF\bin\PagedList.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_2-moharam_AjaxFinish\CustomMembershipEF\bin\PagedList.Mvc.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_2-moharam_AjaxFinish\CustomMembershipEF\bin\System.Web.Http.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_2-moharam_AjaxFinish\CustomMembershipEF\bin\System.Web.Http.WebHost.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_2-moharam_AjaxFinish\CustomMembershipEF\bin\System.Web.Razor.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_2-moharam_AjaxFinish\CustomMembershipEF\bin\System.Net.Http.Formatting.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_2-moharam_AjaxFinish\CustomMembershipEF\bin\EntityFramework.xml
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_2-moharam_AjaxFinish\CustomMembershipEF\bin\PagedList.xml
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_2-moharam_AjaxFinish\CustomMembershipEF\bin\PagedList.Mvc.xml
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_2-moharam_AjaxFinish\CustomMembershipEF\bin\System.Web.Http.xml
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_2-moharam_AjaxFinish\CustomMembershipEF\bin\System.Web.Http.WebHost.xml
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_2-moharam_AjaxFinish\CustomMembershipEF\bin\System.Web.Razor.xml
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_2-moharam_AjaxFinish\CustomMembershipEF\bin\System.Net.Http.Formatting.xml
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_2-moharam_AjaxFinish\CustomMembershipEF\obj\Debug\CustomMembershipEF.csprojResolveAssemblyReference.cache
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_2-moharam_AjaxFinish\CustomMembershipEF\obj\Debug\CustomMembershipEF.Migrations.userscontext.resources
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_2-moharam_AjaxFinish\CustomMembershipEF\obj\Debug\CustomMembershipEF.csproj.GenerateResource.Cache
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_2-moharam_AjaxFinish\CustomMembershipEF\obj\Debug\CustomMembershipEF.dll
+C:\Users\HEEnCo2\Desktop\custom-membership\Teambox_2-moharam_AjaxFinish\CustomMembershipEF\obj\Debug\CustomMembershipEF.pdb
+D:\My Projects\My tools\Teambox_AjaxFinish\CustomMembershipEF\obj\Debug\CustomMembershipEF.csprojResolveAssemblyReference.cache
+D:\My Projects\My tools\Teambox_AjaxFinish\CustomMembershipEF\obj\Debug\CustomMembershipEF.Migrations.userscontext.resources
+D:\My Projects\My tools\Teambox_AjaxFinish\CustomMembershipEF\obj\Debug\CustomMembershipEF.csproj.GenerateResource.Cache
+D:\My Projects\My tools\Teambox_AjaxFinish\CustomMembershipEF\obj\Debug\CustomMembershipEF.dll
+D:\My Projects\My tools\Teambox_AjaxFinish\CustomMembershipEF\obj\Debug\CustomMembershipEF.pdb
+D:\My Projects\My tools\Teambox_AjaxFinish\CustomMembershipEF\bin\CustomMembershipEF.dll.config
+D:\My Projects\My tools\Teambox_AjaxFinish\CustomMembershipEF\bin\CustomMembershipEF.dll
+D:\My Projects\My tools\Teambox_AjaxFinish\CustomMembershipEF\bin\CustomMembershipEF.pdb
+D:\My Projects\My tools\Teambox_AjaxFinish\CustomMembershipEF\bin\EntityFramework.dll
+D:\My Projects\My tools\Teambox_AjaxFinish\CustomMembershipEF\bin\Microsoft.Web.Infrastructure.dll
+D:\My Projects\My tools\Teambox_AjaxFinish\CustomMembershipEF\bin\PagedList.dll
+D:\My Projects\My tools\Teambox_AjaxFinish\CustomMembershipEF\bin\PagedList.Mvc.dll
+D:\My Projects\My tools\Teambox_AjaxFinish\CustomMembershipEF\bin\System.Web.Helpers.dll
+D:\My Projects\My tools\Teambox_AjaxFinish\CustomMembershipEF\bin\System.Web.Http.dll
+D:\My Projects\My tools\Teambox_AjaxFinish\CustomMembershipEF\bin\System.Web.Http.WebHost.dll
+D:\My Projects\My tools\Teambox_AjaxFinish\CustomMembershipEF\bin\System.Web.Mvc.dll
+D:\My Projects\My tools\Teambox_AjaxFinish\CustomMembershipEF\bin\System.Web.Razor.dll
+D:\My Projects\My tools\Teambox_AjaxFinish\CustomMembershipEF\bin\System.Web.WebPages.dll
+D:\My Projects\My tools\Teambox_AjaxFinish\CustomMembershipEF\bin\System.Net.Http.Formatting.dll
+D:\My Projects\My tools\Teambox_AjaxFinish\CustomMembershipEF\bin\System.Web.WebPages.Deployment.dll
+D:\My Projects\My tools\Teambox_AjaxFinish\CustomMembershipEF\bin\EntityFramework.xml
+D:\My Projects\My tools\Teambox_AjaxFinish\CustomMembershipEF\bin\PagedList.xml
+D:\My Projects\My tools\Teambox_AjaxFinish\CustomMembershipEF\bin\PagedList.Mvc.xml
+D:\My Projects\My tools\Teambox_AjaxFinish\CustomMembershipEF\bin\System.Web.Http.xml
+D:\My Projects\My tools\Teambox_AjaxFinish\CustomMembershipEF\bin\System.Web.Http.WebHost.xml
+D:\My Projects\My tools\Teambox_AjaxFinish\CustomMembershipEF\bin\System.Web.Mvc.xml
+D:\My Projects\My tools\Teambox_AjaxFinish\CustomMembershipEF\bin\System.Web.Razor.xml
+D:\My Projects\My tools\Teambox_AjaxFinish\CustomMembershipEF\bin\System.Net.Http.Formatting.xml
+D:\My Projects\My tools\Teambox_AjaxFinish\CustomMembershipEF\bin\System.Web.WebPages.Razor.dll
+D:\My Projects\My tools\Teambox_AjaxFinish\CustomMembershipEF\bin\System.Web.Helpers.xml
+D:\My Projects\My tools\Teambox_AjaxFinish\CustomMembershipEF\bin\System.Web.WebPages.xml
+D:\My Projects\My tools\Teambox_AjaxFinish\CustomMembershipEF\bin\System.Web.WebPages.Deployment.xml
+D:\My Projects\My tools\Teambox_AjaxFinish\CustomMembershipEF\bin\System.Web.WebPages.Razor.xml
+D:\My Projects\OnlineInvitation\Teambox_AjaxFinish\CustomMembershipEF\bin\CustomMembershipEF.dll.config
+D:\My Projects\OnlineInvitation\Teambox_AjaxFinish\CustomMembershipEF\bin\CustomMembershipEF.dll
+D:\My Projects\OnlineInvitation\Teambox_AjaxFinish\CustomMembershipEF\bin\CustomMembershipEF.pdb
+D:\My Projects\OnlineInvitation\Teambox_AjaxFinish\CustomMembershipEF\bin\EntityFramework.dll
+D:\My Projects\OnlineInvitation\Teambox_AjaxFinish\CustomMembershipEF\bin\EntityFramework.SqlServer.dll
+D:\My Projects\OnlineInvitation\Teambox_AjaxFinish\CustomMembershipEF\bin\Microsoft.Web.Infrastructure.dll
+D:\My Projects\OnlineInvitation\Teambox_AjaxFinish\CustomMembershipEF\bin\PagedList.dll
+D:\My Projects\OnlineInvitation\Teambox_AjaxFinish\CustomMembershipEF\bin\PagedList.Mvc.dll
+D:\My Projects\OnlineInvitation\Teambox_AjaxFinish\CustomMembershipEF\bin\System.Web.Helpers.dll
+D:\My Projects\OnlineInvitation\Teambox_AjaxFinish\CustomMembershipEF\bin\System.Web.Http.dll
+D:\My Projects\OnlineInvitation\Teambox_AjaxFinish\CustomMembershipEF\bin\System.Web.Http.WebHost.dll
+D:\My Projects\OnlineInvitation\Teambox_AjaxFinish\CustomMembershipEF\bin\System.Web.Mvc.dll
+D:\My Projects\OnlineInvitation\Teambox_AjaxFinish\CustomMembershipEF\bin\System.Web.Razor.dll
+D:\My Projects\OnlineInvitation\Teambox_AjaxFinish\CustomMembershipEF\bin\System.Web.WebPages.Deployment.dll
+D:\My Projects\OnlineInvitation\Teambox_AjaxFinish\CustomMembershipEF\bin\System.Web.WebPages.dll
+D:\My Projects\OnlineInvitation\Teambox_AjaxFinish\CustomMembershipEF\bin\System.Web.WebPages.Razor.dll
+D:\My Projects\OnlineInvitation\Teambox_AjaxFinish\CustomMembershipEF\bin\System.Net.Http.Formatting.dll
+D:\My Projects\OnlineInvitation\Teambox_AjaxFinish\CustomMembershipEF\bin\EntityFramework.xml
+D:\My Projects\OnlineInvitation\Teambox_AjaxFinish\CustomMembershipEF\bin\EntityFramework.SqlServer.xml
+D:\My Projects\OnlineInvitation\Teambox_AjaxFinish\CustomMembershipEF\bin\PagedList.xml
+D:\My Projects\OnlineInvitation\Teambox_AjaxFinish\CustomMembershipEF\bin\PagedList.Mvc.xml
+D:\My Projects\OnlineInvitation\Teambox_AjaxFinish\CustomMembershipEF\bin\System.Web.Helpers.xml
+D:\My Projects\OnlineInvitation\Teambox_AjaxFinish\CustomMembershipEF\bin\System.Web.Http.xml
+D:\My Projects\OnlineInvitation\Teambox_AjaxFinish\CustomMembershipEF\bin\System.Web.Http.WebHost.xml
+D:\My Projects\OnlineInvitation\Teambox_AjaxFinish\CustomMembershipEF\bin\System.Web.Mvc.xml
+D:\My Projects\OnlineInvitation\Teambox_AjaxFinish\CustomMembershipEF\bin\System.Web.Razor.xml
+D:\My Projects\OnlineInvitation\Teambox_AjaxFinish\CustomMembershipEF\bin\System.Web.WebPages.xml
+D:\My Projects\OnlineInvitation\Teambox_AjaxFinish\CustomMembershipEF\bin\System.Web.WebPages.Deployment.xml
+D:\My Projects\OnlineInvitation\Teambox_AjaxFinish\CustomMembershipEF\bin\System.Web.WebPages.Razor.xml
+D:\My Projects\OnlineInvitation\Teambox_AjaxFinish\CustomMembershipEF\bin\System.Net.Http.Formatting.xml
+D:\My Projects\OnlineInvitation\Teambox_AjaxFinish\CustomMembershipEF\obj\Debug\CustomMembershipEF.Migrations.userscontext.resources
+D:\My Projects\OnlineInvitation\Teambox_AjaxFinish\CustomMembershipEF\obj\Debug\CustomMembershipEF.csproj.GenerateResource.Cache
+D:\My Projects\OnlineInvitation\Teambox_AjaxFinish\CustomMembershipEF\obj\Debug\CustomMembershipEF.dll
+D:\My Projects\OnlineInvitation\Teambox_AjaxFinish\CustomMembershipEF\obj\Debug\CustomMembershipEF.pdb
+C:\Users\mohammadali\Desktop\QUESTIONS\Answer-1\Custom MemberShip\CustomMembershipEF\bin\CustomMembershipEF.dll.config
+C:\Users\mohammadali\Desktop\QUESTIONS\Answer-1\Custom MemberShip\CustomMembershipEF\bin\CustomMembershipEF.dll
+C:\Users\mohammadali\Desktop\QUESTIONS\Answer-1\Custom MemberShip\CustomMembershipEF\bin\CustomMembershipEF.pdb
+C:\Users\mohammadali\Desktop\QUESTIONS\Answer-1\Custom MemberShip\CustomMembershipEF\bin\EntityFramework.dll
+C:\Users\mohammadali\Desktop\QUESTIONS\Answer-1\Custom MemberShip\CustomMembershipEF\bin\EntityFramework.SqlServer.dll
+C:\Users\mohammadali\Desktop\QUESTIONS\Answer-1\Custom MemberShip\CustomMembershipEF\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\mohammadali\Desktop\QUESTIONS\Answer-1\Custom MemberShip\CustomMembershipEF\bin\PagedList.dll
+C:\Users\mohammadali\Desktop\QUESTIONS\Answer-1\Custom MemberShip\CustomMembershipEF\bin\PagedList.Mvc.dll
+C:\Users\mohammadali\Desktop\QUESTIONS\Answer-1\Custom MemberShip\CustomMembershipEF\bin\System.Web.Helpers.dll
+C:\Users\mohammadali\Desktop\QUESTIONS\Answer-1\Custom MemberShip\CustomMembershipEF\bin\System.Web.Http.dll
+C:\Users\mohammadali\Desktop\QUESTIONS\Answer-1\Custom MemberShip\CustomMembershipEF\bin\System.Web.Http.WebHost.dll
+C:\Users\mohammadali\Desktop\QUESTIONS\Answer-1\Custom MemberShip\CustomMembershipEF\bin\System.Web.Mvc.dll
+C:\Users\mohammadali\Desktop\QUESTIONS\Answer-1\Custom MemberShip\CustomMembershipEF\bin\System.Web.Razor.dll
+C:\Users\mohammadali\Desktop\QUESTIONS\Answer-1\Custom MemberShip\CustomMembershipEF\bin\System.Web.WebPages.Deployment.dll
+C:\Users\mohammadali\Desktop\QUESTIONS\Answer-1\Custom MemberShip\CustomMembershipEF\bin\System.Web.WebPages.dll
+C:\Users\mohammadali\Desktop\QUESTIONS\Answer-1\Custom MemberShip\CustomMembershipEF\bin\System.Web.WebPages.Razor.dll
+C:\Users\mohammadali\Desktop\QUESTIONS\Answer-1\Custom MemberShip\CustomMembershipEF\bin\System.Net.Http.Formatting.dll
+C:\Users\mohammadali\Desktop\QUESTIONS\Answer-1\Custom MemberShip\CustomMembershipEF\bin\EntityFramework.xml
+C:\Users\mohammadali\Desktop\QUESTIONS\Answer-1\Custom MemberShip\CustomMembershipEF\bin\EntityFramework.SqlServer.xml
+C:\Users\mohammadali\Desktop\QUESTIONS\Answer-1\Custom MemberShip\CustomMembershipEF\bin\PagedList.xml
+C:\Users\mohammadali\Desktop\QUESTIONS\Answer-1\Custom MemberShip\CustomMembershipEF\bin\PagedList.Mvc.xml
+C:\Users\mohammadali\Desktop\QUESTIONS\Answer-1\Custom MemberShip\CustomMembershipEF\bin\System.Web.Helpers.xml
+C:\Users\mohammadali\Desktop\QUESTIONS\Answer-1\Custom MemberShip\CustomMembershipEF\bin\System.Web.Http.xml
+C:\Users\mohammadali\Desktop\QUESTIONS\Answer-1\Custom MemberShip\CustomMembershipEF\bin\System.Web.Http.WebHost.xml
+C:\Users\mohammadali\Desktop\QUESTIONS\Answer-1\Custom MemberShip\CustomMembershipEF\bin\System.Web.Mvc.xml
+C:\Users\mohammadali\Desktop\QUESTIONS\Answer-1\Custom MemberShip\CustomMembershipEF\bin\System.Web.Razor.xml
+C:\Users\mohammadali\Desktop\QUESTIONS\Answer-1\Custom MemberShip\CustomMembershipEF\bin\System.Web.WebPages.xml
+C:\Users\mohammadali\Desktop\QUESTIONS\Answer-1\Custom MemberShip\CustomMembershipEF\bin\System.Web.WebPages.Deployment.xml
+C:\Users\mohammadali\Desktop\QUESTIONS\Answer-1\Custom MemberShip\CustomMembershipEF\bin\System.Web.WebPages.Razor.xml
+C:\Users\mohammadali\Desktop\QUESTIONS\Answer-1\Custom MemberShip\CustomMembershipEF\bin\System.Net.Http.Formatting.xml
+C:\Users\mohammadali\Desktop\QUESTIONS\Answer-1\Custom MemberShip\CustomMembershipEF\obj\Debug\CustomMembershipEF.Migrations.userscontext.resources
+C:\Users\mohammadali\Desktop\QUESTIONS\Answer-1\Custom MemberShip\CustomMembershipEF\obj\Debug\CustomMembershipEF.csproj.GenerateResource.Cache
+C:\Users\mohammadali\Desktop\QUESTIONS\Answer-1\Custom MemberShip\CustomMembershipEF\obj\Debug\CustomMembershipEF.dll
+C:\Users\mohammadali\Desktop\QUESTIONS\Answer-1\Custom MemberShip\CustomMembershipEF\obj\Debug\CustomMembershipEF.pdb
+C:\Users\mohammadali\Desktop\QUESTIONS\Answer-4\Custom MemberShip\CustomMembershipEF\bin\CustomMembershipEF.dll.config
+C:\Users\mohammadali\Desktop\QUESTIONS\Answer-4\Custom MemberShip\CustomMembershipEF\bin\CustomMembershipEF.dll
+C:\Users\mohammadali\Desktop\QUESTIONS\Answer-4\Custom MemberShip\CustomMembershipEF\bin\CustomMembershipEF.pdb
+C:\Users\mohammadali\Desktop\QUESTIONS\Answer-4\Custom MemberShip\CustomMembershipEF\bin\DataStreams.dll
+C:\Users\mohammadali\Desktop\QUESTIONS\Answer-4\Custom MemberShip\CustomMembershipEF\bin\EntityFramework.dll
+C:\Users\mohammadali\Desktop\QUESTIONS\Answer-4\Custom MemberShip\CustomMembershipEF\bin\EntityFramework.SqlServer.dll
+C:\Users\mohammadali\Desktop\QUESTIONS\Answer-4\Custom MemberShip\CustomMembershipEF\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\mohammadali\Desktop\QUESTIONS\Answer-4\Custom MemberShip\CustomMembershipEF\bin\PagedList.dll
+C:\Users\mohammadali\Desktop\QUESTIONS\Answer-4\Custom MemberShip\CustomMembershipEF\bin\PagedList.Mvc.dll
+C:\Users\mohammadali\Desktop\QUESTIONS\Answer-4\Custom MemberShip\CustomMembershipEF\bin\System.Web.Helpers.dll
+C:\Users\mohammadali\Desktop\QUESTIONS\Answer-4\Custom MemberShip\CustomMembershipEF\bin\System.Web.Http.dll
+C:\Users\mohammadali\Desktop\QUESTIONS\Answer-4\Custom MemberShip\CustomMembershipEF\bin\System.Web.Http.WebHost.dll
+C:\Users\mohammadali\Desktop\QUESTIONS\Answer-4\Custom MemberShip\CustomMembershipEF\bin\System.Web.Mvc.dll
+C:\Users\mohammadali\Desktop\QUESTIONS\Answer-4\Custom MemberShip\CustomMembershipEF\bin\System.Web.Razor.dll
+C:\Users\mohammadali\Desktop\QUESTIONS\Answer-4\Custom MemberShip\CustomMembershipEF\bin\System.Web.WebPages.Deployment.dll
+C:\Users\mohammadali\Desktop\QUESTIONS\Answer-4\Custom MemberShip\CustomMembershipEF\bin\System.Web.WebPages.dll
+C:\Users\mohammadali\Desktop\QUESTIONS\Answer-4\Custom MemberShip\CustomMembershipEF\bin\System.Web.WebPages.Razor.dll
+C:\Users\mohammadali\Desktop\QUESTIONS\Answer-4\Custom MemberShip\CustomMembershipEF\bin\System.Net.Http.Formatting.dll
+C:\Users\mohammadali\Desktop\QUESTIONS\Answer-4\Custom MemberShip\CustomMembershipEF\bin\EntityFramework.xml
+C:\Users\mohammadali\Desktop\QUESTIONS\Answer-4\Custom MemberShip\CustomMembershipEF\bin\EntityFramework.SqlServer.xml
+C:\Users\mohammadali\Desktop\QUESTIONS\Answer-4\Custom MemberShip\CustomMembershipEF\bin\PagedList.xml
+C:\Users\mohammadali\Desktop\QUESTIONS\Answer-4\Custom MemberShip\CustomMembershipEF\bin\PagedList.Mvc.xml
+C:\Users\mohammadali\Desktop\QUESTIONS\Answer-4\Custom MemberShip\CustomMembershipEF\bin\System.Web.Helpers.xml
+C:\Users\mohammadali\Desktop\QUESTIONS\Answer-4\Custom MemberShip\CustomMembershipEF\bin\System.Web.Http.xml
+C:\Users\mohammadali\Desktop\QUESTIONS\Answer-4\Custom MemberShip\CustomMembershipEF\bin\System.Web.Http.WebHost.xml
+C:\Users\mohammadali\Desktop\QUESTIONS\Answer-4\Custom MemberShip\CustomMembershipEF\bin\System.Web.Mvc.xml
+C:\Users\mohammadali\Desktop\QUESTIONS\Answer-4\Custom MemberShip\CustomMembershipEF\bin\System.Web.Razor.xml
+C:\Users\mohammadali\Desktop\QUESTIONS\Answer-4\Custom MemberShip\CustomMembershipEF\bin\System.Web.WebPages.xml
+C:\Users\mohammadali\Desktop\QUESTIONS\Answer-4\Custom MemberShip\CustomMembershipEF\bin\System.Web.WebPages.Deployment.xml
+C:\Users\mohammadali\Desktop\QUESTIONS\Answer-4\Custom MemberShip\CustomMembershipEF\bin\System.Web.WebPages.Razor.xml
+C:\Users\mohammadali\Desktop\QUESTIONS\Answer-4\Custom MemberShip\CustomMembershipEF\bin\System.Net.Http.Formatting.xml
+C:\Users\mohammadali\Desktop\QUESTIONS\Answer-4\Custom MemberShip\CustomMembershipEF\obj\Debug\CustomMembershipEF.Migrations.userscontext.resources
+C:\Users\mohammadali\Desktop\QUESTIONS\Answer-4\Custom MemberShip\CustomMembershipEF\obj\Debug\CustomMembershipEF.Migrations.userscontext1.resources
+C:\Users\mohammadali\Desktop\QUESTIONS\Answer-4\Custom MemberShip\CustomMembershipEF\obj\Debug\CustomMembershipEF.Migrations.userscontext2.resources
+C:\Users\mohammadali\Desktop\QUESTIONS\Answer-4\Custom MemberShip\CustomMembershipEF\obj\Debug\CustomMembershipEF.csproj.GenerateResource.Cache
+C:\Users\mohammadali\Desktop\QUESTIONS\Answer-4\Custom MemberShip\CustomMembershipEF\obj\Debug\CustomMembershipEF.dll
+C:\Users\mohammadali\Desktop\QUESTIONS\Answer-4\Custom MemberShip\CustomMembershipEF\obj\Debug\CustomMembershipEF.pdb
+C:\Users\mohammadali\Desktop\QUESTIONS\Answer-4\ManageRss\CustomMembershipEF\bin\CustomMembershipEF.dll.config
+C:\Users\mohammadali\Desktop\QUESTIONS\Answer-4\ManageRss\CustomMembershipEF\bin\CustomMembershipEF.dll
+C:\Users\mohammadali\Desktop\QUESTIONS\Answer-4\ManageRss\CustomMembershipEF\bin\CustomMembershipEF.pdb
+C:\Users\mohammadali\Desktop\QUESTIONS\Answer-4\ManageRss\CustomMembershipEF\bin\DataStreams.dll
+C:\Users\mohammadali\Desktop\QUESTIONS\Answer-4\ManageRss\CustomMembershipEF\bin\EntityFramework.dll
+C:\Users\mohammadali\Desktop\QUESTIONS\Answer-4\ManageRss\CustomMembershipEF\bin\EntityFramework.SqlServer.dll
+C:\Users\mohammadali\Desktop\QUESTIONS\Answer-4\ManageRss\CustomMembershipEF\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\mohammadali\Desktop\QUESTIONS\Answer-4\ManageRss\CustomMembershipEF\bin\PagedList.dll
+C:\Users\mohammadali\Desktop\QUESTIONS\Answer-4\ManageRss\CustomMembershipEF\bin\PagedList.Mvc.dll
+C:\Users\mohammadali\Desktop\QUESTIONS\Answer-4\ManageRss\CustomMembershipEF\bin\System.Web.Helpers.dll
+C:\Users\mohammadali\Desktop\QUESTIONS\Answer-4\ManageRss\CustomMembershipEF\bin\System.Web.Http.dll
+C:\Users\mohammadali\Desktop\QUESTIONS\Answer-4\ManageRss\CustomMembershipEF\bin\System.Web.Http.WebHost.dll
+C:\Users\mohammadali\Desktop\QUESTIONS\Answer-4\ManageRss\CustomMembershipEF\bin\System.Web.Mvc.dll
+C:\Users\mohammadali\Desktop\QUESTIONS\Answer-4\ManageRss\CustomMembershipEF\bin\System.Web.Razor.dll
+C:\Users\mohammadali\Desktop\QUESTIONS\Answer-4\ManageRss\CustomMembershipEF\bin\System.Web.WebPages.Deployment.dll
+C:\Users\mohammadali\Desktop\QUESTIONS\Answer-4\ManageRss\CustomMembershipEF\bin\System.Web.WebPages.dll
+C:\Users\mohammadali\Desktop\QUESTIONS\Answer-4\ManageRss\CustomMembershipEF\bin\System.Web.WebPages.Razor.dll
+C:\Users\mohammadali\Desktop\QUESTIONS\Answer-4\ManageRss\CustomMembershipEF\bin\System.Net.Http.Formatting.dll
+C:\Users\mohammadali\Desktop\QUESTIONS\Answer-4\ManageRss\CustomMembershipEF\bin\EntityFramework.xml
+C:\Users\mohammadali\Desktop\QUESTIONS\Answer-4\ManageRss\CustomMembershipEF\bin\EntityFramework.SqlServer.xml
+C:\Users\mohammadali\Desktop\QUESTIONS\Answer-4\ManageRss\CustomMembershipEF\bin\PagedList.xml
+C:\Users\mohammadali\Desktop\QUESTIONS\Answer-4\ManageRss\CustomMembershipEF\bin\PagedList.Mvc.xml
+C:\Users\mohammadali\Desktop\QUESTIONS\Answer-4\ManageRss\CustomMembershipEF\bin\System.Web.Helpers.xml
+C:\Users\mohammadali\Desktop\QUESTIONS\Answer-4\ManageRss\CustomMembershipEF\bin\System.Web.Http.xml
+C:\Users\mohammadali\Desktop\QUESTIONS\Answer-4\ManageRss\CustomMembershipEF\bin\System.Web.Http.WebHost.xml
+C:\Users\mohammadali\Desktop\QUESTIONS\Answer-4\ManageRss\CustomMembershipEF\bin\System.Web.Mvc.xml
+C:\Users\mohammadali\Desktop\QUESTIONS\Answer-4\ManageRss\CustomMembershipEF\bin\System.Web.Razor.xml
+C:\Users\mohammadali\Desktop\QUESTIONS\Answer-4\ManageRss\CustomMembershipEF\bin\System.Web.WebPages.xml
+C:\Users\mohammadali\Desktop\QUESTIONS\Answer-4\ManageRss\CustomMembershipEF\bin\System.Web.WebPages.Deployment.xml
+C:\Users\mohammadali\Desktop\QUESTIONS\Answer-4\ManageRss\CustomMembershipEF\bin\System.Web.WebPages.Razor.xml
+C:\Users\mohammadali\Desktop\QUESTIONS\Answer-4\ManageRss\CustomMembershipEF\bin\System.Net.Http.Formatting.xml
+C:\Users\mohammadali\Desktop\QUESTIONS\Answer-4\ManageRss\CustomMembershipEF\obj\Debug\CustomMembershipEF.Migrations.userscontext.resources
+C:\Users\mohammadali\Desktop\QUESTIONS\Answer-4\ManageRss\CustomMembershipEF\obj\Debug\CustomMembershipEF.Migrations.userscontext1.resources
+C:\Users\mohammadali\Desktop\QUESTIONS\Answer-4\ManageRss\CustomMembershipEF\obj\Debug\CustomMembershipEF.Migrations.userscontext2.resources
+C:\Users\mohammadali\Desktop\QUESTIONS\Answer-4\ManageRss\CustomMembershipEF\obj\Debug\CustomMembershipEF.csproj.GenerateResource.Cache
+C:\Users\mohammadali\Desktop\QUESTIONS\Answer-4\ManageRss\CustomMembershipEF\obj\Debug\CustomMembershipEF.dll
+C:\Users\mohammadali\Desktop\QUESTIONS\Answer-4\ManageRss\CustomMembershipEF\obj\Debug\CustomMembershipEF.pdb
+C:\Users\mohammadali\Desktop\QUESTIONS\Answer-4\ManageRss\CustomMembershipEF\obj\Debug\CustomMembershipEF.csprojResolveAssemblyReference.cache
+D:\QUESTIONS\Answer-4\ManageRss\CustomMembershipEF\bin\CustomMembershipEF.dll.config
+D:\QUESTIONS\Answer-4\ManageRss\CustomMembershipEF\bin\CustomMembershipEF.dll
+D:\QUESTIONS\Answer-4\ManageRss\CustomMembershipEF\bin\CustomMembershipEF.pdb
+D:\QUESTIONS\Answer-4\ManageRss\CustomMembershipEF\bin\DataStreams.dll
+D:\QUESTIONS\Answer-4\ManageRss\CustomMembershipEF\bin\EntityFramework.dll
+D:\QUESTIONS\Answer-4\ManageRss\CustomMembershipEF\bin\EntityFramework.SqlServer.dll
+D:\QUESTIONS\Answer-4\ManageRss\CustomMembershipEF\bin\PagedList.dll
+D:\QUESTIONS\Answer-4\ManageRss\CustomMembershipEF\bin\PagedList.Mvc.dll
+D:\QUESTIONS\Answer-4\ManageRss\CustomMembershipEF\bin\System.Web.Helpers.dll
+D:\QUESTIONS\Answer-4\ManageRss\CustomMembershipEF\bin\System.Web.Mvc.dll
+D:\QUESTIONS\Answer-4\ManageRss\CustomMembershipEF\bin\System.Web.Razor.dll
+D:\QUESTIONS\Answer-4\ManageRss\CustomMembershipEF\bin\System.Web.WebPages.Deployment.dll
+D:\QUESTIONS\Answer-4\ManageRss\CustomMembershipEF\bin\System.Web.WebPages.dll
+D:\QUESTIONS\Answer-4\ManageRss\CustomMembershipEF\bin\System.Web.WebPages.Razor.dll
+D:\QUESTIONS\Answer-4\ManageRss\CustomMembershipEF\bin\System.Net.Http.Formatting.dll
+D:\QUESTIONS\Answer-4\ManageRss\CustomMembershipEF\bin\EntityFramework.xml
+D:\QUESTIONS\Answer-4\ManageRss\CustomMembershipEF\bin\EntityFramework.SqlServer.xml
+D:\QUESTIONS\Answer-4\ManageRss\CustomMembershipEF\bin\PagedList.xml
+D:\QUESTIONS\Answer-4\ManageRss\CustomMembershipEF\bin\PagedList.Mvc.xml
+D:\QUESTIONS\Answer-4\ManageRss\CustomMembershipEF\bin\System.Web.Helpers.xml
+D:\QUESTIONS\Answer-4\ManageRss\CustomMembershipEF\bin\System.Web.Http.xml
+D:\QUESTIONS\Answer-4\ManageRss\CustomMembershipEF\bin\System.Web.Http.WebHost.xml
+D:\QUESTIONS\Answer-4\ManageRss\CustomMembershipEF\bin\System.Web.Mvc.xml
+D:\QUESTIONS\Answer-4\ManageRss\CustomMembershipEF\bin\System.Web.Razor.xml
+D:\QUESTIONS\Answer-4\ManageRss\CustomMembershipEF\bin\System.Web.WebPages.xml
+D:\QUESTIONS\Answer-4\ManageRss\CustomMembershipEF\bin\System.Web.WebPages.Deployment.xml
+D:\QUESTIONS\Answer-4\ManageRss\CustomMembershipEF\bin\System.Web.WebPages.Razor.xml
+D:\QUESTIONS\Answer-4\ManageRss\CustomMembershipEF\bin\System.Net.Http.Formatting.xml
+D:\QUESTIONS\Answer-4\ManageRss\CustomMembershipEF\obj\Debug\CustomMembershipEF.csprojResolveAssemblyReference.cache
+D:\QUESTIONS\Answer-4\ManageRss\CustomMembershipEF\obj\Debug\CustomMembershipEF.Migrations.userscontext.resources
+D:\QUESTIONS\Answer-4\ManageRss\CustomMembershipEF\obj\Debug\CustomMembershipEF.Migrations.userscontext1.resources
+D:\QUESTIONS\Answer-4\ManageRss\CustomMembershipEF\obj\Debug\CustomMembershipEF.Migrations.userscontext2.resources
+D:\QUESTIONS\Answer-4\ManageRss\CustomMembershipEF\obj\Debug\CustomMembershipEF.csproj.GenerateResource.Cache
+D:\QUESTIONS\Answer-4\ManageRss\CustomMembershipEF\obj\Debug\CustomMembershipEF.dll
+D:\QUESTIONS\Answer-4\ManageRss\CustomMembershipEF\obj\Debug\CustomMembershipEF.pdb
+D:\My Projects\custom_test\CustomMembershipEF\bin\CustomMembershipEF.dll.config
+D:\My Projects\custom_test\CustomMembershipEF\bin\CustomMembershipEF.dll
+D:\My Projects\custom_test\CustomMembershipEF\bin\CustomMembershipEF.pdb
+D:\My Projects\custom_test\CustomMembershipEF\bin\DataStreams.dll
+D:\My Projects\custom_test\CustomMembershipEF\bin\EntityFramework.dll
+D:\My Projects\custom_test\CustomMembershipEF\bin\EntityFramework.SqlServer.dll
+D:\My Projects\custom_test\CustomMembershipEF\bin\PagedList.dll
+D:\My Projects\custom_test\CustomMembershipEF\bin\PagedList.Mvc.dll
+D:\My Projects\custom_test\CustomMembershipEF\bin\System.Web.Helpers.dll
+D:\My Projects\custom_test\CustomMembershipEF\bin\System.Web.Mvc.dll
+D:\My Projects\custom_test\CustomMembershipEF\bin\System.Web.Razor.dll
+D:\My Projects\custom_test\CustomMembershipEF\bin\System.Web.WebPages.Deployment.dll
+D:\My Projects\custom_test\CustomMembershipEF\bin\System.Web.WebPages.dll
+D:\My Projects\custom_test\CustomMembershipEF\bin\System.Web.WebPages.Razor.dll
+D:\My Projects\custom_test\CustomMembershipEF\bin\EntityFramework.xml
+D:\My Projects\custom_test\CustomMembershipEF\bin\EntityFramework.SqlServer.xml
+D:\My Projects\custom_test\CustomMembershipEF\bin\PagedList.xml
+D:\My Projects\custom_test\CustomMembershipEF\bin\PagedList.Mvc.xml
+D:\My Projects\custom_test\CustomMembershipEF\bin\System.Web.Helpers.xml
+D:\My Projects\custom_test\CustomMembershipEF\bin\System.Web.Mvc.xml
+D:\My Projects\custom_test\CustomMembershipEF\bin\System.Web.Razor.xml
+D:\My Projects\custom_test\CustomMembershipEF\bin\System.Web.WebPages.xml
+D:\My Projects\custom_test\CustomMembershipEF\bin\System.Web.WebPages.Deployment.xml
+D:\My Projects\custom_test\CustomMembershipEF\bin\System.Web.WebPages.Razor.xml
+D:\My Projects\custom_test\CustomMembershipEF\obj\Debug\CustomMembershipEF.Migrations.userscontext.resources
+D:\My Projects\custom_test\CustomMembershipEF\obj\Debug\CustomMembershipEF.Migrations.userscontext1.resources
+D:\My Projects\custom_test\CustomMembershipEF\obj\Debug\CustomMembershipEF.Migrations.userscontext2.resources
+D:\My Projects\custom_test\CustomMembershipEF\obj\Debug\CustomMembershipEF.csproj.GenerateResource.Cache
+D:\My Projects\custom_test\CustomMembershipEF\obj\Debug\CustomMembershipEF.dll
+D:\My Projects\custom_test\CustomMembershipEF\obj\Debug\CustomMembershipEF.pdb
+D:\My Projects\custom_test\CustomMembershipEF\obj\Debug\CustomMembershipEF.csprojResolveAssemblyReference.cache
+D:\My Projects\custom_test\CustomMembershipEF\obj\Debug\CustomMembershipEF.Migrations.userscontext3.resources
+D:\My Projects\Backup\custom_test\CustomMembershipEF\bin\CustomMembershipEF.dll.config
+D:\My Projects\Backup\custom_test\CustomMembershipEF\bin\CustomMembershipEF.dll
+D:\My Projects\Backup\custom_test\CustomMembershipEF\bin\CustomMembershipEF.pdb
+D:\My Projects\Backup\custom_test\CustomMembershipEF\bin\DataStreams.dll
+D:\My Projects\Backup\custom_test\CustomMembershipEF\bin\EntityFramework.dll
+D:\My Projects\Backup\custom_test\CustomMembershipEF\bin\EntityFramework.SqlServer.dll
+D:\My Projects\Backup\custom_test\CustomMembershipEF\bin\PagedList.dll
+D:\My Projects\Backup\custom_test\CustomMembershipEF\bin\PagedList.Mvc.dll
+D:\My Projects\Backup\custom_test\CustomMembershipEF\bin\System.Web.Helpers.dll
+D:\My Projects\Backup\custom_test\CustomMembershipEF\bin\System.Web.Http.dll
+D:\My Projects\Backup\custom_test\CustomMembershipEF\bin\System.Web.Http.WebHost.dll
+D:\My Projects\Backup\custom_test\CustomMembershipEF\bin\System.Web.Mvc.dll
+D:\My Projects\Backup\custom_test\CustomMembershipEF\bin\System.Web.Razor.dll
+D:\My Projects\Backup\custom_test\CustomMembershipEF\bin\System.Web.WebPages.Deployment.dll
+D:\My Projects\Backup\custom_test\CustomMembershipEF\bin\System.Web.WebPages.dll
+D:\My Projects\Backup\custom_test\CustomMembershipEF\bin\System.Web.WebPages.Razor.dll
+D:\My Projects\Backup\custom_test\CustomMembershipEF\bin\System.Net.Http.Formatting.dll
+D:\My Projects\Backup\custom_test\CustomMembershipEF\bin\EntityFramework.xml
+D:\My Projects\Backup\custom_test\CustomMembershipEF\bin\EntityFramework.SqlServer.xml
+D:\My Projects\Backup\custom_test\CustomMembershipEF\bin\PagedList.xml
+D:\My Projects\Backup\custom_test\CustomMembershipEF\bin\PagedList.Mvc.xml
+D:\My Projects\Backup\custom_test\CustomMembershipEF\bin\System.Web.Helpers.xml
+D:\My Projects\Backup\custom_test\CustomMembershipEF\bin\System.Web.Mvc.xml
+D:\My Projects\Backup\custom_test\CustomMembershipEF\bin\System.Web.Razor.xml
+D:\My Projects\Backup\custom_test\CustomMembershipEF\bin\System.Web.WebPages.xml
+D:\My Projects\Backup\custom_test\CustomMembershipEF\bin\System.Web.WebPages.Deployment.xml
+D:\My Projects\Backup\custom_test\CustomMembershipEF\bin\System.Web.WebPages.Razor.xml
+D:\My Projects\Backup\custom_test\CustomMembershipEF\obj\Debug\CustomMembershipEF.csprojResolveAssemblyReference.cache
+D:\My Projects\Backup\custom_test\CustomMembershipEF\obj\Debug\CustomMembershipEF.Migrations.userscontext.resources
+D:\My Projects\Backup\custom_test\CustomMembershipEF\obj\Debug\CustomMembershipEF.Migrations.userscontext1.resources
+D:\My Projects\Backup\custom_test\CustomMembershipEF\obj\Debug\CustomMembershipEF.Migrations.userscontext2.resources
+D:\My Projects\Backup\custom_test\CustomMembershipEF\obj\Debug\CustomMembershipEF.Migrations.userscontext3.resources
+D:\My Projects\Backup\custom_test\CustomMembershipEF\obj\Debug\CustomMembershipEF.csproj.GenerateResource.cache
+D:\My Projects\Backup\custom_test\CustomMembershipEF\obj\Debug\CustomMembershipEF.csproj.CoreCompileInputs.cache
+D:\My Projects\Backup\custom_test\CustomMembershipEF\obj\Debug\CustomMembershipEF.csproj.CopyComplete
+D:\My Projects\Backup\custom_test\CustomMembershipEF\obj\Debug\CustomMembershipEF.dll
+D:\My Projects\Backup\custom_test\CustomMembershipEF\obj\Debug\CustomMembershipEF.pdb
+E:\Source\Fouladi\Laboratory\CustomMembershipEF\bin\CustomMembershipEF.dll.config
+E:\Source\Fouladi\Laboratory\CustomMembershipEF\bin\CustomMembershipEF.dll
+E:\Source\Fouladi\Laboratory\CustomMembershipEF\bin\CustomMembershipEF.pdb
+E:\Source\Fouladi\Laboratory\CustomMembershipEF\bin\DataStreams.dll
+E:\Source\Fouladi\Laboratory\CustomMembershipEF\bin\EntityFramework.dll
+E:\Source\Fouladi\Laboratory\CustomMembershipEF\bin\EntityFramework.SqlServer.dll
+E:\Source\Fouladi\Laboratory\CustomMembershipEF\bin\PagedList.dll
+E:\Source\Fouladi\Laboratory\CustomMembershipEF\bin\PagedList.Mvc.dll
+E:\Source\Fouladi\Laboratory\CustomMembershipEF\bin\System.Web.Helpers.dll
+E:\Source\Fouladi\Laboratory\CustomMembershipEF\bin\System.Web.Mvc.dll
+E:\Source\Fouladi\Laboratory\CustomMembershipEF\bin\System.Web.Razor.dll
+E:\Source\Fouladi\Laboratory\CustomMembershipEF\bin\System.Web.WebPages.Deployment.dll
+E:\Source\Fouladi\Laboratory\CustomMembershipEF\bin\System.Web.WebPages.dll
+E:\Source\Fouladi\Laboratory\CustomMembershipEF\bin\System.Web.WebPages.Razor.dll
+E:\Source\Fouladi\Laboratory\CustomMembershipEF\bin\System.Net.Http.Formatting.dll
+E:\Source\Fouladi\Laboratory\CustomMembershipEF\bin\EntityFramework.xml
+E:\Source\Fouladi\Laboratory\CustomMembershipEF\bin\EntityFramework.SqlServer.xml
+E:\Source\Fouladi\Laboratory\CustomMembershipEF\bin\PagedList.xml
+E:\Source\Fouladi\Laboratory\CustomMembershipEF\bin\PagedList.Mvc.xml
+E:\Source\Fouladi\Laboratory\CustomMembershipEF\bin\System.Web.Helpers.xml
+E:\Source\Fouladi\Laboratory\CustomMembershipEF\bin\System.Web.Mvc.xml
+E:\Source\Fouladi\Laboratory\CustomMembershipEF\bin\System.Web.Razor.xml
+E:\Source\Fouladi\Laboratory\CustomMembershipEF\bin\System.Web.WebPages.xml
+E:\Source\Fouladi\Laboratory\CustomMembershipEF\bin\System.Web.WebPages.Deployment.xml
+E:\Source\Fouladi\Laboratory\CustomMembershipEF\bin\System.Web.WebPages.Razor.xml
+E:\Source\Fouladi\Laboratory\CustomMembershipEF\obj\Debug\CustomMembershipEF.csprojResolveAssemblyReference.cache
+E:\Source\Fouladi\Laboratory\CustomMembershipEF\obj\Debug\CustomMembershipEF.Migrations.userscontext.resources
+E:\Source\Fouladi\Laboratory\CustomMembershipEF\obj\Debug\CustomMembershipEF.Migrations.userscontext1.resources
+E:\Source\Fouladi\Laboratory\CustomMembershipEF\obj\Debug\CustomMembershipEF.Migrations.userscontext2.resources
+E:\Source\Fouladi\Laboratory\CustomMembershipEF\obj\Debug\CustomMembershipEF.Migrations.userscontext3.resources
+E:\Source\Fouladi\Laboratory\CustomMembershipEF\obj\Debug\CustomMembershipEF.csproj.GenerateResource.Cache
+E:\Source\Fouladi\Laboratory\CustomMembershipEF\obj\Debug\CustomMembershipEF.csproj.CoreCompileInputs.cache
+E:\Source\Fouladi\Laboratory\CustomMembershipEF\obj\Debug\CustomMembershipEF.dll
+E:\Source\Fouladi\Laboratory\CustomMembershipEF\obj\Debug\CustomMembershipEF.pdb

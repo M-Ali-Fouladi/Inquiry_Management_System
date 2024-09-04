@@ -1,0 +1,91 @@
+﻿
+@model CustomMembershipEF.Entities.TaskList
+
+<div dir="rtl">
+<h2>Create TaskList</h2>
+
+@{
+ 
+  //  Layout = "~/Views/Layouts/_LayoutUser.cshtml";
+    ViewBag.Title = "Edit";
+
+}
+<link href="~/Content/Site.css" rel="stylesheet" />
+<h2 dir="rtl"></h2>
+
+@using (Html.BeginForm())
+{
+    @Html.ValidationSummary(true)
+
+    <fieldset dir="rtl">
+        <legend>UserEdit</legend>
+
+        @Html.HiddenFor(model => model.UserId)
+        @Html.HiddenFor(model => model.ID)
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.TLName)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.TLName)
+            @Html.ValidationMessageFor(model => model.TLName)
+        </div>
+       
+        <div class="editor-label">
+            @Html.LabelFor(model => model.TLSdate)
+        </div>
+        <div class="editor-field">
+            @Html.TextBoxFor(model => model.TLSdate, new { @class = "date" })
+            @Html.ValidationMessageFor(model => model.TLSdate)
+        </div>
+
+        <div class="editor-label" >
+            @Html.LabelFor(model => model.TLEdate)
+        </div>
+        <div class="editor-field" >
+            @Html.TextBoxFor(model => model.TLEdate, new { @class = "date" })
+            @Html.ValidationMessageFor(model => model.TLEdate)
+        </div>
+        
+
+        
+        
+          
+         <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+<link rel="stylesheet" href="/resources/demos/style.css" />
+
+         <script>
+             $(function () {
+                 $(".date").datepicker();
+             });
+         </script>
+         <style>
+.ui-menu { width: 150px; }
+</style>
+
+
+
+
+
+        <p dir="rtl">
+            <input type="submit" value="ثبت تغییرات" />
+        </p>
+        <br />
+        @{
+    if (@ViewBag.error != "")
+    {
+            <h2>@ViewBag.error </h2>
+    }
+            
+        }
+    </fieldset>
+}
+
+<div class="back">
+    @Html.ActionLink("بازگشت به صفحه مدیریت لیست کارها", "ManageTaskList")
+</div>
+
+
+    </div>

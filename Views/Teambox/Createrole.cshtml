@@ -1,0 +1,58 @@
+﻿
+@model CustomMembershipEF.Entities.Role
+
+<div dir="rtl">
+<h2>ایجاد نقش جدید</h2>
+
+<link href="~/Content/Site.css" rel="stylesheet" />
+<h2 dir="rtl"></h2>
+
+@using (Html.BeginForm())
+{
+    @Html.ValidationSummary(true)
+
+    <fieldset dir="rtl">
+        <legend>UserEdit</legend>
+
+       
+        @Html.HiddenFor(model => model.RoleId)
+        
+
+
+        <div class="editor-label">
+            @Html.Label("نام نقش")
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.RoleName)
+            @Html.ValidationMessageFor(model => model.RoleName)
+        </div>
+
+        <div class="editor-label">
+            @Html.Label("توضیحات")
+        </div>
+        <div class="editor-field">
+            @Html.TextAreaFor(model => model.RoleDescription)
+            @Html.ValidationMessageFor(model => model.RoleDescription)
+        </div>
+        <br />
+        
+        <p dir="rtl">
+            <input type="submit" value="ثبت نقش" />
+        </p>
+        <br />
+        @{
+    if (@ViewBag.error != "")
+    {
+            <h2>@ViewBag.error </h2>
+    }
+            
+        }
+    </fieldset>
+}
+
+<div class="back">
+    @Html.ActionLink("بازگشت به صفحه مدیریت کارها", "ManageAdmin")
+</div>
+
+
+    </div>

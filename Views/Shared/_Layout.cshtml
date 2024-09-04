@@ -1,0 +1,115 @@
+﻿<!DOCTYPE html>
+
+<head>
+    
+    <title>صفحه اصلی</title>
+    
+    <script src="~/Scripts/jquery-3.3.1.js"></script>
+    <script src="~/Scripts/jquery-3.3.1.min.js"></script>
+    <script src="~/Scripts/jquery.unobtrusive-ajax.js"></script>
+    <script src="~/Scripts/jquery.unobtrusive-ajax.min.js"></script>
+    <script src="~/Scripts/angular.js"></script>
+    <script src="~/Scripts/angular.min.js"></script>
+
+    <script src="~/Scripts/PersianDatePicker.js"></script>
+    <script src="~/Scripts/PersianDatePicker.min.js"></script>
+    
+    <script src="~/Scripts/kendo/kendo.dropdownlist.min.js"></script>
+    <script src="~/Scripts/kendo/kendo.all.min.js"></script>
+    <script src="~/Scripts/kendo/kendo.web.min.js"></script>
+    <script src="~/Scripts/kendo/kendo.aspnetmvc.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/Site.css" rel="stylesheet" />
+    <link href="~/Content/kendo/kendo.default.min.css" rel="stylesheet" />
+    <link href="~/Content/kendo/kendo.common.min.css" rel="stylesheet" />
+
+    <link href="~/Content/PersianDatePicker.css" rel="stylesheet" />
+    <link href="~/Content/PersianDatePicker.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div  class="container" >
+        <div id="header">
+            <div id="title">
+                <h1>سیستم مدیریت آزمایشگاه </h1>
+
+            </div>
+            <div id="logindisplay">
+                @Html.Partial("_LogOnPartial")
+            </div>
+           <div id="menucontainer" dir="rtl">
+                <ul id="menu">
+                    @if (Request.IsAuthenticated)
+                    {
+
+                        if (User.IsInRole("admin"))
+                        {
+                           
+
+                            <li>@Html.ActionLink("کارتابل", "FirstPage", "Home")</li>
+                            <li>@Html.ActionLink("درخواست ها", "Manage_inquiry", "Home")</li>
+                            <li>@Html.ActionLink("عملیات اجرایی", "Manage_Operation", "Home")</li>
+                            <li>@Html.ActionLink("نتایج عملیات", "Manage_ResultOperation", "Home")</li>
+                            <li>@Html.ActionLink("گزارشات", "Manage_Report", "Home")</li>
+                            <li>@Html.ActionLink("اطلاعات پایه", "Manage_payeh", "Home")</li>
+                            <li>@Html.ActionLink("مجوز تردد", "Manage_taradod", "Home")</li>
+                            <li>@Html.ActionLink("دسترسی کاربران", "Manage_Users", "Home")</li>
+
+                            @*<li>@Html.ActionLink("عملیات اجرایی", "FirstPage", "Home")</li>
+                            <li>@Html.ActionLink("نتایج عملیات", "FirstPage", "Home")</li>
+                            <li>@Html.ActionLink("گزارش", "FirstPage", "Home")</li>
+                            <li>@Html.ActionLink("اطلاعات پایه", "FirstPage", "Home")</li>
+                            <li>@Html.ActionLink("مجوز تردد", "FirstPage", "Home")</li>
+                            <li>@Html.ActionLink("دسترسی کاربران", "FirstPage", "Home")</li>*@
+                        }
+
+                    }
+                    else
+                    {
+
+                    }
+                    
+
+                    
+                  
+
+                        @*<li>@Html.ActionLink("Protected", "Protected", "Home")</li>
+                            <li>@Html.ActionLink("AdminOrSuperAdmin", "AdminOrSuperAdmin", "Home")</li>*@
+
+                        @*                    @if (User.IsInRole("SuperAdmin"))
+                            {
+                                <li>@Html.ActionLink("Super Admin", "SuperAdmin", "Home")</li>
+                            }
+                            @if (User.IsInRole("Admin"))
+                            {
+                                <li>@Html.ActionLink("Admin", "Admin", "Home")</li>
+                            }
+                            @if (User.IsInRole("SuperAdmin") || User.IsInRole("Admin"))
+                            {
+                                <li>@Html.ActionLink("Admin Or Super Admin", "AdminOrSuperAdmin", "Home")</li>
+                            }
+                            @if (User.IsInRole("Admin") || User.IsInRole("Author"))
+                            {
+                                <li>@Html.ActionLink("Admin Or Author", "AdminOrAuthor", "Home")</li>
+                            }
+                            @if (User.IsInRole("SuperAdmin"))
+                            {
+                                <li>@Html.ActionLink("Manage Users", "Index","Manage")</li>
+                            }*@
+                    </ul>
+            </div>
+        </div>
+        <div id="main">
+
+            @RenderBody()
+        </div>
+        <div id="footer">
+        </div>
+    </div>
+</body>
+        
+
+ 

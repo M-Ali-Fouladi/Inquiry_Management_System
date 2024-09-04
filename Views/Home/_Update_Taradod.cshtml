@@ -1,0 +1,47 @@
+﻿@model CustomMembershipEF.Models.tbl_InquiryNew
+
+
+<div>
+    @Html.LabelFor(model => model.Inquiry_Count)
+    @Html.TextBoxFor(model => model.Inquiry_Count, new { @id = "Inquiry_Count" })
+</div>
+
+<fieldset id="group1">
+   
+    <input  type="radio" name="rd" id="Inquiry_Registered" value="true">تایید  <br>
+    <input  type="radio" name="rd" id="Inquiry_Registered"  value="false">عدم تایید تردد<br>
+</fieldset>
+
+<input onclick="EditUser()" type="button" value="ثبت " />
+
+<script>
+   
+    function EditUser()
+    {//go to _Update_Users ajax call post
+        alert($("#Inquiry_Registered"))
+         $.ajax({
+             url: '/Home/_Update_Taradod',
+                dataType: "json",
+                type: "POST",
+                contentType: 'application/json; charset=utf-8',
+                data: JSON.stringify({
+                    model: { Inquiry_Count: $("#Inquiry_Count").val(), Inquiry_Registered: $("#Inquiry_Registered").val()}
+                }),
+                async: true,
+                processData: false,
+                cache: false,
+                success: function (data) {
+                    // if ($('#Inquiry_Registered').is(':checked')) { alert("it's checked"); }
+                  
+                    alert('عملیات با موفقیت انجام شد');
+                    window.location.href = data;
+                    //var grid = $("#Grid2").data("kendoGrid");
+                    //grid.dataSource.read();
+                },
+                error: function (xhr) {
+                     //alert('مشکلی در ثبت تغییرات صورت گرفته است.');
+                   // alert('error');
+                }
+            })
+    }
+</script>

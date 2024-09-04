@@ -1,0 +1,59 @@
+﻿@model CustomMembershipEF.Controllers.TeamboxController.textboxmodel
+@{
+    ViewBag.Title = "test";
+}
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+<link rel="stylesheet" href="/resources/demos/style.css" />
+ <script src="js/modernizr-2.5.3.min.js"></script>
+<script>
+  
+ @*   
+    function Load(str) {
+        $("#button").click(function () {
+            ViewBag.str = $("#txt1").val();
+            $.get("@Url.Action("Fun","Teambox", new {a=ViewBag.str})", function (data) {
+                $("#myDiv").html(data);
+            });
+        });
+    }*@
+
+    $(function () {
+        $('.link').click(function () {
+
+            var ipvalue1 = $("#IP1").val();
+            var ipvalue2 = $("#IP2").val();
+
+            var url = "@Url.Action("Compute","Teambox", new {@ipValue1="ip1",@ipValue2="ip2"})";
+            url = url.replace("ip1", ipvalue1).replace("ip2", ipvalue2).replace("amp;", "");
+            
+            $.get(url, function (data) {
+                $("#myDiv").html(data);
+            });
+
+        });
+    });
+
+
+</script>
+<div>
+
+ <div id="myDiv"></div>
+    
+@*   @using (Html.BeginForm("Fun", "Teambox", FormMethod.Get))
+   { 
+   @Html.TextBox(model =>model.text);
+   <input type="submit" value="compute" />
+       <br />
+       <br />
+   }*@
+
+    <input type="text" name="IP1" id="IP1" value=""/>
+   <br />
+    <input type="text" name="IP2" id="IP2" value=""/>
+  <br />
+    <a class="link"> click</a>
+    @*@Html.ActionLink("Compute", "Fun", new { ipValue1 ="xxx",ipValue2="yyy" }, new {@class = "link"})*@ 
+
+</div>

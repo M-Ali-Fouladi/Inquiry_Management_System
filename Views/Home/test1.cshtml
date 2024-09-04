@@ -1,0 +1,56 @@
+﻿
+@using (@Ajax.BeginForm("Update_inquiry", "Home", new AjaxOptions() { UpdateTargetId = "result", OnFailure = "AjaxFailure", OnBegin = "AjaxBegin", OnComplete = "AjaxComplete" }, new { id = "DabirKhanehForm" }))
+            {
+
+
+    <fieldset class="fieldset">
+        <legend class="legend">ویرایش</legend>
+        <div>
+            <div>
+
+                @*@Html.HiddenFor(model => model.NamehaId)*@
+
+
+               
+
+            </div>
+            <div>
+
+                @*@Html.HiddenFor(model => model.NamehaId)*@
+
+                @*@Html.LabelFor(model => model.EdarehID)*@
+                @Html.TextBox("reza")   
+
+            </div>
+            <div>
+
+                @*@Html.HiddenFor(model => model.NamehaId)*@
+
+                @*@Html.LabelFor(model => model.EdarehID)*@
+                @Html.TextBox("hamed")
+
+            </div>
+
+        </div>
+    </fieldset>
+
+                <div class="columns">
+                    <div class="eight-columns twelve-columns-tablet">
+                        <button id="Update" class="button blue-gradient" type="submit">ذخیــره</button>
+                    </div>
+                </div>
+
+}
+<script>
+        function AjaxBegin() {
+        }
+
+        function AjaxComplete(result) {
+            alert("Completed")
+        }
+
+        function AjaxFailure(ajaxContext) {
+            var response = ajaxContext.responseText;
+            alert("Error Code [" + ajaxContext.ErrorCode + "] " + response);
+        }
+</script>

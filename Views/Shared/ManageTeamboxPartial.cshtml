@@ -1,0 +1,39 @@
+﻿@model CustomMembershipEF.Entities.Organization
+<div class="item">
+<table class="example">
+    <tr>
+        <th>کد سازمان</th>
+        <th>نام سازمان</th>
+    </tr>
+
+    @foreach (var item in Model.Organizations)
+    {
+        string selectedRow = "";
+        if (item.Id == ViewBag.OrganizationID)
+        {
+            selectedRow = "selectedrow";
+        } 
+        <tr class="@selectedRow">
+
+            <td>
+                @Html.DisplayFor(model => item.Id)
+            </td>
+            <td>
+                @Html.DisplayFor(model => item.OName)
+            </td>
+
+            <td>
+                @Html.ActionLink("انتخاب", "ManageTeambox", new { id = item.Id })
+
+            </td>
+
+            <td>
+                @Html.ActionLink("ایجاد پروژه جدید", "ManageTeambox", new { id = item.Id })
+
+            </td>
+
+
+        </tr>
+    }
+</table>
+</div>

@@ -1,0 +1,408 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="LaboratoryModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="tbl_Admin">
+    <Key>
+      <PropertyRef Name="AdminID" />
+    </Key>
+    <Property Name="AdminID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="AdminUserName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="GroupID" Type="Int32" />
+    <Property Name="AdminDsc" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="AdminType" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="tbl_App_Objs">
+    <Key>
+      <PropertyRef Name="ObjID" />
+    </Key>
+    <Property Name="ObjID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ObjName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="PageID" Type="Int32" />
+    <Property Name="ObjNameFA" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="tbl_App_Securable_Pages">
+    <Key>
+      <PropertyRef Name="tbl_SecPageID" />
+    </Key>
+    <Property Name="tbl_SecPageID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PageID" Type="Int32" />
+    <Property Name="GroupID" Type="Int32" />
+  </EntityType>
+  <EntityType Name="tbl_Attachment">
+    <Key>
+      <PropertyRef Name="Attchment_ID" />
+    </Key>
+    <Property Name="Attchment_ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Attachment_FullAddress" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Test_Inquiry_ID" Type="Int64" />
+    <Property Name="Attachment_FileName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="tbl_Hardware">
+    <Key>
+      <PropertyRef Name="Hardware_ID" />
+    </Key>
+    <Property Name="Hardware_ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Hardware_Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Hardware_Code" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Hardware_Serial" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Hardware_Site" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Hardware_Using" Type="Boolean" />
+    <Property Name="Hardware_NotUsing" Type="Boolean" />
+    <Property Name="Hardware_NCR" Type="Boolean" />
+    <Property Name="Hardware_Calibration_External" Type="Boolean" />
+    <Property Name="Hardware_Calibration_Internal" Type="Boolean" />
+    <Property Name="Hardware_Programable" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="tbl_Masraf">
+    <Key>
+      <PropertyRef Name="Masraf_ID" />
+    </Key>
+    <Property Name="Masraf_ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Masraf_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Masraf_Unit" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Masraf_Quantity" Type="Int32" />
+  </EntityType>
+  <EntityType Name="tbl_Test">
+    <Key>
+      <PropertyRef Name="Test_ID" />
+    </Key>
+    <Property Name="Test_ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Test_UID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Test_Subject" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="Test_Standard_Code" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Test_Sample_No" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Test_Related_HardWare" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Test_Base_Cost" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Test_Base_Vahed" Type="Int32" />
+    <Property Name="Test_Sample_Count" Type="Int32" />
+  </EntityType>
+  <EntityType Name="tbl_Test_Inquiry_Hardware">
+    <Key>
+      <PropertyRef Name="Test_Inquiry_Hardware_ID" />
+    </Key>
+    <Property Name="Test_Inquiry_Hardware_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Test_Inquiry_ID" Type="Int64" />
+    <Property Name="Hardware_ID" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Test_Inquiry_Hardware_Program_FromDate" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Test_Inquiry_Hardware_FromDate" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Test_Inquiry_Hardware_Program_ToDate" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Test_Inquiry_Hardware_ToDate" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Test_Inquiry_Hardware_Program_FromTime" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Test_Inquiry_Hardware_FromTime" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Test_Inquiry_Hardware_Program_ToTime" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Test_Inquiry_Hardware_ToTime" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Test_Inquiry_Hardware_Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="tbl_Test_Inquiry_History">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Test_Inquiry_ID" Type="Int64" Nullable="false" />
+    <Property Name="Test_Inquiry_Desc" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Test_Inquiry_Coast" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Test_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Inquiry_ID" Type="Int64" />
+    <Property Name="Test_Inquiry_Hardware_Desc" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="Test_Inquiry_Way_Desc" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Test_Inquiry_Done_Desc" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Test_Inquiry_PreDone_Date" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Test_Inquiry_Done_Date" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Test_Inquiry_Done_Time" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Test_Inquiry_PreStart_Date" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Test_Inquiry_Start_Date" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Test_Inquiry_Start_Time" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Test_Inquiry_Final_Status" Type="Boolean" />
+    <Property Name="Test_NafarSaat" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Test_NeededDate" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Test_Ghatiat" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Inquiry_Related_Agent" Type="Int32" />
+    <Property Name="Inquiry_Assigned_Date" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Test_Inquiry_Result" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Test_Standard_Code" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Test_Acception_Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Test_Inquiry_PreferedResult" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Inquiry_Final_Confirm" Type="Boolean" />
+    <Property Name="Inquiry_Final_Confirm_Date" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Inquiry_Element_Rahgiri" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Inquiry_Element_Refer_Agent" Type="Boolean" />
+    <Property Name="Inquiry_Element_Refer_Agent_Date" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="tbl_Test_Inquiry_Masraf">
+    <Key>
+      <PropertyRef Name="Test_Inquiry_Masraf_ID" />
+    </Key>
+    <Property Name="Test_Inquiry_Masraf_ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Test_Inquiry_ID" Type="Int64" />
+    <Property Name="Masraf_Name" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="Masraf_Unit" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Test_Inquiry_Masraf_Quantity" Type="Int64" />
+  </EntityType>
+  <EntityType Name="tbl_AdminGroup">
+    <Key>
+      <PropertyRef Name="GroupID" />
+      <PropertyRef Name="GroupName" />
+    </Key>
+    <Property Name="GroupID" Type="Int32" Nullable="false" />
+    <Property Name="GroupName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tbl_App_Pages">
+    <Key>
+      <PropertyRef Name="PageID" />
+    </Key>
+    <Property Name="PageID" Type="Int32" Nullable="false" />
+    <Property Name="PageName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="PageNameFA" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="priority" Type="Int32" />
+  </EntityType>
+  <EntityType Name="tbl_App_Securables">
+    <Key>
+      <PropertyRef Name="tbl_SecID" />
+    </Key>
+    <Property Name="tbl_SecID" Type="Int32" Nullable="false" />
+    <Property Name="ObjID" Type="Int32" />
+    <Property Name="GroupID" Type="Int32" />
+  </EntityType>
+  <EntityType Name="tbl_Inquiry">
+    <Key>
+      <PropertyRef Name="Inquiry_ID" />
+      <PropertyRef Name="Inquiry_Element_Code" />
+    </Key>
+    <Property Name="Inquiry_ID" Type="Int64" Nullable="false" />
+    <Property Name="Inquiry_Admin" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Inquiry_Name" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Inquiry_Vahed" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Inquiry_Date" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Inquiry_NeededDate" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Inquiry_Element" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="Inquiry_Element_Type1" Type="Boolean" />
+    <Property Name="Inquiry_Element_Type" Type="Int32" />
+    <Property Name="Inquiry_Element_Rahgiri" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Inquiry_Element_Gate_Pass" Type="Boolean" />
+    <Property Name="Inquiry_Element_Gate_Pass_Date" Type="String" MaxLength="70" FixedLength="false" Unicode="true" />
+    <Property Name="Inquiry_Element_Gate_Pass_Count" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Inquiry_Element_Lab_Pass" Type="Boolean" />
+    <Property Name="Inquiry_Element_Lab_Pass_Date" Type="String" MaxLength="70" FixedLength="false" Unicode="true" />
+    <Property Name="Inquiry_Element_Lab_Pass_Count" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Inquiry_Map_Code" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Inquiry_Element_Code" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Inquiry_Type" Type="Int32" />
+    <Property Name="Inquiry_Tech_Code" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Inquiry_Scale" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Inquiry_Count" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Inquiry_Trace_Code" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Inquiry_Client_Desc" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Inquiry_Registered" Type="Boolean" />
+    <Property Name="Inquiry_Register_Date" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Inquiry_Confirmed_ManagerLab" Type="Boolean" />
+    <Property Name="Inquiry_Confirmed" Type="Boolean" />
+    <Property Name="Inquiry_Confirmed_ManagerLab_Date" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Inquiry_Confirm_Date" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Inquiry_Rejected" Type="Boolean" />
+    <Property Name="Inquiry_Reject_Date" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Inquiry_RejectedDesc" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="Inquiry_Reserved" Type="Boolean" />
+    <Property Name="Inquiry_Related_Agent" Type="Int32" />
+    <Property Name="Inquiry_Assigned_Date" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Inquiry_Acception_Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Inquiry_Admin_Time" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Inquiry_Final_Confirm" Type="Boolean" />
+    <Property Name="Inquiry_Final_Confirm_Date" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Inquiry_Main_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Inquiry_Manager_Confirm" Type="Boolean" />
+    <Property Name="Inquiry_Primary_Date" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Inquiry_Manager_UserName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Inquiry_OutSource" Type="Boolean" />
+    <Property Name="Inquiry_OutSource_Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Inquiry_OutSource_Duration" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Inquiry_OutSource_Cost" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Inquiry_Admin_History" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="tbl_Inquiry950725">
+    <Key>
+      <PropertyRef Name="Inquiry_ID" />
+      <PropertyRef Name="Inquiry_Element_Code" />
+    </Key>
+    <Property Name="Inquiry_ID" Type="Int64" Nullable="false" />
+    <Property Name="Inquiry_Admin" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Inquiry_Name" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Inquiry_Vahed" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Inquiry_Date" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Inquiry_NeededDate" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Inquiry_Element" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="Inquiry_Element_Type1" Type="Boolean" />
+    <Property Name="Inquiry_Element_Type" Type="Int32" />
+    <Property Name="Inquiry_Element_Rahgiri" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Inquiry_Element_Gate_Pass" Type="Boolean" />
+    <Property Name="Inquiry_Element_Gate_Pass_Date" Type="String" MaxLength="70" FixedLength="false" Unicode="true" />
+    <Property Name="Inquiry_Element_Gate_Pass_Count" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Inquiry_Element_Lab_Pass" Type="Boolean" />
+    <Property Name="Inquiry_Element_Lab_Pass_Date" Type="String" MaxLength="70" FixedLength="false" Unicode="true" />
+    <Property Name="Inquiry_Element_Lab_Pass_Count" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Inquiry_Map_Code" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Inquiry_Element_Code" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Inquiry_Type" Type="Int32" />
+    <Property Name="Inquiry_Tech_Code" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Inquiry_Scale" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Inquiry_Count" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Inquiry_Trace_Code" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Inquiry_Client_Desc" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Inquiry_Registered" Type="Boolean" />
+    <Property Name="Inquiry_Register_Date" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Inquiry_Confirmed" Type="Boolean" />
+    <Property Name="Inquiry_Confirm_Date" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Inquiry_Rejected" Type="Boolean" />
+    <Property Name="Inquiry_Reject_Date" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Inquiry_RejectedDesc" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="Inquiry_Reserved" Type="Boolean" />
+    <Property Name="Inquiry_Related_Agent" Type="Int32" />
+    <Property Name="Inquiry_Assigned_Date" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Inquiry_Acception_Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Inquiry_Admin_Time" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Inquiry_Final_Confirm" Type="Boolean" />
+    <Property Name="Inquiry_Final_Confirm_Date" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Inquiry_Main_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Inquiry_Manager_Confirm" Type="Boolean" />
+    <Property Name="Inquiry_Primary_Date" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Inquiry_Manager_UserName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Inquiry_OutSource" Type="Boolean" />
+    <Property Name="Inquiry_OutSource_Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Inquiry_OutSource_Duration" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Inquiry_OutSource_Cost" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Inquiry_Admin_History" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="tbl_Inquiry_kazemi">
+    <Key>
+      <PropertyRef Name="Inquiry_ID" />
+      <PropertyRef Name="Inquiry_Element_Code" />
+    </Key>
+    <Property Name="Inquiry_ID" Type="Int64" Nullable="false" />
+    <Property Name="Inquiry_Admin" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Inquiry_Name" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Inquiry_Vahed" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Inquiry_Date" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Inquiry_NeededDate" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Inquiry_Element" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="Inquiry_Element_Type1" Type="Boolean" />
+    <Property Name="Inquiry_Element_Type" Type="Int32" />
+    <Property Name="Inquiry_Element_Rahgiri" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Inquiry_Element_Gate_Pass" Type="Boolean" />
+    <Property Name="Inquiry_Element_Gate_Pass_Date" Type="String" MaxLength="70" FixedLength="false" Unicode="true" />
+    <Property Name="Inquiry_Element_Gate_Pass_Count" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Inquiry_Element_Lab_Pass" Type="Boolean" />
+    <Property Name="Inquiry_Element_Lab_Pass_Date" Type="String" MaxLength="70" FixedLength="false" Unicode="true" />
+    <Property Name="Inquiry_Element_Lab_Pass_Count" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Inquiry_Map_Code" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Inquiry_Element_Code" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Inquiry_Type" Type="Int32" />
+    <Property Name="Inquiry_Tech_Code" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Inquiry_Scale" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Inquiry_Count" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Inquiry_Trace_Code" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Inquiry_Client_Desc" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Inquiry_Registered" Type="Boolean" />
+    <Property Name="Inquiry_Register_Date" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Inquiry_Confirmed" Type="Boolean" />
+    <Property Name="Inquiry_Confirm_Date" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Inquiry_Rejected" Type="Boolean" />
+    <Property Name="Inquiry_Reject_Date" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Inquiry_RejectedDesc" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="Inquiry_Reserved" Type="Boolean" />
+    <Property Name="Inquiry_Related_Agent" Type="Int32" />
+    <Property Name="Inquiry_Assigned_Date" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Inquiry_Acception_Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Inquiry_Admin_Time" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Inquiry_Final_Confirm" Type="Boolean" />
+    <Property Name="Inquiry_Final_Confirm_Date" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Inquiry_Main_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Inquiry_Manager_Confirm" Type="Boolean" />
+    <Property Name="Inquiry_Primary_Date" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Inquiry_Manager_UserName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Inquiry_OutSource" Type="Boolean" />
+    <Property Name="Inquiry_OutSource_Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Inquiry_OutSource_Duration" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Inquiry_OutSource_Cost" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Inquiry_Admin_History" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="tbl_Test_Inquiry">
+    <Key>
+      <PropertyRef Name="Test_Inquiry_ID" />
+    </Key>
+    <Property Name="Test_Inquiry_ID" Type="Int64" Nullable="false" />
+    <Property Name="Test_Inquiry_Desc" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Test_Inquiry_Coast" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Test_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Inquiry_ID" Type="Int64" />
+    <Property Name="Test_Inquiry_Hardware_Desc" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="Test_Inquiry_Way_Desc" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Test_Inquiry_Done_Desc" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Test_Inquiry_PreDone_Date" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Test_Inquiry_Done_Date" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Test_Inquiry_Done_Time" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Test_Inquiry_PreStart_Date" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Test_Inquiry_Start_Date" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Test_Inquiry_Start_Time" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Test_Inquiry_Final_Status" Type="Boolean" />
+    <Property Name="Test_NafarSaat" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Test_NeededDate" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Test_Ghatiat" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Inquiry_Related_Agent" Type="Int32" />
+    <Property Name="Inquiry_Assigned_Date" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Test_Inquiry_Result" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Test_Standard_Code" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Test_Acception_Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Test_Inquiry_PreferedResult" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Inquiry_Final_Confirm" Type="Boolean" />
+    <Property Name="Inquiry_Final_Confirm_Date" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Inquiry_Element_Rahgiri" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Inquiry_Element_Refer_Agent" Type="Boolean" />
+    <Property Name="Inquiry_Element_Refer_Agent_Date" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Inquiry_Element_Alamat_Azmoon" Type="Int32" />
+  </EntityType>
+  <EntityType Name="tblTest">
+    <Key>
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="رديف" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="رديف" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="نام_آزمون" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="كد_آزمون" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="شماره_استاندارد__روش_آزمون" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="تعداد_نمونه_ها_جهت_انجام_آزمون" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="نام_وکد_دستگاه_مورد_استفاده" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="tblTests1">
+    <Key>
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="رديف" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="رديف" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="نام_آزمون" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="كد_آزمون" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="شماره_استاندارد__روش_آزمون" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="تعداد_نمونه_ها_جهت_انجام_آزمون" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="نام_وکد_دستگاه_مورد_استفاده" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityContainer Name="LaboratoryEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="tbl_Admin" EntityType="Self.tbl_Admin" />
+    <EntitySet Name="tbl_App_Objs" EntityType="Self.tbl_App_Objs" />
+    <EntitySet Name="tbl_App_Securable_Pages" EntityType="Self.tbl_App_Securable_Pages" />
+    <EntitySet Name="tbl_Attachment" EntityType="Self.tbl_Attachment" />
+    <EntitySet Name="tbl_Hardware" EntityType="Self.tbl_Hardware" />
+    <EntitySet Name="tbl_Masraf" EntityType="Self.tbl_Masraf" />
+    <EntitySet Name="tbl_Test" EntityType="Self.tbl_Test" />
+    <EntitySet Name="tbl_Test_Inquiry_Hardware" EntityType="Self.tbl_Test_Inquiry_Hardware" />
+    <EntitySet Name="tbl_Test_Inquiry_History" EntityType="Self.tbl_Test_Inquiry_History" />
+    <EntitySet Name="tbl_Test_Inquiry_Masraf" EntityType="Self.tbl_Test_Inquiry_Masraf" />
+    <EntitySet Name="tbl_AdminGroup" EntityType="Self.tbl_AdminGroup" />
+    <EntitySet Name="tbl_App_Pages" EntityType="Self.tbl_App_Pages" />
+    <EntitySet Name="tbl_App_Securables" EntityType="Self.tbl_App_Securables" />
+    <EntitySet Name="tbl_Inquiry" EntityType="Self.tbl_Inquiry" />
+    <EntitySet Name="tbl_Inquiry950725" EntityType="Self.tbl_Inquiry950725" />
+    <EntitySet Name="tbl_Inquiry_kazemi" EntityType="Self.tbl_Inquiry_kazemi" />
+    <EntitySet Name="tbl_Test_Inquiry" EntityType="Self.tbl_Test_Inquiry" />
+    <EntitySet Name="tblTests" EntityType="Self.tblTest" />
+    <EntitySet Name="tblTests1" EntityType="Self.tblTests1" />
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,58 @@
+﻿@model CustomMembershipEF.Entities.UserRole
+
+@{
+  
+    ViewBag.Title = "AdminDelete";
+}
+<div dir="rtl">
+<h2>حذف کاربر</h2>
+    <br />
+
+
+<h3>آیا مایل به حذف این کاربر هستید ؟</h3>
+
+
+<fieldset>
+    <legend>Department</legend>
+
+  
+    <br />
+    <div class="display-label">
+         @Html.DisplayName("نام کاربری")
+    </div>----------
+    <div class="display-field">
+        @Html.DisplayFor(model => model.User.UserName)
+    </div>
+    <br />
+    <div class="display-label">
+         @Html.DisplayName("نام")
+    </div>----------
+    <div class="display-field">
+        @Html.DisplayFor(model => model.User.Name)
+    </div>
+    <br />
+    <div class="display-label">
+         @Html.DisplayName("نام خانوادگی")
+    </div>----------
+    <div class="display-field">
+        @Html.DisplayFor(model => model.User.Family)
+    </div>
+    <br />
+</fieldset>
+@using (Html.BeginForm()) {
+    
+       @Html.HiddenFor(model => model.UserRoleId)
+       @Html.HiddenFor(model => model.UserId)
+       @Html.HiddenFor(model => model.RoleId)
+
+
+
+<br />
+    <p>
+     
+ <input type="submit" value="حذف" />
+        <br />
+        @Html.ActionLink("بازگشت به صفحه مدیریت کاربران", "ManageAdmin")
+    </p>
+}
+</div>

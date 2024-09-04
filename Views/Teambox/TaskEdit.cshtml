@@ -1,0 +1,81 @@
+﻿
+@model CustomMembershipEF.Entities.Task
+@{
+ //   Layout = "~/Views/Layouts/_LayoutUser.cshtml";
+    ViewBag.Title = "AdminEdit";
+}
+<div dir="rtl">
+<h2>ویریش اطلاعات کاربر</h2>
+
+<link href="~/Content/Site.css" rel="stylesheet" />
+<h2 dir="rtl"></h2>
+
+@using (Html.BeginForm())
+{
+    @Html.ValidationSummary(true)
+
+    <fieldset dir="rtl">
+        <legend>UserEdit</legend>
+
+        @Html.HiddenFor(model => model.Id)
+        @Html.HiddenFor(model => model.TLid)
+        @Html.HiddenFor(model => model.ReceaverUserId)
+        @Html.HiddenFor(model => model.Date)
+        @Html.HiddenFor(model =>model.SenderName)
+        @Html.HiddenFor(model =>model.SenderUserId)
+        @Html.HiddenFor(model =>model.Title)
+        
+
+
+
+         <div class="editor-label">
+            @Html.Label("عنوان کار ")
+        </div>
+        <div class="editor-field">
+        @Html.LabelFor(model => model.Title)
+      
+        </div>
+
+        <br />
+
+        <div class="editor-label">
+            @Html.Label("متن کار ")
+        </div>
+        <div class="editor-field">
+            @Html.TextAreaFor(model => model.Text)
+            @Html.ValidationMessageFor(model => model.Text)
+        </div>
+
+        <br />
+
+
+          <div class="editor-label">
+            @Html.Label("وضعیت کار ")
+        </div>
+        <div class="editor-field">
+          @Html.DropDownListFor(model => model.StatusId, (SelectList)ViewBag.StatusId)
+        
+        </div>
+
+        <p dir="rtl">
+            <input type="submit" value="ارسال پاسخ کار" />
+        </p>
+        <br />
+        @{
+    if (@ViewBag.message != "")
+    {
+            <h2>@ViewBag.message </h2>
+    }
+            
+        }
+    </fieldset>
+}
+
+<div class="back">
+    @Html.ActionLink("بازگشت به صفحه اصلی", "FirstPage")
+    <br />
+    @Html.ActionLink("بازگشت به صفحه مدیریت کارها", "ManageTask", new {id=@ViewBag.Tlid,Oid=@ViewBag.Oid,Pid=ViewBag.Pid })
+</div>
+
+
+    </div>

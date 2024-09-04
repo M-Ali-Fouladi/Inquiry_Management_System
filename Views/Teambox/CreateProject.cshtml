@@ -1,0 +1,33 @@
+﻿@model CustomMembershipEF.Entities.Project
+
+@{
+   // Layout = "~/Views/Layouts/_LayoutUser.cshtml";
+    ViewBag.Title = "createProject";
+}
+
+<h2 dir="rtl">ایجاد پروژه جدید</h2>
+
+@using (Html.BeginForm()) {
+    @Html.ValidationSummary(true)
+
+    <fieldset dir="rtl">
+        <legend>User</legend>
+
+        <div class="editor-label" dir="rtl">
+            @Html.LabelFor(model => model.PName)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.PName)
+            @Html.ValidationMessageFor(model => model.PName)
+        </div>
+
+        <p dir="rtl">
+            <input type="submit" value="ثبت پروژه" />
+        </p>
+    </fieldset>
+}
+
+<div dir="rtl">
+    @Html.ActionLink("بازگشت به صفحه مدیریت پروژه", "ManageProject")
+</div>
+

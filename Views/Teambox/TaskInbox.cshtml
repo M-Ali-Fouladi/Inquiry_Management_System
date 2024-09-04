@@ -1,0 +1,165 @@
+﻿
+@model PagedList.IPagedList<CustomMembershipEF.Entities.Task>
+@using PagedList.Mvc; 
+
+@{
+ //   Layout = "~/Views/Layouts/_LayoutUser.cshtml";
+    ViewBag.Title = "Manage";
+}
+<div dir="rtl">
+ @using (Html.BeginForm())
+{ 
+       <p>
+    جستجو بر اساس نام:@Html.TextBox("SearchString");
+          
+</p>
+    <p><input type="submit" value="جستجو" /></p>
+ }
+
+<h2>  کارهای دریافتی </h2>
+
+@* -------------------------------Table Users---------------------------------------------------- *@
+
+
+
+<table id="view" dir="rtl">
+    
+
+    <tr>
+        <th>
+            
+             @Html.DisplayName("کد کار")
+        </th>
+          <th>
+            @Html.DisplayName("عنوان کار")
+        </th>
+
+        
+            <th>
+            @Html.DisplayName("نام ارسال کننده")
+        </th>
+          
+            <th>
+            @Html.DisplayName("نام گیرنده")
+        </th>
+        
+          <th>
+            @Html.DisplayName("تاریخ آخرین تغییرات")
+        </th>
+        
+          <th>
+            @Html.DisplayName("وضعیت کار")
+        </th>
+
+
+
+       
+        
+    </tr>
+    @{ 
+        
+       
+        
+            foreach(var item in Model)
+{
+        
+    <tr >
+     
+        <td>
+          
+           @Html.DisplayFor(model => item.Id)
+        </td>
+                <td>
+            @Html.DisplayFor(model => item.Title)
+        
+        </td>
+
+        
+                <td>
+            @Html.DisplayFor(model => item.SenderName)
+        
+        </td>
+
+        
+                <td>
+                    @{
+                      CustomMembershipEF.Contexts.UsersContext db =new CustomMembershipEF.Contexts.UsersContext();
+                      var ReceaverName=db.Users.Where(q=>q.UserId==item.ReceaverUserId).Select(q=>q.Name).FirstOrDefault();  
+                      
+            @Html.DisplayFor(model => ReceaverName)
+                    }
+        
+        </td>
+
+                <td>
+            @Html.DisplayFor(model => item.Date)
+        
+        </td>
+
+                         <td>
+            @Html.DisplayFor(model => item.Status.StatusMode)
+        
+        </td>
+
+        <td>
+            @Html.ActionLink(" بررسی کار", "TaskEdit", new {id=item.Id,TLid=@ViewBag.TaskListid,Oid=@ViewBag.Oid,Pid=@ViewBag.pid,BackPage="TaskInbox"});
+        </td>
+
+        <td>
+            @Html.ActionLink("آرشیو کار", "Archive", new {id=item.Id,TLid=@ViewBag.TaskListid,Oid=@ViewBag.Oid,Pid=@ViewBag.pid,BackPage="TaskInbox"});
+        </td>
+
+
+    </tr>
+             
+  
+}
+    }
+    </table>
+ <br />
+    @Html.ActionLink("ایجاد کار جدید", "CreateTask", new { id=@ViewBag.TaskListid,Oid=@ViewBag.Oid,Pid=@ViewBag.pid})
+    Page @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) of @Model.PageCount 
+     @Html.PagedListPager( Model, page => Url.Action("TaskInbox", new { page, sortOrder = ViewBag.CurrentSort, currentFilter=ViewBag.CurrentFilter,BackPage="TaskInbox" }) )
+
+
+      <h2>@ViewBag.message</h2>
+      
+  <br />
+    @Html.ActionLink("بازگشت به صفحه اصلی ", "FirstPage")
+        
+    <br />
+      @Html.ActionLink("بازگشت به صفحه مدیریت کارها", "ManageTask", new {id=@ViewBag.Tlid,Oid=@ViewBag.Oid,Pid=ViewBag.Pid })
+
+    </div>
+    @*------------------------------------------------------------------------ *@
+
+<style>
+#view
+{
+font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+width:auto;
+border-collapse:collapse;
+}
+#view td, #view th 
+{
+font-size:1em;
+border:1px solid #98bf21;
+padding:3px 7px 2px 7px;
+}
+#view th 
+{
+font-size:1.1em;
+text-align:center;
+padding-top:5px;
+padding-bottom:4px;
+background-color:#98bf21;
+color:#ffffff;
+}
+#view tr.alt td 
+{
+color:#000000;
+background-color:#ffd800;
+}
+</style>
+
+ 

@@ -1,0 +1,325 @@
+﻿
+@using System.Web.Mvc.Ajax;
+@model CustomMembershipEF.ViewModels.OrganizationIndexData
+@{
+    ViewBag.Title = "ManageTeambox";
+    //Layout = "~/Views/Layouts/_LayoutUser.cshtml";
+}
+
+<link href="~/Content/Sit.css" rel="stylesheet" dir="rtl" />
+
+
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+<link rel="stylesheet" href="/resources/demos/style.css" />
+<script src="@Url.Content("~/Scripts/jquery.unobtrusive-ajax.js")" type="text/javascript"></script>
+    
+
+
+    <script>
+        $(function () {
+
+            $("#test").click(function () {
+                $.get("@Url.Action("ManageTeambox", "Teambox", new {RefFlag = true})", function (data) {
+                    $("#ret").html(data);
+                });
+            });
+
+
+            $("#dialog_org").dialog();
+            $("#close").click(function () {
+                $("#dialog_org").dialog("close");
+                $.get("@Url.Action("ManageTeamboxPartial", "Teambox", new {RefFlag = true})", function (data) {
+                    $("#ret").html(data);
+
+                });
+            });
+
+        });
+        //$.get("~/Teambox/ManageTeambox", function (data) {
+        //    $("#page").html(data);
+
+
+
+    </script>  
+
+@{
+    CustomMembershipEF.Contexts.UsersContext db=new CustomMembershipEF.Contexts.UsersContext();
+    //CustomMembershipEF.Entities.Organization selorg;
+    var selorg=db.organizations.Select(q=>q).ToList();
+         
+   // if (ViewBag.RefFlag == true)
+   //     {
+   //         ViewBag.RefFlag = false;
+   //foreach (var p in Model.Organizations)
+   //{
+   //    Html.RenderPartial("ManageTeamboxPartial", p);
+   //}
+   //     }
+}
+    @if (selorg.Count() != 0)
+    { 
+          <table>
+    <tr>
+        <th>کد سازمان</th>
+        <th>نام سازمان</th>
+    </tr>
+
+    @foreach (var item in Model.Organizations)
+    {
+        string selectedRow = "";
+        if (item.Id == ViewBag.OrganizationID)
+        {
+            selectedRow = "selectedrow";
+        } 
+        <tr class="@selectedRow">
+
+            <td>
+                @Html.DisplayFor(model => item.Id)
+            </td>
+            <td>
+                @Html.DisplayFor(model => item.OName)
+            </td>
+
+            <td>
+                @Html.ActionLink("انتخاب", "ManageTeambox", new { id = item.Id })
+
+            </td>
+
+            <td>
+                @Html.ActionLink("ایجاد پروژه جدید", "ManageTeambox", new { id = item.Id })
+
+            </td>
+
+
+        </tr>
+    }
+</table>
+            
+
+    if (Model.Projects != null)
+    { 
+    <h3>Courses Taught by Selected Instructor</h3> 
+    <table>
+        <tr>
+
+            <th>کد پروژه</th>
+            <th>عنوان پروژه</th>
+
+        </tr>
+
+        @foreach (var item in Model.Projects)
+        {
+            string selectedRow = "";
+            if (item.Id == ViewBag.ProjectID)
+            {
+                selectedRow = "selectedrow";
+            } 
+            <tr class="@selectedRow">
+
+                <td>
+                    @item.Id
+                </td>
+                <td>
+                    @item.PName
+                </td>
+                <td>
+                    @Html.ActionLink("Select", "ManageTeambox", new { ProjectID = item.Id })
+                </td>
+
+            </tr> 
+        }
+
+    </table> 
+    }
+
+
+
+    if (Model.TaskLists != null)
+    { 
+    <h3>Courses Taught by Selected Instructor</h3> 
+    <table>
+        <tr>
+
+            <th>کد لیست کار</th>
+            <th>نام لیست کار</th>
+
+        </tr>
+
+        @foreach (var item in Model.TaskLists)
+        {
+            string selectedRow = "";
+            if (item.ID == ViewBag.TaskListID)
+            {
+                selectedRow = "selectedrow";
+            } 
+            <tr class="@selectedRow">
+
+                <td>
+                    @item.ID
+                </td>
+                <td>
+                    @item.TLName
+                </td>
+
+                <td>
+                    @item.UserId
+                </td>
+
+                <td>
+                    @item.Pid
+                </td>
+
+                <td>
+                    @Html.ActionLink("Select", "ManageTeambox", new { TaskListID = item.ID })
+                </td>
+                 
+            </tr> 
+        }
+
+    </table> 
+    }
+
+
+
+
+
+
+
+    if (Model.Tasks != null)
+    { 
+    <h3>tasks of Tasklist</h3> 
+    <table>
+
+
+        <tr>
+            
+
+            <th>
+
+                @Html.DisplayName("کد کار")
+            </th>
+
+            <th>
+
+                @Html.DisplayName("کد کار")
+            </th>
+
+            <th>
+
+                @Html.DisplayName("کد کار")
+            </th>
+
+            <th>
+
+                @Html.DisplayName("کد کار")
+            </th>
+
+            <th>
+
+                @Html.DisplayName("کد کار")
+            </th>
+
+            <th>
+
+                @Html.DisplayName("کد کار")
+            </th>
+
+            <th>
+                @Html.DisplayName("عنوان کار")
+            </th>
+            <th>
+                @Html.DisplayName("نام ارسال کننده")
+            </th>
+            <th>
+                @Html.DisplayName("نام گیرنده")
+            </th>
+
+            <th>
+                @Html.DisplayName("تاریخ آخرین تغییرات")
+            </th>
+
+            <th>
+                @Html.DisplayName("وضعیت کار")
+            </th>
+
+        </tr>
+
+
+
+        @foreach (var item in Model.Tasks)
+        {
+            
+           
+            <tr>
+        
+                <td>
+
+                    @Html.DisplayFor(model => item.Id)
+                </td>
+                  
+                   <td>
+                   @Html.DisplayFor(model => item.Text)
+             </td>
+
+                   <td>
+                   @Html.DisplayFor(model => item.SenderUserId)
+             </td>
+
+                   <td>
+                   @Html.DisplayFor(model => item.TLid)
+             </td>
+
+                   <td>
+                   @Html.DisplayFor(model => item.ReceaverUserId)
+             </td>
+
+                   <td>
+                   @Html.DisplayFor(model => item.StatusId)
+             </td>
+
+
+                <td>
+                    @Html.DisplayFor(model => item.Title)
+
+                </td>
+
+                <td>
+                    @Html.DisplayFor(model => item.SenderName)
+
+                </td>
+
+                <td>
+                    @Html.DisplayFor(model => item.User.Name)
+
+                </td>
+
+
+
+                <td>
+                    @Html.DisplayFor(model => item.Date)
+
+                </td>
+
+                <td>
+                    @Html.DisplayFor(model => item.Status.StatusMode)
+
+                </td>
+
+       @*         <td>
+                    @Html.ActionLink("بررسی کار", "TaskEdit", new { id = item.Id, TLid = @ViewBag.TaskListid, Oid = @ViewBag.Oid, Pid = @ViewBag.pid });
+            
+                </td>*@
+
+            </tr>
+        
+  
+        }
+    </table> 
+       
+}
+
+}
+         
+       

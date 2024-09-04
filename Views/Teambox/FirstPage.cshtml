@@ -1,0 +1,82 @@
+﻿@model CustomMembershipEF.ViewModels.OrganizationIndexData
+@{
+    ViewBag.Title = "Organizations";
+    //Layout = "~/Views/Layouts/_LayoutUser.cshtml";
+}
+
+<link href="~/Content/Site.css" rel="stylesheet" dir="rtl" />
+
+
+
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+<link rel="stylesheet" href="/resources/demos/style.css" />
+
+
+ <script>
+$(function() {
+    $(".draggable").draggable();
+});
+
+</script>
+
+
+
+
+
+<h1>@ViewBag.message</h1>
+<h1>@ViewBag.userid</h1>
+<br />
+<div dir="rtl">
+    @*       <input id="test" /><button id="qq" onclick="t()"></button>
+            <div id="tstDiv" style="width:100%; height:100%">a</div>*@
+   
+    <a href="~/Teambox/ManageOrganization" dir="rtl">
+        مدیریت سازمان </a>
+        <br />
+    <br />
+         <a href="~/Teambox/TaskInbox" dir="rtl">
+        صندوق کارها 
+    </a>
+    <br />
+    <br />
+         <a href="~/Teambox/ManageTeambox" dir="rtl">
+        مدیریت کل پروژه 
+    </a>
+
+    <br />
+    <br />
+    @{
+        CustomMembershipEF.Contexts.UsersContext db = new CustomMembershipEF.Contexts.UsersContext();
+        var InputUser = (CustomMembershipEF.Entities.User)Session["User"];
+        var SelRoleUser = db.UserRoles.Where(q => q.UserId == InputUser.UserId).Select(q => q).FirstOrDefault();
+        var selRolName = db.Roles.Where(q => q.RoleId == SelRoleUser.RoleId).Select(q => q).FirstOrDefault();
+        if (selRolName.RoleName == "Admin")
+        { 
+        <a  href="~/Teambox/ManageAdmin" dir="rtl">
+            
+            <input  type="button" value="مدیریت کاربران " dir="rtl" />
+                
+       
+        </a>
+        }
+  
+    
+    }
+    @*            <a href="~/Teambox/ManageProject" dir="rtl">
+      <input type="button" value="مدیریت پروژه ها" dir="rtl"/>
+      <br />
+   </a>
+
+
+            <a href="~/Teambox/ManageTaskList" dir="rtl">
+      <input type="button" value="مدیریت لیست کارها" dir="rtl"/>
+      <br />
+   </a>
+                     <a href="~/Teambox/ManageTask" dir="rtl">
+      <input type="button" value="مدیریت کارها" dir="rtl"/>
+      <br />
+   </a>*@
+
+</div>

@@ -1,0 +1,43 @@
+﻿
+@{
+    ViewBag.Title = "Manage_Payeh";
+}
+
+<h2>Manage_Payeh</h2>
+
+<button onclick="Create_Test()" class="button blue-gradient">آزمون ها</button>
+<button onclick="Create_Hardware()" class="button blue-gradient">تجهیزات</button>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script>
+    function Create_Test()
+    {
+        $.get("@Url.Action("_Insert_payeh_Test", "Home")/",
+                function (data) { $(".modal-body").html(data); })
+                $('#exampleModal').modal('show');
+    }
+
+    function Create_Hardware()
+    {
+         $.get("@Url.Action("_Update_inquiry", "Home")/" + dataItem.Id,
+                function (data) { $(".modal-body").html(data); })
+                $('#exampleModal').modal('show');
+    }
+
+</script>

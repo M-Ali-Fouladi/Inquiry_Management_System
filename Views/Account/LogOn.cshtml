@@ -1,0 +1,113 @@
+﻿@model CustomMembershipEF.Models.LogOnModel
+
+@{
+    ViewBag.Title = "Log On";
+}
+<div dir="rtl">
+
+<p>
+    @Html.ActionLink("ثبت نام", "Register") 
+</p>
+
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+
+ <script src="js/modernizr-2.5.3.min.js"></script>
+
+    <script>
+        function load() {
+            var unj = $("#username").val();
+            var psj = $("#password").val();
+
+            
+                var url = "@Url.Action("LogOn","Account", new {username="ip1",password="ip2"})";
+                url = url.replace("ip1", unj).replace("ip2", psj).replace("amp;", "");
+                $.get(url, function (data) {
+                    $("#mydiv").html(data);
+                });
+            
+            //else
+            //{
+               @* var url2 = "@Url.Action("Teambox","FirstPage")";
+                window.location.href = url2;   *@  
+            //}
+           
+      
+       //     if (CustomMembershipEF.Controllers.AccountController.ErrorMsg != "")
+       //     {
+
+            //  ViewBag.error = "please enter username and password";
+          
+@*            var url2 = "@Url.Action("Athenticate","Account", new {username="ip1",password="ip2"})";
+            url2 = url2.replace("ip1", unj).replace("ip2", psj).replace("amp;", "");
+            *@
+         
+        @*    $.get("@Url.Action("Athenticate","Account")", function (data)
+                 {
+                     $("#mydiv").html(data);    
+                 });*@
+
+            //}
+
+            //if (unj == "" && psj != "")
+                //{
+                //    alert("you username error")
+                //    ViewBag.error = "please enter username";
+                //}
+
+                //if (psj == "" && unj != "")
+                //{
+                //    alert("you password error")
+                //    ViewBag.error = "please enter password";
+                //}
+        
+        }
+    </script>         
+
+    @if (@ViewBag.message == "error")
+    { 
+         <div id="res2" dir="rtl">
+        @using (@Ajax.BeginForm(new AjaxOptions() { UpdateTargetId = "res", OnFailure = "Athenticate", OnBegin = "AjaxBegin", OnComplete = "AjaxComplete" }))
+       {
+           
+             <div id="res"> </div>
+       }
+         </div>
+    }
+   
+@Html.ValidationSummary(true, "Login was unsuccessful. Please correct the errors and try again.")
+    
+    
+    <div id="mydiv"> </div>
+
+ @using (Html.BeginForm()) {
+    <div>
+        <fieldset>
+            <label for="inputEmail3" class="editor-label">نام کاربری</label>
+            <div class="col-sm-3">
+                @Html.TextBoxFor(m => m.UserName, new {@id= "InputEmail3", @class="form-control", @placeholder = "نام کاربری" })
+                @Html.ValidationMessageFor(m => m.UserName)
+            </div>
+
+            <label for="inputPassword3" class="col-sm-2 control-label">رمز عبور</label>
+            <div class="col-sm-3">
+                @Html.PasswordFor(m => m.Password, new { @id = "inputPassword3", @class = "form-control", @placeholder = "رمز عبور" })
+                @Html.ValidationMessageFor(m => m.Password)
+            </div>
+
+            <div class="editor-label">
+                @Html.CheckBoxFor(m => m.RememberMe)
+                @Html.Label("کلمه عبور به خاطر سپرده شود ")
+            </div>
+
+            <p>
+                
+                <input type="submit" value="ورود" />
+            </p>
+        </fieldset>
+    </div>
+    
+}
+
+   </div>
+    

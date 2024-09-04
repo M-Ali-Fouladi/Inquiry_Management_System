@@ -1,0 +1,47 @@
+﻿@model CustomMembershipEF.Entities.Organization
+
+@{
+    //   Layout = "~/Views/Layouts/_LayoutUser.cshtml";
+    ViewBag.Title = "CreateOrganization";
+}
+
+<h2 dir="rtl">ایجاد سازمان جدید</h2>
+<br />
+@using (Html.BeginForm())
+{
+    @Html.ValidationSummary(true)
+
+    <fieldset dir="rtl">
+        <legend>User</legend>
+
+        <div class="editor-label" dir="rtl">
+            @Html.LabelFor(model => model.OName)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.OName)
+            @Html.ValidationMessageFor(model => model.OName)
+        </div>
+        <br />
+           @Html.ActionLink("انتخاب کاربران", "UserChosen")
+
+
+      @*  @Html.ListBoxFor(model => model.User,
+                new SelectList(Model.User, "Id", "UserName"))*@
+        
+  @*      @Html.ListBoxFor(x => x.User, 
+        (@ViewBag.sel).Select(f => new SelectListItem { Text = f.UserName, Value = f.UserId.ToString() })) *@
+
+
+        <p dir="rtl">
+            <input type="submit" value="ثبت سازمان" />
+        </p>
+
+
+     
+    </fieldset>
+}
+
+<div dir="rtl">
+    @Html.ActionLink("بازگشت به صفحه اصلی", "FirstPage")
+</div>
+

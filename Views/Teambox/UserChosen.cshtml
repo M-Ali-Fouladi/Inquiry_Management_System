@@ -1,0 +1,51 @@
+﻿
+@model CustomMembershipEF.Entities.User
+@{
+ //   Layout = "~/Views/Layouts/_LayoutUser.cshtml";
+    ViewBag.Title = "AdminEdit";
+}
+<div dir="rtl">
+<h2>ویریش اطلاعات کاربر</h2>
+
+<link href="~/Content/Site.css" rel="stylesheet" />
+<h2 dir="rtl"></h2>
+
+@using (Html.BeginForm())
+{
+    @Html.ValidationSummary(true)
+
+    <fieldset dir="rtl">
+        <legend>UserEdit</legend>
+
+       
+
+          <div class="editor-label">
+            @Html.Label("نام کاربری ")
+        </div>
+        <div class="editor-field">
+          @Html.DropDownListFor(model => model.UserId, (SelectList)ViewBag.UserIdTask);
+        
+        </div>
+
+        <p dir="rtl">
+            <input type="submit" value="کاربر اضافه شود" />
+        </p>
+        <br />
+        @{
+    if (@ViewBag.message != "")
+    {
+            <h2>@ViewBag.message </h2>
+    }
+            
+        }
+    </fieldset>
+}
+
+<div class="back">
+    @Html.ActionLink("بازگشت به صفحه اصلی", "FirstPage")
+    <br />
+    @*@Html.ActionLink("بازگشت به صفحه مدیریت کارها", "ManageOrganization", new {id=@ViewBag.Tlid,Oid=@ViewBag.Oid,Pid=ViewBag.Pid })*@
+</div>
+
+
+    </div>

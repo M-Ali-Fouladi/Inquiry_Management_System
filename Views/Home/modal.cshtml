@@ -1,0 +1,44 @@
+﻿
+    @(Html.Kendo().Grid<CustomMembershipEF.Models.Test_Inquiry_Viewmodel>()
+            .Name("grid")
+            .Columns(columns =>
+            {
+                columns.Bound(c => c.Id);
+                columns.Bound(c => c.Test_UID);
+                columns.Bound(c => c.Test_Subject);
+                columns.Bound(c => c.Test_Standard_Code);
+                // columns.Command(command => { command.Edit(); command.Destroy(); }).Width(250);
+            })
+              //  .ToolBar(toolbar => toolbar.Create())
+              // .Editable(editable => editable.Mode(GridEditMode.PopUp))
+              .Pageable()
+              .Sortable()
+              .Scrollable()
+           //   .HtmlAttributes(new { style = "height:550px;" })
+              .DataSource(dataSource => dataSource
+                .Ajax()
+                .PageSize(20)
+            // .Events(events => events.Error("error_handler"))
+             // .Model(model => model.Id(p => p.Id))
+            //.Create(update => update.Action("EditingPopup_Create", "Home"))
+            .Read(read => read.Action("Popup_Read", "Home"))
+            //.Update(update => update.Action("EditingPopup_Update", "Home"))
+            //.Destroy(update => update.Action("EditingPopup_Destroy", "Home"))
+            )
+    )
+
+    <script type="text/javascript">
+        function error_handler(e) {
+            if (e.errors) {
+                var message = "Errors:\n";
+                $.each(e.errors, function (key, value) {
+                    if ('errors' in value) {
+                        $.each(value.errors, function () {
+                            message += this + "\n";
+                        });
+                    }
+                });
+                alert(message);
+            }
+        }
+    </script>

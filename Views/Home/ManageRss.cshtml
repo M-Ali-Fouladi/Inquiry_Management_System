@@ -1,0 +1,103 @@
+﻿@model CustomMembershipEF.Entities.ManageRssEntities
+
+
+@{
+    ViewBag.Title = "ManageRss";
+}
+<h2>مدیریت Rss Provider</h2>
+
+@{
+    if (ViewBag.error != null)
+    {
+        <h2>پیغام خطا</h2>
+        <h2>@ViewBag.error</h2>
+    }
+
+}
+<script src="@Url.Content("~/Scripts/jquery.validate.min.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/jquery.validate.unobtrusive.min.js")" type="text/javascript"></script>
+<script src="~/Scripts/PersianDatePicker.js"></script>
+<script src="~/Scripts/PersianDatePicker.min.js"></script>
+<link href="~/Content/PersianDatePicker.min.css" rel="stylesheet" />
+@using (Html.BeginForm())
+{
+    @Html.ValidationSummary(true, "Account creation was unsuccessful. Please correct the errors and try again.")
+    <div>
+        <fieldset>
+            <legend>Account Information</legend>
+           
+
+
+            <div class="editor-label">
+                @Html.Label("Provider")
+
+            </div>
+            <div class="editor-field">
+
+                @* @Html.DropDownListFor(model => model.education, (SelectList)ViewBag.EducationList);*@
+                @Html.DropDownListFor(model => model.Provider,
+                                 new SelectList(new List<System.Web.Mvc.SelectListItem> {
+                                    new System.Web.Mvc.SelectListItem { Text = "Database", Value = "Database"},
+                                 new System.Web.Mvc.SelectListItem { Text = "CSV File", Value = "CSV File"},
+                                 }, "Value", "Text"),
+
+
+                         new {  @id = "dropdown" , @class = "form-control" })
+                @Html.ValidationMessageFor(m => m.Provider)
+            </div>
+
+
+          <div id="textarea">
+            <div class="editor-label">
+                @Html.Label("Source")
+            </div>
+            <div class="editor-field">
+               
+                @Html.TextAreaFor(m => m.Source,new {style= "Width: 445px;height:150px; ", @dir = "ltr" })
+                @Html.ValidationMessageFor(m => m.Source)
+            </div>
+          </div>
+            <div id="picture">
+                <div class="editor-label">
+                    @Html.Label("تصویر فایل CSV را در زیر مشاهده می کنید")
+                   
+                </div>
+                <br />
+                <img src="@Url.Content("~/Content/images/CsvFile.jpg")" style=" Width: 445px;height:250px" alt="Image" />
+                <br />
+              
+            </div>
+            <div id="msg">
+            @Html.Label("لطفا جهت استخراج خروجی از فایل فوق بر روی دکمه Export Result کلیک کنید")
+            <br />
+            @Html.Label("این فایل در مسیر~/CSV File/users.csv می باشد . ")
+                </div>
+            <p>
+                <input type="submit" value="Export Result "  />
+            </p>
+        </fieldset>
+    </div>
+}
+<script>
+    $("#textarea").show();
+    $("#picture").hide();
+    $("#msg").hide();
+
+    $('#dropdown').change(function ()
+    {
+        if ($('#dropdown :selected').text() === "Database")
+        {
+           
+            $("#textarea").show();
+            $("#picture").hide();
+        }
+        else if ($('#dropdown :selected').text() === "CSV File")
+        {
+          
+            $("#textarea").hide();
+            $("#picture").show();
+            $("#msg").show();
+            
+        }
+    })
+</script>

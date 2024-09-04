@@ -1,0 +1,63 @@
+﻿@model IEnumerable<CustomMembershipEF.Entities.RequestLog>
+    @{
+        //Layout = "~/Views/Shared/_Layout.cshtml";
+        if (ViewBag.error != null)
+        {
+            <h2>پیغام خطا</h2>
+            <h2>@ViewBag.error</h2>
+        }
+    }
+    <div dir="rtl">
+        <h2>مدیریت کاربران</h2>
+
+
+        <table id="view" dir="rtl">
+
+
+            <tr>
+            
+                <th>
+                    @Html.DisplayName("نام کاربری")
+                </th>
+                <th>
+                    @Html.DisplayName("تاریخ")
+                </th>
+                <th>
+                    @Html.DisplayName("فراهم کننده")
+                 </th>
+                <th>
+                    @Html.DisplayName("سورس")
+                </th>
+
+            </tr>
+            @{
+                foreach (var item in Model)
+                {
+                    @Html.HiddenFor(model => item.LogId)
+                    <tr>
+
+                        <td>
+                            @Html.DisplayFor(model => item.UserName)
+                        </td>
+
+                        <td>
+                            @Html.DisplayFor(model => item.date)
+                        </td>
+
+                        <td>
+                            @Html.DisplayFor(model => item.Provider)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(model => item.Source)
+                        </td>
+                       
+                    </tr>
+
+                }
+            }
+        </table>
+
+
+    </div>
+
+

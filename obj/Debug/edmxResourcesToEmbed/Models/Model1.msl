@@ -1,0 +1,402 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="LaboratoryModelStoreContainer" CdmEntityContainer="LaboratoryEntities">
+    <EntitySetMapping Name="tbl_Admin">
+      <EntityTypeMapping TypeName="LaboratoryModel.tbl_Admin">
+        <MappingFragment StoreEntitySet="tbl_Admin">
+          <ScalarProperty Name="AdminID" ColumnName="AdminID" />
+          <ScalarProperty Name="AdminUserName" ColumnName="AdminUserName" />
+          <ScalarProperty Name="GroupID" ColumnName="GroupID" />
+          <ScalarProperty Name="AdminDsc" ColumnName="AdminDsc" />
+          <ScalarProperty Name="AdminType" ColumnName="AdminType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_App_Objs">
+      <EntityTypeMapping TypeName="LaboratoryModel.tbl_App_Objs">
+        <MappingFragment StoreEntitySet="tbl_App_Objs">
+          <ScalarProperty Name="ObjID" ColumnName="ObjID" />
+          <ScalarProperty Name="ObjName" ColumnName="ObjName" />
+          <ScalarProperty Name="PageID" ColumnName="PageID" />
+          <ScalarProperty Name="ObjNameFA" ColumnName="ObjNameFA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_App_Securable_Pages">
+      <EntityTypeMapping TypeName="LaboratoryModel.tbl_App_Securable_Pages">
+        <MappingFragment StoreEntitySet="tbl_App_Securable_Pages">
+          <ScalarProperty Name="tbl_SecPageID" ColumnName="tbl_SecPageID" />
+          <ScalarProperty Name="PageID" ColumnName="PageID" />
+          <ScalarProperty Name="GroupID" ColumnName="GroupID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Attachment">
+      <EntityTypeMapping TypeName="LaboratoryModel.tbl_Attachment">
+        <MappingFragment StoreEntitySet="tbl_Attachment">
+          <ScalarProperty Name="Attchment_ID" ColumnName="Attchment_ID" />
+          <ScalarProperty Name="Attachment_FullAddress" ColumnName="Attachment_FullAddress" />
+          <ScalarProperty Name="Test_Inquiry_ID" ColumnName="Test_Inquiry_ID" />
+          <ScalarProperty Name="Attachment_FileName" ColumnName="Attachment_FileName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Hardware">
+      <EntityTypeMapping TypeName="LaboratoryModel.tbl_Hardware">
+        <MappingFragment StoreEntitySet="tbl_Hardware">
+          <ScalarProperty Name="Hardware_ID" ColumnName="Hardware_ID" />
+          <ScalarProperty Name="Hardware_Name" ColumnName="Hardware_Name" />
+          <ScalarProperty Name="Hardware_Code" ColumnName="Hardware_Code" />
+          <ScalarProperty Name="Hardware_Serial" ColumnName="Hardware_Serial" />
+          <ScalarProperty Name="Hardware_Site" ColumnName="Hardware_Site" />
+          <ScalarProperty Name="Hardware_Using" ColumnName="Hardware_Using" />
+          <ScalarProperty Name="Hardware_NotUsing" ColumnName="Hardware_NotUsing" />
+          <ScalarProperty Name="Hardware_NCR" ColumnName="Hardware_NCR" />
+          <ScalarProperty Name="Hardware_Calibration_External" ColumnName="Hardware_Calibration_External" />
+          <ScalarProperty Name="Hardware_Calibration_Internal" ColumnName="Hardware_Calibration_Internal" />
+          <ScalarProperty Name="Hardware_Programable" ColumnName="Hardware_Programable" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Masraf">
+      <EntityTypeMapping TypeName="LaboratoryModel.tbl_Masraf">
+        <MappingFragment StoreEntitySet="tbl_Masraf">
+          <ScalarProperty Name="Masraf_ID" ColumnName="Masraf_ID" />
+          <ScalarProperty Name="Masraf_Name" ColumnName="Masraf_Name" />
+          <ScalarProperty Name="Masraf_Unit" ColumnName="Masraf_Unit" />
+          <ScalarProperty Name="Masraf_Quantity" ColumnName="Masraf_Quantity" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Test">
+      <EntityTypeMapping TypeName="LaboratoryModel.tbl_Test">
+        <MappingFragment StoreEntitySet="tbl_Test">
+          <ScalarProperty Name="Test_ID" ColumnName="Test_ID" />
+          <ScalarProperty Name="Test_UID" ColumnName="Test_UID" />
+          <ScalarProperty Name="Test_Subject" ColumnName="Test_Subject" />
+          <ScalarProperty Name="Test_Standard_Code" ColumnName="Test_Standard_Code" />
+          <ScalarProperty Name="Test_Sample_No" ColumnName="Test_Sample_No" />
+          <ScalarProperty Name="Test_Related_HardWare" ColumnName="Test_Related_HardWare" />
+          <ScalarProperty Name="Test_Base_Cost" ColumnName="Test_Base_Cost" />
+          <ScalarProperty Name="Test_Base_Vahed" ColumnName="Test_Base_Vahed" />
+          <ScalarProperty Name="Test_Sample_Count" ColumnName="Test_Sample_Count" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Test_Inquiry_Hardware">
+      <EntityTypeMapping TypeName="LaboratoryModel.tbl_Test_Inquiry_Hardware">
+        <MappingFragment StoreEntitySet="tbl_Test_Inquiry_Hardware">
+          <ScalarProperty Name="Test_Inquiry_Hardware_ID" ColumnName="Test_Inquiry_Hardware_ID" />
+          <ScalarProperty Name="Test_Inquiry_ID" ColumnName="Test_Inquiry_ID" />
+          <ScalarProperty Name="Hardware_ID" ColumnName="Hardware_ID" />
+          <ScalarProperty Name="Test_Inquiry_Hardware_Program_FromDate" ColumnName="Test_Inquiry_Hardware_Program_FromDate" />
+          <ScalarProperty Name="Test_Inquiry_Hardware_FromDate" ColumnName="Test_Inquiry_Hardware_FromDate" />
+          <ScalarProperty Name="Test_Inquiry_Hardware_Program_ToDate" ColumnName="Test_Inquiry_Hardware_Program_ToDate" />
+          <ScalarProperty Name="Test_Inquiry_Hardware_ToDate" ColumnName="Test_Inquiry_Hardware_ToDate" />
+          <ScalarProperty Name="Test_Inquiry_Hardware_Program_FromTime" ColumnName="Test_Inquiry_Hardware_Program_FromTime" />
+          <ScalarProperty Name="Test_Inquiry_Hardware_FromTime" ColumnName="Test_Inquiry_Hardware_FromTime" />
+          <ScalarProperty Name="Test_Inquiry_Hardware_Program_ToTime" ColumnName="Test_Inquiry_Hardware_Program_ToTime" />
+          <ScalarProperty Name="Test_Inquiry_Hardware_ToTime" ColumnName="Test_Inquiry_Hardware_ToTime" />
+          <ScalarProperty Name="Test_Inquiry_Hardware_Description" ColumnName="Test_Inquiry_Hardware_Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Test_Inquiry_History">
+      <EntityTypeMapping TypeName="LaboratoryModel.tbl_Test_Inquiry_History">
+        <MappingFragment StoreEntitySet="tbl_Test_Inquiry_History">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Test_Inquiry_ID" ColumnName="Test_Inquiry_ID" />
+          <ScalarProperty Name="Test_Inquiry_Desc" ColumnName="Test_Inquiry_Desc" />
+          <ScalarProperty Name="Test_Inquiry_Coast" ColumnName="Test_Inquiry_Coast" />
+          <ScalarProperty Name="Test_ID" ColumnName="Test_ID" />
+          <ScalarProperty Name="Inquiry_ID" ColumnName="Inquiry_ID" />
+          <ScalarProperty Name="Test_Inquiry_Hardware_Desc" ColumnName="Test_Inquiry_Hardware_Desc" />
+          <ScalarProperty Name="Test_Inquiry_Way_Desc" ColumnName="Test_Inquiry_Way_Desc" />
+          <ScalarProperty Name="Test_Inquiry_Done_Desc" ColumnName="Test_Inquiry_Done_Desc" />
+          <ScalarProperty Name="Test_Inquiry_PreDone_Date" ColumnName="Test_Inquiry_PreDone_Date" />
+          <ScalarProperty Name="Test_Inquiry_Done_Date" ColumnName="Test_Inquiry_Done_Date" />
+          <ScalarProperty Name="Test_Inquiry_Done_Time" ColumnName="Test_Inquiry_Done_Time" />
+          <ScalarProperty Name="Test_Inquiry_PreStart_Date" ColumnName="Test_Inquiry_PreStart_Date" />
+          <ScalarProperty Name="Test_Inquiry_Start_Date" ColumnName="Test_Inquiry_Start_Date" />
+          <ScalarProperty Name="Test_Inquiry_Start_Time" ColumnName="Test_Inquiry_Start_Time" />
+          <ScalarProperty Name="Test_Inquiry_Final_Status" ColumnName="Test_Inquiry_Final_Status" />
+          <ScalarProperty Name="Test_NafarSaat" ColumnName="Test_NafarSaat" />
+          <ScalarProperty Name="Test_NeededDate" ColumnName="Test_NeededDate" />
+          <ScalarProperty Name="Test_Ghatiat" ColumnName="Test_Ghatiat" />
+          <ScalarProperty Name="Inquiry_Related_Agent" ColumnName="Inquiry_Related_Agent" />
+          <ScalarProperty Name="Inquiry_Assigned_Date" ColumnName="Inquiry_Assigned_Date" />
+          <ScalarProperty Name="Test_Inquiry_Result" ColumnName="Test_Inquiry_Result" />
+          <ScalarProperty Name="Test_Standard_Code" ColumnName="Test_Standard_Code" />
+          <ScalarProperty Name="Test_Acception_Description" ColumnName="Test_Acception_Description" />
+          <ScalarProperty Name="Test_Inquiry_PreferedResult" ColumnName="Test_Inquiry_PreferedResult" />
+          <ScalarProperty Name="Inquiry_Final_Confirm" ColumnName="Inquiry_Final_Confirm" />
+          <ScalarProperty Name="Inquiry_Final_Confirm_Date" ColumnName="Inquiry_Final_Confirm_Date" />
+          <ScalarProperty Name="Inquiry_Element_Rahgiri" ColumnName="Inquiry_Element_Rahgiri" />
+          <ScalarProperty Name="Inquiry_Element_Refer_Agent" ColumnName="Inquiry_Element_Refer_Agent" />
+          <ScalarProperty Name="Inquiry_Element_Refer_Agent_Date" ColumnName="Inquiry_Element_Refer_Agent_Date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Test_Inquiry_Masraf">
+      <EntityTypeMapping TypeName="LaboratoryModel.tbl_Test_Inquiry_Masraf">
+        <MappingFragment StoreEntitySet="tbl_Test_Inquiry_Masraf">
+          <ScalarProperty Name="Test_Inquiry_Masraf_ID" ColumnName="Test_Inquiry_Masraf_ID" />
+          <ScalarProperty Name="Test_Inquiry_ID" ColumnName="Test_Inquiry_ID" />
+          <ScalarProperty Name="Masraf_Name" ColumnName="Masraf_Name" />
+          <ScalarProperty Name="Masraf_Unit" ColumnName="Masraf_Unit" />
+          <ScalarProperty Name="Test_Inquiry_Masraf_Quantity" ColumnName="Test_Inquiry_Masraf_Quantity" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_AdminGroup">
+      <EntityTypeMapping TypeName="LaboratoryModel.tbl_AdminGroup">
+        <MappingFragment StoreEntitySet="tbl_AdminGroup">
+          <ScalarProperty Name="GroupID" ColumnName="GroupID" />
+          <ScalarProperty Name="GroupName" ColumnName="GroupName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_App_Pages">
+      <EntityTypeMapping TypeName="LaboratoryModel.tbl_App_Pages">
+        <MappingFragment StoreEntitySet="tbl_App_Pages">
+          <ScalarProperty Name="PageID" ColumnName="PageID" />
+          <ScalarProperty Name="PageName" ColumnName="PageName" />
+          <ScalarProperty Name="PageNameFA" ColumnName="PageNameFA" />
+          <ScalarProperty Name="priority" ColumnName="priority" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_App_Securables">
+      <EntityTypeMapping TypeName="LaboratoryModel.tbl_App_Securables">
+        <MappingFragment StoreEntitySet="tbl_App_Securables">
+          <ScalarProperty Name="tbl_SecID" ColumnName="tbl_SecID" />
+          <ScalarProperty Name="ObjID" ColumnName="ObjID" />
+          <ScalarProperty Name="GroupID" ColumnName="GroupID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Inquiry">
+      <EntityTypeMapping TypeName="LaboratoryModel.tbl_Inquiry">
+        <MappingFragment StoreEntitySet="tbl_Inquiry">
+          <ScalarProperty Name="Inquiry_ID" ColumnName="Inquiry_ID" />
+          <ScalarProperty Name="Inquiry_Admin" ColumnName="Inquiry_Admin" />
+          <ScalarProperty Name="Inquiry_Name" ColumnName="Inquiry_Name" />
+          <ScalarProperty Name="Inquiry_Vahed" ColumnName="Inquiry_Vahed" />
+          <ScalarProperty Name="Inquiry_Date" ColumnName="Inquiry_Date" />
+          <ScalarProperty Name="Inquiry_NeededDate" ColumnName="Inquiry_NeededDate" />
+          <ScalarProperty Name="Inquiry_Element" ColumnName="Inquiry_Element" />
+          <ScalarProperty Name="Inquiry_Element_Type1" ColumnName="Inquiry_Element_Type1" />
+          <ScalarProperty Name="Inquiry_Element_Type" ColumnName="Inquiry_Element_Type" />
+          <ScalarProperty Name="Inquiry_Element_Rahgiri" ColumnName="Inquiry_Element_Rahgiri" />
+          <ScalarProperty Name="Inquiry_Element_Gate_Pass" ColumnName="Inquiry_Element_Gate_Pass" />
+          <ScalarProperty Name="Inquiry_Element_Gate_Pass_Date" ColumnName="Inquiry_Element_Gate_Pass_Date" />
+          <ScalarProperty Name="Inquiry_Element_Gate_Pass_Count" ColumnName="Inquiry_Element_Gate_Pass_Count" />
+          <ScalarProperty Name="Inquiry_Element_Lab_Pass" ColumnName="Inquiry_Element_Lab_Pass" />
+          <ScalarProperty Name="Inquiry_Element_Lab_Pass_Date" ColumnName="Inquiry_Element_Lab_Pass_Date" />
+          <ScalarProperty Name="Inquiry_Element_Lab_Pass_Count" ColumnName="Inquiry_Element_Lab_Pass_Count" />
+          <ScalarProperty Name="Inquiry_Map_Code" ColumnName="Inquiry_Map_Code" />
+          <ScalarProperty Name="Inquiry_Element_Code" ColumnName="Inquiry_Element_Code" />
+          <ScalarProperty Name="Inquiry_Type" ColumnName="Inquiry_Type" />
+          <ScalarProperty Name="Inquiry_Tech_Code" ColumnName="Inquiry_Tech_Code" />
+          <ScalarProperty Name="Inquiry_Scale" ColumnName="Inquiry_Scale" />
+          <ScalarProperty Name="Inquiry_Count" ColumnName="Inquiry_Count" />
+          <ScalarProperty Name="Inquiry_Trace_Code" ColumnName="Inquiry_Trace_Code" />
+          <ScalarProperty Name="Inquiry_Client_Desc" ColumnName="Inquiry_Client_Desc" />
+          <ScalarProperty Name="Inquiry_Registered" ColumnName="Inquiry_Registered" />
+          <ScalarProperty Name="Inquiry_Register_Date" ColumnName="Inquiry_Register_Date" />
+          <ScalarProperty Name="Inquiry_Confirmed_ManagerLab" ColumnName="Inquiry_Confirmed_ManagerLab" />
+          <ScalarProperty Name="Inquiry_Confirmed" ColumnName="Inquiry_Confirmed" />
+          <ScalarProperty Name="Inquiry_Confirmed_ManagerLab_Date" ColumnName="Inquiry_Confirmed_ManagerLab_Date" />
+          <ScalarProperty Name="Inquiry_Confirm_Date" ColumnName="Inquiry_Confirm_Date" />
+          <ScalarProperty Name="Inquiry_Rejected" ColumnName="Inquiry_Rejected" />
+          <ScalarProperty Name="Inquiry_Reject_Date" ColumnName="Inquiry_Reject_Date" />
+          <ScalarProperty Name="Inquiry_RejectedDesc" ColumnName="Inquiry_RejectedDesc" />
+          <ScalarProperty Name="Inquiry_Reserved" ColumnName="Inquiry_Reserved" />
+          <ScalarProperty Name="Inquiry_Related_Agent" ColumnName="Inquiry_Related_Agent" />
+          <ScalarProperty Name="Inquiry_Assigned_Date" ColumnName="Inquiry_Assigned_Date" />
+          <ScalarProperty Name="Inquiry_Acception_Description" ColumnName="Inquiry_Acception_Description" />
+          <ScalarProperty Name="Inquiry_Admin_Time" ColumnName="Inquiry_Admin_Time" />
+          <ScalarProperty Name="Inquiry_Final_Confirm" ColumnName="Inquiry_Final_Confirm" />
+          <ScalarProperty Name="Inquiry_Final_Confirm_Date" ColumnName="Inquiry_Final_Confirm_Date" />
+          <ScalarProperty Name="Inquiry_Main_ID" ColumnName="Inquiry_Main_ID" />
+          <ScalarProperty Name="Inquiry_Manager_Confirm" ColumnName="Inquiry_Manager_Confirm" />
+          <ScalarProperty Name="Inquiry_Primary_Date" ColumnName="Inquiry_Primary_Date" />
+          <ScalarProperty Name="Inquiry_Manager_UserName" ColumnName="Inquiry_Manager_UserName" />
+          <ScalarProperty Name="Inquiry_OutSource" ColumnName="Inquiry_OutSource" />
+          <ScalarProperty Name="Inquiry_OutSource_Name" ColumnName="Inquiry_OutSource_Name" />
+          <ScalarProperty Name="Inquiry_OutSource_Duration" ColumnName="Inquiry_OutSource_Duration" />
+          <ScalarProperty Name="Inquiry_OutSource_Cost" ColumnName="Inquiry_OutSource_Cost" />
+          <ScalarProperty Name="Inquiry_Admin_History" ColumnName="Inquiry_Admin_History" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Inquiry950725">
+      <EntityTypeMapping TypeName="LaboratoryModel.tbl_Inquiry950725">
+        <MappingFragment StoreEntitySet="tbl_Inquiry950725">
+          <ScalarProperty Name="Inquiry_ID" ColumnName="Inquiry_ID" />
+          <ScalarProperty Name="Inquiry_Admin" ColumnName="Inquiry_Admin" />
+          <ScalarProperty Name="Inquiry_Name" ColumnName="Inquiry_Name" />
+          <ScalarProperty Name="Inquiry_Vahed" ColumnName="Inquiry_Vahed" />
+          <ScalarProperty Name="Inquiry_Date" ColumnName="Inquiry_Date" />
+          <ScalarProperty Name="Inquiry_NeededDate" ColumnName="Inquiry_NeededDate" />
+          <ScalarProperty Name="Inquiry_Element" ColumnName="Inquiry_Element" />
+          <ScalarProperty Name="Inquiry_Element_Type1" ColumnName="Inquiry_Element_Type1" />
+          <ScalarProperty Name="Inquiry_Element_Type" ColumnName="Inquiry_Element_Type" />
+          <ScalarProperty Name="Inquiry_Element_Rahgiri" ColumnName="Inquiry_Element_Rahgiri" />
+          <ScalarProperty Name="Inquiry_Element_Gate_Pass" ColumnName="Inquiry_Element_Gate_Pass" />
+          <ScalarProperty Name="Inquiry_Element_Gate_Pass_Date" ColumnName="Inquiry_Element_Gate_Pass_Date" />
+          <ScalarProperty Name="Inquiry_Element_Gate_Pass_Count" ColumnName="Inquiry_Element_Gate_Pass_Count" />
+          <ScalarProperty Name="Inquiry_Element_Lab_Pass" ColumnName="Inquiry_Element_Lab_Pass" />
+          <ScalarProperty Name="Inquiry_Element_Lab_Pass_Date" ColumnName="Inquiry_Element_Lab_Pass_Date" />
+          <ScalarProperty Name="Inquiry_Element_Lab_Pass_Count" ColumnName="Inquiry_Element_Lab_Pass_Count" />
+          <ScalarProperty Name="Inquiry_Map_Code" ColumnName="Inquiry_Map_Code" />
+          <ScalarProperty Name="Inquiry_Element_Code" ColumnName="Inquiry_Element_Code" />
+          <ScalarProperty Name="Inquiry_Type" ColumnName="Inquiry_Type" />
+          <ScalarProperty Name="Inquiry_Tech_Code" ColumnName="Inquiry_Tech_Code" />
+          <ScalarProperty Name="Inquiry_Scale" ColumnName="Inquiry_Scale" />
+          <ScalarProperty Name="Inquiry_Count" ColumnName="Inquiry_Count" />
+          <ScalarProperty Name="Inquiry_Trace_Code" ColumnName="Inquiry_Trace_Code" />
+          <ScalarProperty Name="Inquiry_Client_Desc" ColumnName="Inquiry_Client_Desc" />
+          <ScalarProperty Name="Inquiry_Registered" ColumnName="Inquiry_Registered" />
+          <ScalarProperty Name="Inquiry_Register_Date" ColumnName="Inquiry_Register_Date" />
+          <ScalarProperty Name="Inquiry_Confirmed" ColumnName="Inquiry_Confirmed" />
+          <ScalarProperty Name="Inquiry_Confirm_Date" ColumnName="Inquiry_Confirm_Date" />
+          <ScalarProperty Name="Inquiry_Rejected" ColumnName="Inquiry_Rejected" />
+          <ScalarProperty Name="Inquiry_Reject_Date" ColumnName="Inquiry_Reject_Date" />
+          <ScalarProperty Name="Inquiry_RejectedDesc" ColumnName="Inquiry_RejectedDesc" />
+          <ScalarProperty Name="Inquiry_Reserved" ColumnName="Inquiry_Reserved" />
+          <ScalarProperty Name="Inquiry_Related_Agent" ColumnName="Inquiry_Related_Agent" />
+          <ScalarProperty Name="Inquiry_Assigned_Date" ColumnName="Inquiry_Assigned_Date" />
+          <ScalarProperty Name="Inquiry_Acception_Description" ColumnName="Inquiry_Acception_Description" />
+          <ScalarProperty Name="Inquiry_Admin_Time" ColumnName="Inquiry_Admin_Time" />
+          <ScalarProperty Name="Inquiry_Final_Confirm" ColumnName="Inquiry_Final_Confirm" />
+          <ScalarProperty Name="Inquiry_Final_Confirm_Date" ColumnName="Inquiry_Final_Confirm_Date" />
+          <ScalarProperty Name="Inquiry_Main_ID" ColumnName="Inquiry_Main_ID" />
+          <ScalarProperty Name="Inquiry_Manager_Confirm" ColumnName="Inquiry_Manager_Confirm" />
+          <ScalarProperty Name="Inquiry_Primary_Date" ColumnName="Inquiry_Primary_Date" />
+          <ScalarProperty Name="Inquiry_Manager_UserName" ColumnName="Inquiry_Manager_UserName" />
+          <ScalarProperty Name="Inquiry_OutSource" ColumnName="Inquiry_OutSource" />
+          <ScalarProperty Name="Inquiry_OutSource_Name" ColumnName="Inquiry_OutSource_Name" />
+          <ScalarProperty Name="Inquiry_OutSource_Duration" ColumnName="Inquiry_OutSource_Duration" />
+          <ScalarProperty Name="Inquiry_OutSource_Cost" ColumnName="Inquiry_OutSource_Cost" />
+          <ScalarProperty Name="Inquiry_Admin_History" ColumnName="Inquiry_Admin_History" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Inquiry_kazemi">
+      <EntityTypeMapping TypeName="LaboratoryModel.tbl_Inquiry_kazemi">
+        <MappingFragment StoreEntitySet="tbl_Inquiry-kazemi">
+          <ScalarProperty Name="Inquiry_ID" ColumnName="Inquiry_ID" />
+          <ScalarProperty Name="Inquiry_Admin" ColumnName="Inquiry_Admin" />
+          <ScalarProperty Name="Inquiry_Name" ColumnName="Inquiry_Name" />
+          <ScalarProperty Name="Inquiry_Vahed" ColumnName="Inquiry_Vahed" />
+          <ScalarProperty Name="Inquiry_Date" ColumnName="Inquiry_Date" />
+          <ScalarProperty Name="Inquiry_NeededDate" ColumnName="Inquiry_NeededDate" />
+          <ScalarProperty Name="Inquiry_Element" ColumnName="Inquiry_Element" />
+          <ScalarProperty Name="Inquiry_Element_Type1" ColumnName="Inquiry_Element_Type1" />
+          <ScalarProperty Name="Inquiry_Element_Type" ColumnName="Inquiry_Element_Type" />
+          <ScalarProperty Name="Inquiry_Element_Rahgiri" ColumnName="Inquiry_Element_Rahgiri" />
+          <ScalarProperty Name="Inquiry_Element_Gate_Pass" ColumnName="Inquiry_Element_Gate_Pass" />
+          <ScalarProperty Name="Inquiry_Element_Gate_Pass_Date" ColumnName="Inquiry_Element_Gate_Pass_Date" />
+          <ScalarProperty Name="Inquiry_Element_Gate_Pass_Count" ColumnName="Inquiry_Element_Gate_Pass_Count" />
+          <ScalarProperty Name="Inquiry_Element_Lab_Pass" ColumnName="Inquiry_Element_Lab_Pass" />
+          <ScalarProperty Name="Inquiry_Element_Lab_Pass_Date" ColumnName="Inquiry_Element_Lab_Pass_Date" />
+          <ScalarProperty Name="Inquiry_Element_Lab_Pass_Count" ColumnName="Inquiry_Element_Lab_Pass_Count" />
+          <ScalarProperty Name="Inquiry_Map_Code" ColumnName="Inquiry_Map_Code" />
+          <ScalarProperty Name="Inquiry_Element_Code" ColumnName="Inquiry_Element_Code" />
+          <ScalarProperty Name="Inquiry_Type" ColumnName="Inquiry_Type" />
+          <ScalarProperty Name="Inquiry_Tech_Code" ColumnName="Inquiry_Tech_Code" />
+          <ScalarProperty Name="Inquiry_Scale" ColumnName="Inquiry_Scale" />
+          <ScalarProperty Name="Inquiry_Count" ColumnName="Inquiry_Count" />
+          <ScalarProperty Name="Inquiry_Trace_Code" ColumnName="Inquiry_Trace_Code" />
+          <ScalarProperty Name="Inquiry_Client_Desc" ColumnName="Inquiry_Client_Desc" />
+          <ScalarProperty Name="Inquiry_Registered" ColumnName="Inquiry_Registered" />
+          <ScalarProperty Name="Inquiry_Register_Date" ColumnName="Inquiry_Register_Date" />
+          <ScalarProperty Name="Inquiry_Confirmed" ColumnName="Inquiry_Confirmed" />
+          <ScalarProperty Name="Inquiry_Confirm_Date" ColumnName="Inquiry_Confirm_Date" />
+          <ScalarProperty Name="Inquiry_Rejected" ColumnName="Inquiry_Rejected" />
+          <ScalarProperty Name="Inquiry_Reject_Date" ColumnName="Inquiry_Reject_Date" />
+          <ScalarProperty Name="Inquiry_RejectedDesc" ColumnName="Inquiry_RejectedDesc" />
+          <ScalarProperty Name="Inquiry_Reserved" ColumnName="Inquiry_Reserved" />
+          <ScalarProperty Name="Inquiry_Related_Agent" ColumnName="Inquiry_Related_Agent" />
+          <ScalarProperty Name="Inquiry_Assigned_Date" ColumnName="Inquiry_Assigned_Date" />
+          <ScalarProperty Name="Inquiry_Acception_Description" ColumnName="Inquiry_Acception_Description" />
+          <ScalarProperty Name="Inquiry_Admin_Time" ColumnName="Inquiry_Admin_Time" />
+          <ScalarProperty Name="Inquiry_Final_Confirm" ColumnName="Inquiry_Final_Confirm" />
+          <ScalarProperty Name="Inquiry_Final_Confirm_Date" ColumnName="Inquiry_Final_Confirm_Date" />
+          <ScalarProperty Name="Inquiry_Main_ID" ColumnName="Inquiry_Main_ID" />
+          <ScalarProperty Name="Inquiry_Manager_Confirm" ColumnName="Inquiry_Manager_Confirm" />
+          <ScalarProperty Name="Inquiry_Primary_Date" ColumnName="Inquiry_Primary_Date" />
+          <ScalarProperty Name="Inquiry_Manager_UserName" ColumnName="Inquiry_Manager_UserName" />
+          <ScalarProperty Name="Inquiry_OutSource" ColumnName="Inquiry_OutSource" />
+          <ScalarProperty Name="Inquiry_OutSource_Name" ColumnName="Inquiry_OutSource_Name" />
+          <ScalarProperty Name="Inquiry_OutSource_Duration" ColumnName="Inquiry_OutSource_Duration" />
+          <ScalarProperty Name="Inquiry_OutSource_Cost" ColumnName="Inquiry_OutSource_Cost" />
+          <ScalarProperty Name="Inquiry_Admin_History" ColumnName="Inquiry_Admin_History" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Test_Inquiry">
+      <EntityTypeMapping TypeName="LaboratoryModel.tbl_Test_Inquiry">
+        <MappingFragment StoreEntitySet="tbl_Test_Inquiry">
+          <ScalarProperty Name="Test_Inquiry_ID" ColumnName="Test_Inquiry_ID" />
+          <ScalarProperty Name="Test_Inquiry_Desc" ColumnName="Test_Inquiry_Desc" />
+          <ScalarProperty Name="Test_Inquiry_Coast" ColumnName="Test_Inquiry_Coast" />
+          <ScalarProperty Name="Test_ID" ColumnName="Test_ID" />
+          <ScalarProperty Name="Inquiry_ID" ColumnName="Inquiry_ID" />
+          <ScalarProperty Name="Test_Inquiry_Hardware_Desc" ColumnName="Test_Inquiry_Hardware_Desc" />
+          <ScalarProperty Name="Test_Inquiry_Way_Desc" ColumnName="Test_Inquiry_Way_Desc" />
+          <ScalarProperty Name="Test_Inquiry_Done_Desc" ColumnName="Test_Inquiry_Done_Desc" />
+          <ScalarProperty Name="Test_Inquiry_PreDone_Date" ColumnName="Test_Inquiry_PreDone_Date" />
+          <ScalarProperty Name="Test_Inquiry_Done_Date" ColumnName="Test_Inquiry_Done_Date" />
+          <ScalarProperty Name="Test_Inquiry_Done_Time" ColumnName="Test_Inquiry_Done_Time" />
+          <ScalarProperty Name="Test_Inquiry_PreStart_Date" ColumnName="Test_Inquiry_PreStart_Date" />
+          <ScalarProperty Name="Test_Inquiry_Start_Date" ColumnName="Test_Inquiry_Start_Date" />
+          <ScalarProperty Name="Test_Inquiry_Start_Time" ColumnName="Test_Inquiry_Start_Time" />
+          <ScalarProperty Name="Test_Inquiry_Final_Status" ColumnName="Test_Inquiry_Final_Status" />
+          <ScalarProperty Name="Test_NafarSaat" ColumnName="Test_NafarSaat" />
+          <ScalarProperty Name="Test_NeededDate" ColumnName="Test_NeededDate" />
+          <ScalarProperty Name="Test_Ghatiat" ColumnName="Test_Ghatiat" />
+          <ScalarProperty Name="Inquiry_Related_Agent" ColumnName="Inquiry_Related_Agent" />
+          <ScalarProperty Name="Inquiry_Assigned_Date" ColumnName="Inquiry_Assigned_Date" />
+          <ScalarProperty Name="Test_Inquiry_Result" ColumnName="Test_Inquiry_Result" />
+          <ScalarProperty Name="Test_Standard_Code" ColumnName="Test_Standard_Code" />
+          <ScalarProperty Name="Test_Acception_Description" ColumnName="Test_Acception_Description" />
+          <ScalarProperty Name="Test_Inquiry_PreferedResult" ColumnName="Test_Inquiry_PreferedResult" />
+          <ScalarProperty Name="Inquiry_Final_Confirm" ColumnName="Inquiry_Final_Confirm" />
+          <ScalarProperty Name="Inquiry_Final_Confirm_Date" ColumnName="Inquiry_Final_Confirm_Date" />
+          <ScalarProperty Name="Inquiry_Element_Rahgiri" ColumnName="Inquiry_Element_Rahgiri" />
+          <ScalarProperty Name="Inquiry_Element_Refer_Agent" ColumnName="Inquiry_Element_Refer_Agent" />
+          <ScalarProperty Name="Inquiry_Element_Refer_Agent_Date" ColumnName="Inquiry_Element_Refer_Agent_Date" />
+          <ScalarProperty Name="Inquiry_Element_Alamat_Azmoon" ColumnName="Inquiry_Element_Alamat_Azmoon" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblTests">
+      <EntityTypeMapping TypeName="LaboratoryModel.tblTest">
+        <MappingFragment StoreEntitySet="tblTests">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="رديف" ColumnName="رديف" />
+          <ScalarProperty Name="نام_آزمون" ColumnName="نام آزمون" />
+          <ScalarProperty Name="كد_آزمون" ColumnName="كد آزمون" />
+          <ScalarProperty Name="شماره_استاندارد__روش_آزمون" ColumnName="شماره استاندارد  روش آزمون" />
+          <ScalarProperty Name="تعداد_نمونه_ها_جهت_انجام_آزمون" ColumnName="تعداد نمونه ها جهت انجام آزمون" />
+          <ScalarProperty Name="نام_وکد_دستگاه_مورد_استفاده" ColumnName="نام وکد دستگاه مورد استفاده" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblTests1">
+      <EntityTypeMapping TypeName="LaboratoryModel.tblTests1">
+        <MappingFragment StoreEntitySet="tblTests1">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="رديف" ColumnName="رديف" />
+          <ScalarProperty Name="نام_آزمون" ColumnName="نام آزمون" />
+          <ScalarProperty Name="كد_آزمون" ColumnName="كد آزمون" />
+          <ScalarProperty Name="شماره_استاندارد__روش_آزمون" ColumnName="شماره استاندارد  روش آزمون" />
+          <ScalarProperty Name="تعداد_نمونه_ها_جهت_انجام_آزمون" ColumnName="تعداد نمونه ها جهت انجام آزمون" />
+          <ScalarProperty Name="نام_وکد_دستگاه_مورد_استفاده" ColumnName="نام وکد دستگاه مورد استفاده" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

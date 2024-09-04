@@ -1,0 +1,122 @@
+﻿@model IEnumerable<CustomMembershipEF.Models.InquiryViewModel>
+
+    @(Html.Kendo().Grid(Model)
+            .Name("grid")
+            .Columns(columns =>
+            {
+                columns.Bound(c => c.Id).Hidden(true);
+                columns.Bound(c => c.Inquiry_Main_ID);
+                columns.Bound(c => c.Inquiry_Element);
+                columns.Bound(c => c.Inquiry_Date);
+                columns.Bound(c => c.Inquiry_Vahed);
+                columns.Bound(c => c.Inquiry_Type);
+                columns.Bound(c => c.Inquiry_Name);
+                columns.Bound(c => c.Inquiry_NeededDate);
+                columns.Command(command =>
+                {
+                    command.Custom("ویرایش").Click("showDetails");
+                    command.Custom("حذف").Click("DeleteCommand");
+                });
+                //columns.Command(command => command.Custom("ویرایش").Click("showDetails")).Width(180);
+                // columns.Template(@<text> @Html.ActionLink("Popup_Read", "Home", new { id = "<#= Id #>" })</text>);
+            })
+              //  .ToolBar(toolbar => toolbar.Create())
+              // .Editable(editable => editable.Mode(GridEditMode.PopUp))
+              .Pageable(pageable => pageable
+                .Refresh(true)
+                .PageSizes(true)
+                .ButtonCount(5))
+                .Sortable()
+                .Scrollable()
+                  .HtmlAttributes(new { style = "height:550px;" })
+                  .Filterable(filterable => filterable
+        .Extra(false)
+        .Operators(operators => operators
+            .ForString(str => str.Clear()
+                .StartsWith("شروع شود با")
+                .IsEqualTo("برابر باشد با")
+                .IsNotEqualTo("مخالف باشد با")
+                .Contains("شبیه باشد با")
+            ))
+        )
+                .DataSource(dataSource => dataSource
+                .Ajax()
+                .PageSize(10)
+            // .Events(events => events.Error("error_handler"))
+            // .Model(model => model.Id(p => p.Id))
+            //.Create(update => update.Action("EditingPopup_Create", "Home"))
+            .Read(read => read.Action("InquiryPopup_Read", "Home"))
+            //.Update(update => update.Action("EditingPopup_Update", "Home"))
+            //.Destroy(update => update.Action("EditingPopup_Destroy", "Home"))
+            )
+)
+                      @(Html.Kendo().Window().Name("Details")
+                    .Title("Customer Details")
+                    .Visible(false)
+                    .Modal(true)
+                    .Draggable(true)
+                    .Width(300)
+                      )
+    
+                      <button type="button" onclick="InsertFunction2()" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">ثبت درخواست جدید </button>
+
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+                      @*<button type="button" onclick="InsertFunction()" class="btn btn-primary" data-toggle="modal" data-target=".examplemodal"> modal</button>*@
+
+                
+
+               
+
+                 
+                     
+
+
+
+    <script type="text/javascript">
+        var detailsTemplate = kendo.template($("#template").html());
+
+
+        function showDetails(e) {
+            e.preventDefault();
+            var dataItem = this.dataItem($(e.currentTarget).closest("tr"));
+            $.get("@Url.Action("_Update_inquiry", "Home")/" + dataItem.Id,
+                function (data) { $(".modal-body").html(data); })
+                $('#exampleModal').modal('show');
+        }
+        function DeleteCommand(e) {
+            
+            e.preventDefault();
+            var dataItem = this.dataItem($(e.currentTarget).closest("tr"));
+            $.get("@Url.Action("_Delete_inquiry", "Home")/" + dataItem.Id,
+                function (data) { $(".modal-body").html(data); })
+            $('#exampleModal').modal('show');
+            
+        }
+        //$('#btn').click(function () {
+        //    //do something
+        //    alert('');
+        //});
+        function InsertFunction2()
+        {
+             $.get("@Url.Action("_Create_inquiry", "Home")",
+                function (data) { $(".modal-body").html(data); })
+             $('#examplemodal').modal('show');
+        }
+    </script>
+

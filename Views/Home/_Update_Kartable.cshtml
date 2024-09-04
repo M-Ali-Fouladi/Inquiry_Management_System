@@ -1,0 +1,276 @@
+﻿
+@model CustomMembershipEF.Models.tbl_InquiryNew
+
+@{
+    ViewBag.Title = "Update";
+
+}
+<script type="text/javascript">
+    $(function () {
+        $('.VaredehDate').datepicker();
+        $('.SabtDate').datepicker();
+    });
+</script>
+
+<h2>ویرایش </h2>
+
+@using (@Ajax.BeginForm("_Update_Kartable", "Home", new AjaxOptions() { UpdateTargetId = "result", OnFailure = "AjaxFailure", OnBegin = "AjaxBegin", OnComplete = "AjaxComplete" }, new { id = "DabirKhanehForm" }))
+{
+    <div>
+        <legend class="legend">ویرایش</legend>
+        @Html.HiddenFor(model => model.InquiryID)
+        <input type="checkbox" name="Inquiry_Confirmed" value="true"> تایید درخواست<br>
+        <input type="checkbox" name="Inquiry_Rejected" value="true"> رد درخواست<br>
+        <input type="checkbox" name="Inquiry_OutSource" value="true"> خارج از سازمان<br>
+        @*<input type="submit" value="Submit">*@
+
+        <div>
+            @Html.LabelFor(model => model.Inquiry_Primary_Date)
+            @Html.TextBoxFor(model => model.Inquiry_Primary_Date, new { @onclick = "PersianDatePicker.Show(this, '1397/01/01')" })
+        </div>
+       
+        <div>
+          @*  @Html.Label("نام کارشناس آزمایشگاه")
+    @(Html.Kendo().DropDownListFor(model => model.Inquiry_Related_Agent)
+                                  .Name("Inquiry_Related_Agent")
+                                  .DataTextField("AdminUserName")
+                                  .DataValueField("AdminID")
+                                  .DataSource(source =>
+                                  {
+                                      source.Read(read =>
+                                      {
+                                          read.Action("GetAdminDropdown", "Home");
+                                      });
+                                  })
+                                  .HtmlAttributes(new { style = "width: 100%" })
+    )
+    @* from tbl admin *@
+        </div>
+        <div>
+            @Html.LabelFor(model => model.Inquiry_Main_ID)
+            @Html.TextBoxFor(model => model.Inquiry_Main_ID, new { @class = "input full-width" })
+
+        </div>
+        <div title="نوع درخواست">
+
+            <fieldset id="group1">
+                <input type="radio" name="Inquiry_Type" value="1">داخلی <br>
+                <input type="radio" name="Inquiry_Type" value="2">خارجی<br>
+            </fieldset>
+
+        </div>
+        <div>
+            @Html.LabelFor(model => model.Inquiry_Name)
+            @(Html.Kendo().DropDownListFor(model => model.Inquiry_Name)
+                                          .Name("Inquiry_Name")
+                                          .DataTextField("FullName")
+                                          .DataValueField("Id")
+                                          .DataSource(source =>
+                                          {
+                                              source.Read(read =>
+                                              {
+                                                  read.Action("GetInquiryNameDropdown", "Home");
+                                              });
+                                          })
+                                          .HtmlAttributes(new { style = "width: 100%" })
+            )
+        </div>
+        <div>
+            @Html.LabelFor(model => model.Inquiry_Vahed)
+            @(Html.Kendo().DropDownListFor(model => model.Inquiry_Vahed)
+                                          .Name("Inquiry_Vahed")
+                                          .DataTextField("WorkSectionTitle")
+                                          .DataValueField("WorkSectionID")
+                                          .DataSource(source =>
+                                          {
+
+                                              source.Read(read =>
+                                              {
+                                                  read.Action("GetInquiryVahedDropdown", "Home");
+                                              });
+                                          })
+                                          .HtmlAttributes(new { style = "width: 100%" })
+            )
+
+        </div>
+
+        <div>
+            @Html.LabelFor(model => model.Inquiry_Date)
+            @Html.TextBoxFor(model => model.Inquiry_Date, new { @onclick = "PersianDatePicker.Show(this, '1397/01/01')" })
+
+
+        </div>
+        <div>
+            @Html.LabelFor(model => model.Inquiry_NeededDate)
+            @Html.TextBoxFor(model => model.Inquiry_NeededDate, new { @onclick = "PersianDatePicker.Show(this, '1397/01/01')" })
+
+
+        </div>
+        <div>
+            @Html.LabelFor(model => model.Inquiry_Element_Code)
+            @*@Html.DropDownListFor(model => model.Inquiry_Element_Code, (SelectList)ViewBag.Amniat)*@
+
+        </div>
+        <div>
+            @Html.LabelFor(model => model.Inquiry_Tech_Code)
+            @Html.TextBoxFor(model => model.Inquiry_Tech_Code, new { @class = "input full-width" })
+
+        </div>
+
+        <div>
+            @Html.LabelFor(model => model.Inquiry_Element)
+            @Html.TextBoxFor(model => model.Inquiry_Element, new { @class = "input full-width" })
+
+        </div>
+        <div>
+            @Html.LabelFor(model => model.Inquiry_Scale)
+            @Html.TextBoxFor(model => model.Inquiry_Scale, new { @class = "input full-width" })
+
+        </div>
+        <div>
+            @Html.LabelFor(model => model.Inquiry_Count)
+            @Html.TextBoxFor(model => model.Inquiry_Count, new { @class = "input full-width" })
+
+        </div>
+
+        <div>
+            @Html.Label("نوع قطعه")
+            <fieldset id="group1">
+                <input type="radio" name="Inquiry_Element_Type" value="1">محصول نهایی <br>
+                <input type="radio" name="Inquiry_Element_Type" value="2">پروژه ایی<br>
+                <input type="radio" name="Inquiry_Element_Type" value="3"> قطعه کنترلی<br>
+            </fieldset>
+        </div>
+        <div>
+            @Html.LabelFor(model => model.Inquiry_Map_Code)
+            @Html.TextBoxFor(model => model.Inquiry_Map_Code, new { @class = "input full-width" })
+
+        </div>
+        <div>
+            @Html.LabelFor(model => model.Inquiry_Trace_Code)
+            @Html.TextBoxFor(model => model.Inquiry_Trace_Code, new { @class = "input full-width" })
+
+        </div>
+        <div>
+            @Html.LabelFor(model => model.Inquiry_Client_Desc)
+            @Html.TextAreaFor(model => model.Inquiry_Client_Desc, new { @class = "img-shadow" })
+        </div>
+        <div class="columns">
+            <div class="eight-columns twelve-columns-tablet">
+                @*<button id="Update" class="button blue-gradient" type="submit">ذخیــره</button>*@
+                @*<input type="submit" value="Submit">*@
+            </div>
+        </div>
+    </div>
+
+}
+
+@(Html.Kendo().Grid<CustomMembershipEF.Models.Test_Inquiry_Viewmodel>()
+            .Name("Grid2")
+            .Columns(columns =>
+            {
+                columns.Bound(c => c.Id);
+                columns.Bound(c => c.Test_UID);
+                columns.Bound(c => c.Test_Subject);
+                columns.Bound(c => c.Test_Standard_Code);
+                //  columns.Command(command => command.Custom("ViewDetails").Click("showDetails")).Width(180);
+            })
+            .DataSource(dataSource => dataSource
+                .Ajax()
+                .PageSize(20)
+                    .Read(read => read.Action("Popup_Read_Kartable", "Home"))
+                )
+)
+    <button id="InsertFunction" onclick="InsertFunction()" class="button blue-gradient">تایید صدور درخواست</button>
+    <button id="showcancel" onclick="showcancel()" class="button blue-gradient">رد صدور درخواست</button>
+
+    <fieldset id="frm_cancel">
+        <legend >***لطفا دلیل رد صدور درخواست را وارد کنید***</legend>
+        دلیل رد صدور درخواست: <input id="cancel_desc" type="text"><br>
+        <button id="cancelfuction" onclick="cancelfuction()" class="button blue-gradient">رد صدور درخواست</button>
+        <button id="hidecancel" onclick="hidecancel()" class="button blue-gradient">انصراف</button>
+
+    </fieldset>
+
+
+<script>
+    //when page loads
+    $("#frm_cancel").hide();
+    function hidecancel() {
+        $("#frm_cancel").hide();
+        $("#InsertFunction").show();
+        $("#showcancel").show(); 
+        document.getElementById("cancel_desc").value = "";
+    }
+    function showcancel()
+    {
+        $("#InsertFunction").hide();
+        $("#showcancel").hide(); 
+        $("#frm_cancel").show();
+    }
+    var pub_cancel_desc;
+    function cancelfuction() {
+        pub_cancel_desc = document.getElementById("cancel_desc").value;
+        $.ajax({
+            url: '/Home/Update_Confirm_Inquiry',
+            dataType: "json",
+            type: "POST",
+            contentType: 'application/json; charset=utf-8',
+            data: JSON.stringify({ Test_Inquiry: { Test_ID: "", Test_Inquiry_Coast: "", Test_Inquiry_Desc: pub_cancel_desc } }),
+            async: true,
+            processData: false,
+            cache: false,
+            success: function (data) {
+                //var grid = $("#Grid2").data("kendoGrid");
+                //grid.dataSource.read();
+
+                alert('عملیات رد صدور درخواست با موفقیت انجام شد.');
+                hidecancel();
+            },
+            error: function (xhr) {
+                alert('در سیستم پیام خطا وجود دارد، لطفا با پشتیبان تماس بگیرید');
+            }
+        })
+    }
+    function InsertFunction() {
+        $.ajax({
+            url: '/Home/Update_Confirm_Inquiry',
+            dataType: "json",
+            type: "POST",
+            contentType: 'application/json; charset=utf-8',
+            data: JSON.stringify({ Test_Inquiry: { Test_ID: "", Test_Inquiry_Coast: "", Test_Inquiry_Desc: "" } }),
+            async: true,
+            processData: false,
+            cache: false,
+            success: function (data) {
+                alert('عملیات تایید صدور درخواست با موفقیت انجام شد');
+                window.location.href = data;
+                
+                //var grid = $("#Grid2").data("kendoGrid");
+                //grid.dataSource.read();
+            },
+            error: function (xhr) {
+                alert('این درخواست قبلا تایید شده است.');
+            }
+        })
+
+         
+    }
+</script>
+
+
+
+<script>
+    function AjaxBegin() {
+    }
+
+    function AjaxComplete(result) {
+        alert("Completed")
+    }
+
+    function AjaxFailure(ajaxContext) {
+        var response = ajaxContext.responseText;
+        alert("Error Code [" + ajaxContext.ErrorCode + "] " + response);
+    }
+
+</script>
